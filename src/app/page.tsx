@@ -6,9 +6,13 @@ const Home = () => {
   return ( 
     <div className='flex flex-col gap-7 h-[900px]'>
        <Banner />
-
-        <div className='flex justify-center items-center p-4'>
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2'> 
+       <Header />
+        <div className='bg-pink-100 flex flex-row justify-center items-center w-full xl:px-20
+               md:px-[10px]
+               sm:px-2
+               mx-auto
+               px-9'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-[40px]'> 
           <Card text='To scaffold the project with the Nest CLI, run the following commands. This will create a new project of the man who is great.' image='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyTsHBlbqERI_rbT046jA4F4W7gjcdc3Q_6A&s' />
           <Card text='To scaffold the project with the Nest CLI, run the following commands. This will create a new project' image='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyTsHBlbqERI_rbT046jA4F4W7gjcdc3Q_6A&s' />
           <Card text='To scaffold the project with the Nest CLI, run the following commands. This will create a new project' image='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyTsHBlbqERI_rbT046jA4F4W7gjcdc3Q_6A&s' />
@@ -30,7 +34,7 @@ interface CardProps{
 
 const Card:React.FC<CardProps> = ({ text, image }) => {
   return (
-   <div className='flex flex-col gap-2 overflow-x-auto w-[280px] h-[300px] p-5'
+   <div className='flex flex-col overflow-x-auto xl:w-[270px] w-[309px] h-[367px] px-2'
     >
       <div className='overflow-hidden'>
         <Image src={image} alt='logo' height={300} width={300} />

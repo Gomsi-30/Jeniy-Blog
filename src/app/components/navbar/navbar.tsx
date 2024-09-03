@@ -14,14 +14,14 @@ const Navbar = () => {
   }
     return ( 
     <>
-    {/* <div className={`${isOpen ? 'w-full h-full bg-black/60' : 'w-full h-full bg-black/60'}`}> */}
+   
     <div className='fixed border-b-[1px] shadow w-full h-[85px] bg-white text-black p-2'>
       <Container>
         <div className='flex flex-row justify-between items-center'>
           {isOpen ? <h1></h1> : <Logo />} 
           <Items checker={true} />
           <Brands />
-          <div onClick={handle} className=' md:hidden'>
+          <div onClick={handle} className='md:hidden'>
              <IoIosMenu size={21}/>
             
           </div>
@@ -30,13 +30,7 @@ const Navbar = () => {
         </div>   
       </Container>
 
-      {/* {isOpen && 
-             <div className='transition transform z-30 translate-x-[-30px] delay-1 ease-in-out duration-300  bg-white'>
-                <div className='text-sm z-20'>
-                  <Items checker={false} />
-                </div>
-              </div>
-      } */}
+     
       </div>
       
  {/* Sliding Menu */}
