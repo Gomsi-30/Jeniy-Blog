@@ -15,7 +15,7 @@ const Navbar = () => {
     return ( 
     <>
    
-    <div className='fixed border-b-[1px] shadow w-full h-[85px] bg-white text-black p-2'>
+    <div className='fixed border-b-[1px] shadow w-full h-[85px] bg-white text-black p-2 z-20'>
       <Container>
         <div className='flex flex-row justify-between items-center'>
           {isOpen ? <h1></h1> : <Logo />} 
@@ -23,10 +23,7 @@ const Navbar = () => {
           <Brands />
           <div onClick={handle} className='md:hidden'>
              <IoIosMenu size={21}/>
-            
           </div>
-         
-         
         </div>   
       </Container>
 

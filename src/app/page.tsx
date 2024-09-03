@@ -1,13 +1,15 @@
 import Banner from "./components/banner/banner"
+import Banner2 from "./components/banner2/banner2"
 import Image from 'next/image'
 import Header from './components/header'
+import BlogCard from './components/card/blog-card'
 
 const Home = () => {
   return ( 
-    <div className='flex flex-col gap-7 h-[900px]'>
+    <div className='flex flex-col gap-12 h-[5000px]'>
        <Banner />
-       <Header />
-        <div className='bg-pink-100 flex flex-row justify-center items-center w-full xl:px-20
+       <Header label='INFLUENCER'/>
+        <div className='flex flex-row justify-center items-center w-full xl:px-20
                md:px-[10px]
                sm:px-2
                mx-auto
@@ -19,6 +21,18 @@ const Home = () => {
           <Card text='To scaffold the project with the Nest CLI, run the following commands. This will create a new project' image='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyTsHBlbqERI_rbT046jA4F4W7gjcdc3Q_6A&s' />
         </div>
         </div>
+
+        {/* header */}
+        <Header label='SOCIAL MEDIA'/>
+
+        {/* blog card */}
+        <BlogCard />
+
+        {/* banner 2 */}
+        <Banner2 />
+
+        {/* blogs */}
+        <Header label='BLOGS'/>
     </div>
    );
 }
