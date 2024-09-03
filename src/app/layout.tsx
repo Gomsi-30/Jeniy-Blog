@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navbar/navbar";
+import Footer from "./components/footer/footer";
+
 const inter = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -19,6 +21,7 @@ export default function RootLayout({
       <body className={inter.className} >
           <Navbar />
           <main className='pt-[86px]'> {children} </main>
+          <Footer />
         </body>
     </html>
   );

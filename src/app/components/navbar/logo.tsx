@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-const Logo = () => {
+const Logo = ({label}) => {
     return ( 
     <>
-       <Image src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjsScWYmyfPv3XdkNdEFVJ1wlDKMOgcSWUcg&s' alt='logo' height={100} width={100} />
+       <Image src={label} alt='logo' height={60} width={60} className='text-white' />
     </> 
     );
 }

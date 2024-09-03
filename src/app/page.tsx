@@ -1,4 +1,5 @@
 import Banner from "./components/banner/banner"
+import GridCard from "./components/grid-cards/grid-cards"
 import Banner2 from "./components/banner2/banner2"
 import Image from 'next/image'
 import Header from './components/header'
@@ -6,7 +7,7 @@ import BlogCard from './components/card/blog-card'
 
 const Home = () => {
   return ( 
-    <div className='flex flex-col gap-12 h-[5000px]'>
+    <div className='flex flex-col gap-12 h-auto'>
        <Banner />
        <Header label='INFLUENCER'/>
         <div className='flex flex-row justify-center items-center w-full xl:px-20
@@ -26,13 +27,18 @@ const Home = () => {
         <Header label='SOCIAL MEDIA'/>
 
         {/* blog card */}
-        <BlogCard />
+        <BlogCard label="/Rectangle 3.png"/>
 
         {/* banner 2 */}
         <Banner2 />
 
-        {/* blogs */}
+        {/* BLOG-COMPONENT */}
         <Header label='BLOGS'/>
+        <GridCard />
+
+        {/* Influencer marketing */}
+        <Header label='INFLUENCER MARKETING'/>
+        <BlogCard label="/blog2png.png"/>
     </div>
    );
 }

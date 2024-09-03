@@ -8,20 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        customGray: '#121221', // You can name it anything you like
+      },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'blog1' : "url('/blog2png.png')",
       },
-      animation: {
-        wiggle: 'wiggle 1s ease-in-out infinite',
-      },
-      keyframes: {
-        wiggle: {
-          '0%, 50%': { transform: 'translateX(0px)' },
-          '100%': { transform: 'translateX(-30px)' },
-        }
-      }
     },
   },
   plugins: [],

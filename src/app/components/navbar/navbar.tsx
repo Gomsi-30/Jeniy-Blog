@@ -15,12 +15,12 @@ const Navbar = () => {
     return ( 
     <>
    
-    <div className='fixed border-b-[1px] shadow w-full h-[85px] bg-white text-black p-2 z-20'>
+    <div className='fixed border-b-[1px] shadow w-full h-[85px] bg-white text-black py-5 px-2 z-20'>
       <Container>
         <div className='flex flex-row justify-between items-center'>
-          {isOpen ? <h1></h1> : <Logo />} 
+          {isOpen ? <h1></h1> : <Logo label='/InCb.png' />} 
           <Items checker={true} />
-          <Brands />
+          <Brands color='black' />
           <div onClick={handle} className='md:hidden'>
              <IoIosMenu size={21}/>
           </div>
