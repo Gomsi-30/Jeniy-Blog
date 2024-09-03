@@ -1,9 +1,9 @@
 
-interface containerProps {
+type containerProps = {
     children : React.ReactNode
 }
 
-const Container: React.FC<containerProps> = ({children}) => {
+const Container = ({children}:containerProps) => {
     return ( 
         <>
            <div className="w-full

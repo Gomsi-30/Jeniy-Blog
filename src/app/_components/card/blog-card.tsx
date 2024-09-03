@@ -1,11 +1,11 @@
 import Image from 'next/image'
 import Container from '../container'
 
-interface BlogCardProps {
+type BlogCardProps = {
   label: string;
 }
 
-const BlogCard: React.FC<BlogCardProps> = ({ label }) => {
+const BlogCard = ({ label }:BlogCardProps) => {
   return (
     <Container>
       <div className="flex flex-col md:flex-row md:justify-between gap-[40px] w-full">
@@ -14,9 +14,9 @@ const BlogCard: React.FC<BlogCardProps> = ({ label }) => {
             className="w-full"
             src={label}
             alt="Card Image"
-            width={769}  // or whatever appropriate width
-            height={450}  // or whatever appropriate height
-            layout="responsive"  // this will make the image responsive
+            width={769}  
+            height={450} 
+            layout="responsive"  
           />
           <div className="px-6 py-4 w-full">
             <p className="text-gray-700 text-base">

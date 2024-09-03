@@ -6,7 +6,7 @@ const GridCards = () => {
         <Container>
             <div className='grid md:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-[40px]'>
                 {[...Array(9)].map((_, index) => (
-                    <div key={index} className="h-[170px] rounded overflow-hidden shadow-lg flex">
+                    <div key={index} className="h-[170px] rounded overflow-hidden flex">
                         <div className="w-[50%] relative h-full">
                             <Image
                                 src="/Rectangle 3.png"

@@ -2,7 +2,11 @@ import Link from 'next/link'
 import { FaAmazon } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 
-const Brands = ({color})=>{
+type BrandProps = {
+    color:string
+}
+
+const Brands = ({color}:BrandProps)=>{
     return (
         <>
            <div className='hidden lg:flex flex-row gap-5 items-center opacity:50'>
