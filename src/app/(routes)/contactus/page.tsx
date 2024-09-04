@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa';
-import Container from '../_components/container';
+import Container from '../../_components/container';
 
 const ContactUs = () => {
   return (
@@ -39,46 +39,46 @@ const ContactUs = () => {
           <div className="flex flex-col gap-4 w-[550px] sm:w-[800px]">
             {/* You can add contact information or social media links here */}
             <div>
-             <h1>Full name</h1>
-             <input type='text' className='w-full border-[2px] p-1' placeholder='Full name'></input>
+              <h1>Full name</h1>
+              <input type='text' className='w-full border-[2px] p-1' placeholder='Full name'></input>
             </div>
             <div>
-             <h1>Email address</h1>
-             <input type='email' className='w-full border-[2px] p-1' placeholder='someone@example.com'></input>
+              <h1>Email address</h1>
+              <input type='email' className='w-full border-[2px] p-1' placeholder='someone@example.com'></input>
             </div>
             <div>
-             <h1>Phone number</h1>
-             <input type='phone' className='w-full border-[2px] p-1' placeholder='000-000'></input>
+              <h1>Phone number</h1>
+              <input type='phone' className='w-full border-[2px] p-1' placeholder='000-000'></input>
             </div>
             <div>
-             <h1>Message</h1>
-            <textarea rows="4" cols="50" className='w-full h-[100px] border-[2px]' placeholder='Leave us a message'></textarea>
+              <h1>Message</h1>
+              <textarea rows="4" cols="50" className='w-full h-[100px] border-[2px]' placeholder='Leave us a message'></textarea>
             </div>
             <div className='flex justify-center items-center bg-black  p-1'>
-            <button className='text-white'>Message</button>
+              <button className='text-white'>Message</button>
             </div>
           </div>
 
           {/* Contact Form */}
           <div className="flex flex-col gap-6 w-[600px] mt-[10px]">
-             <div className='flex flex-col gap-1 font-bold'>
-                <h1 className='text-1xl font-bold'>Email Us</h1>
-                <p className='text-sm font-semibold opacity-70'>Email us if you have any query or something.</p>
-                <Link href=''> <p className='text-sm font-semibold opacity-70'>info@example.com</p></Link>
-              </div>
+            <div className='flex flex-col gap-1 font-bold'>
+              <h1 className='text-1xl font-bold'>Email Us</h1>
+              <p className='text-sm font-semibold opacity-70'>Email us if you have any query or something.</p>
+              <Link href=''> <p className='text-sm font-semibold opacity-70'>info@example.com</p></Link>
+            </div>
 
-              <div className='flex flex-col gap-1'>
-                <h1 className='text-1xl font-bold'>Office Address</h1>
-                <p className='text-sm font-semibold opacity-70'>Email us if you have any query or something.</p>
-              </div>
+            <div className='flex flex-col gap-1'>
+              <h1 className='text-1xl font-bold'>Office Address</h1>
+              <p className='text-sm font-semibold opacity-70'>Email us if you have any query or something.</p>
+            </div>
 
-              <div className='flex flex-col gap-1'>
-                <p className='text-sm font-semibold opacity-70'>InfluencerCollab</p>
-                <p className='text-sm font-semibold opacity-70'>4567 Social Avenue</p>
-                <p className='text-sm font-semibold opacity-70'>Suite 890</p>
-                <p className='text-sm font-semibold opacity-70'>New York, NY 10010</p>
-                <p className='text-sm font-semibold opacity-70'>United States</p>
-              </div>
+            <div className='flex flex-col gap-1'>
+              <p className='text-sm font-semibold opacity-70'>InfluencerCollab</p>
+              <p className='text-sm font-semibold opacity-70'>4567 Social Avenue</p>
+              <p className='text-sm font-semibold opacity-70'>Suite 890</p>
+              <p className='text-sm font-semibold opacity-70'>New York, NY 10010</p>
+              <p className='text-sm font-semibold opacity-70'>United States</p>
+            </div>
           </div>
         </div>
       </Container>

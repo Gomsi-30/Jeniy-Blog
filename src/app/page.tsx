@@ -21,7 +21,7 @@ const Home = () => {
       <BlogCard label="/Rectangle 3.png" />
 
       {/* banner 2 */}
-      <Banner2 />
+      <Banner2 check={false}  />
 
       {/* BLOG-COMPONENT */}
       <Header label='BLOGS' />
