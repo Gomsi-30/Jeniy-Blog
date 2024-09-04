@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className='body' >
+      <body className=''>
         <Navbar />
         <main className='pt-[86px]'> {children} </main>
         <Footer />

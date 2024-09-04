@@ -87,8 +87,8 @@ const Footer = () => {
               </div>
             </div>
           </Container>
-          <div className="text-center p-3 border-t border-white text-white">
-            © 2020 Copyright
+          <div className="text-center p-3 border-t border-white text-white mt-[35px]">
+            © 2024 Copyright
             <Link href="https://mdbootstrap.com/" className="text-white hover:underline">
               -InCb
             </Link>

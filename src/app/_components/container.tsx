@@ -9,9 +9,10 @@ const Container = ({children}:containerProps) => {
            <div className="w-full
                mx-auto
                xl:px-20
+               lg:px-20
                md:px-10
-               sm:px-2
-               px-5">
+               px-10
+             ">
               {children}
            </div>
         </>

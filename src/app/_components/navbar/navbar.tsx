@@ -1,5 +1,5 @@
 "use client"
-
+import { RxCross2 } from "react-icons/rx";
 import Container from "../container";
 import Logo from "./logo";
 import Items from "./items";
@@ -18,12 +18,14 @@ const Navbar = () => {
     <div className='fixed border-b-[1px] shadow w-full h-[85px] bg-white text-black py-5 px-2 z-20'>
       <Container>
         <div className='flex flex-row justify-between items-center'>
-          {isOpen ? <h1></h1> : <Logo label='/InCb.png' />} 
+          {isOpen ? <h1></h1> : <div className=''><Logo label='/InCb.png' /></div>} 
           <Items checker={true} />
           <Brands color='black' />
-          <div onClick={handle} className='md:hidden'>
-             <IoIosMenu size={21}/>
+         
+          <div onClick={handle} className='sm:hidden'>
+             <IoIosMenu size={51}/>
           </div>
+          
         </div>   
       </Container>
 
@@ -31,8 +33,9 @@ const Navbar = () => {
       </div>
       
  {/* Sliding Menu */}
- <div className={`fixed top-0 right-0 h-full w-[75%] max-w-sm bg-white shadow-lg transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out`}>
-        <div className='p-4'>
+ <div className={`fixed px-6 py-6 flex flex-col gap-[20px] z-50 top-0 right-0 h-full w-[75%] max-w-sm bg-white shadow-lg transform ${isOpen ? 'translate-x-0' : `translate-x-full`} transition-transform duration-300 ease-in-out`}>
+        <div className='p-6'>
+           <div onClick={handle} className='absolute top-5 left-5'><RxCross2 /></div>
            <Items checker={false} />
         </div>
       </div>

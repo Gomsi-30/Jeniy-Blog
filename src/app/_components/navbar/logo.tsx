@@ -1,9 +1,14 @@
 import Image from "next/image";
 
-const Logo = ({label}) => {
+type LogoProps = {
+  label : string
+}
+
+const Logo = ({label}:LogoProps) => {
     return ( 
     <>
-       <Image src={label} alt='logo' height={60} width={60} className='text-white' />
+  <Image src={label} alt='logo' height={70} width={70} className='text-white' />
+
     </> 
     );
 }
