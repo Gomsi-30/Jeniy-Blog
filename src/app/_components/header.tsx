@@ -6,7 +6,7 @@ type HeaderProps = {
  const Header = ({ label }:HeaderProps) => {
    return (
      <div className='hh flex justify-center items-center border-t-[2px] border-b-[2px] py-9'>
-       <div className='font-bold text-4xl'>
+       <div className='font-bold text-2xl md:text-3xl lg:text-4xl'>
          {label}
        </div>
      </div>

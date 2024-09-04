@@ -7,7 +7,7 @@ import NewCard from './_components/new-card/newCard'
 
 const Home = () => {
   return (
-    <div className='container mx-auto flex flex-col gap-12 h-auto'>
+    <div className=' flex flex-col gap-12 h-auto'>
       <Banner />
       <Header label='INFLUENCER' />
 
