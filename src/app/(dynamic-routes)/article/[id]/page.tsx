@@ -6,7 +6,8 @@ import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa';
 import { data2 } from './data'; // Adjust the path as needed
 
-const DynamicArticle = ({ params }) => {
+
+const DynamicArticle = ({ params }:any) => {
     const { id } = params; // Extract the ID from the URL
 
     // Filter data based on the ID
