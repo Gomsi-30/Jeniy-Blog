@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className=' flex flex-col gap-12 h-auto'>
       <Banner />
-      <Header label='INFLUENCER' />
+      <Header className='bg-pink-200' label='INFLUENCER' />
 
       {/* new card */}
       <NewCard />
@@ -21,7 +21,8 @@ const Home = () => {
       <BlogCard label="/Rectangle 3.png" />
 
       {/* banner 2 */}
-      <Banner2 check={false}  />
+      <Header label='BRANDS' />
+      <Banner2 check='a' />
 
       {/* BLOG-COMPONENT */}
       <Header label='BLOGS' />

@@ -1,25 +1,65 @@
+"use client"
 import Logo from '../navbar/logo';
-import Brands from '../navbar/brands';
 import Container from '../container';
 import Link from 'next/link';
+import { FaTwitter, FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
+import { useState } from 'react';
+import { z } from 'zod';
+import { toast } from 'react-hot-toast';
+import { Toaster } from 'react-hot-toast';
+
+// Zod schema for email validation
+const emailSchema = z.string().email({ message: 'Invalid email address' });
 
 const Footer = () => {
+  const [email, setEmail] = useState('');
+
+  // Function to handle form submission
+  const handleSubscribe = (e) => {
+    e.preventDefault();
+    try {
+      // Validate email using zod
+      emailSchema.parse(email);
+      // Show success toast if validation passes
+      toast.success('Subscribed successfully!');
+      setEmail(''); // Reset the email input after success
+    } catch (error:any) {
+      // Show error toast if validation fails
+      toast.error(error.errors[0].message);
+    }
+  };
+
   return (
-    <div className='bg-customGray h-[330px] w-full'>
-      <div className="mx-auto my-8">
+    <div className="bg-customGray w-full mt-[140px] lg:mt-[200px]">
+      <div className="">
         <footer className="pt-10">
           <Container>
-            <div className='lg:flex flex-row justify-between'>
-              <Logo label='/mainLogo.png' />
-              <Brands color='white' />
+            <div className="flex flex-row justify-center lg:justify-between items-center">
+              <Logo label="/mainLogo.png" />
+              {/* Social Media Icons */}
+              <div className="hidden lg:flex space-x-4">
+                <Link href="#!" className="text-white hover:text-gray-300">
+                  <FaTwitter size={20} />
+                </Link>
+                <Link href="#!" className="text-white hover:text-gray-300">
+                  <FaXTwitter size={20} />
+                </Link>
+                <Link href="#!" className="text-white hover:text-gray-300">
+                  <FaLinkedinIn size={20} />
+                </Link>
+                <Link href="#!" className="text-white hover:text-gray-300">
+                  <FaFacebookF size={20} />
+                </Link>
+              </div>
             </div>
           </Container>
           <Container>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:items-center mt-[55px]">
+            <div className="grid grid-cols-3 lg:grid-cols-4 lg:gap-0 gap-6 mt-8 lg:mt-[55px] text-center lg:text-left w-full">
               <div>
-                <ul className="mb-4 text-md">
+                <ul className="mb-4 text-sm md:text-md lg:text-lg space-y-2">
                   <li>
-                    <Link href="#!" className="text-white hover:underline">
+                    <Link href="/" className="text-white hover:underline">
                       Home
                     </Link>
                   </li>
@@ -29,33 +69,33 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="#!" className="text-white hover:underline">
+                    <Link href="/influencers" className="text-white hover:underline">
                       Influencers
                     </Link>
                   </li>
                 </ul>
               </div>
               <div>
-                <ul className="mb-4 text-md">
+                <ul className="mb-4 text-sm md:text-md lg:text-lg space-y-2">
                   <li>
-                    <Link href="#!" className="text-white hover:underline">
+                    <Link href="/socialmedia" className="text-white hover:underline">
                       Social Media
                     </Link>
                   </li>
                   <li>
-                    <Link href="#!" className="text-white hover:underline">
+                    <Link href="/brands" className="text-white hover:underline">
                       Brands
                     </Link>
                   </li>
                   <li>
-                    <Link href="#!" className="text-white hover:underline">
+                    <Link href="/influencer-marketing" className="text-white hover:underline">
                       Influencer Marketing
                     </Link>
                   </li>
                 </ul>
               </div>
               <div>
-                <ul className="mb-4 text-md">
+                <ul className="mb-4 text-sm md:text-md lg:text-lg space-y-2">
                   <li>
                     <Link href="/contactus" className="text-white hover:underline">
                       Contact Us
@@ -71,30 +111,52 @@ const Footer = () => {
                       Terms
                     </Link>
                   </li>
+                  <li>
+                    <Link href="/disclaimer" className="text-white hover:underline">
+                      Disclaimer
+                    </Link>
+                  </li>
                 </ul>
               </div>
-              <div className="flex flex-col sm:flex-row">
-               
+              {/* The social media icons will remain hidden on small screens */}
+              <div className="flex justify-center lg:justify-start lg:col-span-1 col-span-3 lg:hidden">
+                <div className="flex space-x-4">
+                  <Link href="#!" className="text-white hover:text-gray-300">
+                    <FaTwitter size={20} />
+                  </Link>
+                  <Link href="#!" className="text-white hover:text-gray-300">
+                    <FaXTwitter size={20} />
+                  </Link>
+                  <Link href="#!" className="text-white hover:text-gray-300">
+                    <FaLinkedinIn size={20} />
+                  </Link>
+                  <Link href="#!" className="text-white hover:text-gray-300">
+                    <FaFacebookF size={20} />
+                  </Link>
+                </div>
+              </div>
+              <div className="flex justify-center lg:col-span-1 col-span-3 ">
+                <form onSubmit={handleSubscribe} className="flex items-center space-x-1">
                   <input
-                    className="p-1 bg-black text-white flex-grow rounded"
-                    placeholder='Email address'
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="p-1 text-sm bg-black text-white rounded-l-lg border border-white w-52"
+                    placeholder="Email address"
                     type="email"
                   />
-                  <button className='p-1 bg-white text-sm text-black border-l-[2px] font-semibold rounded'>
+                  <button type="submit" className="p-1 text-sm bg-white text-black font-semibold rounded-r-lg w-21">
                     Subscribe
                   </button>
-               
+                </form>
               </div>
             </div>
           </Container>
-          <div className="text-center p-3 border-t border-white text-white mt-[35px]">
-            © 2024 Copyright
-            <Link href="https://mdbootstrap.com/" className="text-white hover:underline">
-              -InCb
-            </Link>
+          <div className="text-center p-3 border-t border-white text-white mt-8 lg:mt-[35px]">
+            © 2024 Incb. All rights reserved.
           </div>
         </footer>
       </div>
+      <Toaster />
     </div>
   );
 };

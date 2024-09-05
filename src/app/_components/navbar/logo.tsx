@@ -7,8 +7,7 @@ type LogoProps = {
 const Logo = ({label}:LogoProps) => {
     return ( 
     <>
-  <Image src={label} alt='logo' height={70} width={70} className='text-white' />
-
+     <Image src={label} alt='logo' height={70} width={70} className='text-white' />
     </> 
     );
 }

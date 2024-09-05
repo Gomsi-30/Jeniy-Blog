@@ -4,7 +4,7 @@ import Container from "../container";
 import Logo from "./logo";
 import Items from "./items";
 import Brands from "./brands";
-import { IoIosMenu } from "react-icons/io";
+import { RiMenu3Fill } from "react-icons/ri";
 import {useState} from 'react';
 
 const Navbar = () => {
@@ -23,7 +23,7 @@ const Navbar = () => {
           <Brands color='black' />
          
           <div onClick={handle} className='sm:hidden'>
-             <IoIosMenu size={51}/>
+             <RiMenu3Fill size={34}/>
           </div>
           
         </div>   

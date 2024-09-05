@@ -1,87 +1,136 @@
+"use client";
+import { useForm } from 'react-hook-form';
+import { z } from 'zod';
+import { zodResolver } from '@hookform/resolvers/zod';
+import toast from 'react-hot-toast';
 import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa';
 import Container from '../../_components/container';
+import { Toaster } from 'react-hot-toast';
+
+// Define validation schema
+const schema = z.object({
+  fullName: z.string().min(1, "Full name is required"),
+  email: z.string().email("Invalid email address"),
+  phone: z.string().min(1, "Phone number is required"),
+  message: z.string().min(1, "Message is required"),
+});
 
 const ContactUs = () => {
+  const { register, handleSubmit, formState: { errors } } = useForm({
+    resolver: zodResolver(schema),
+  });
+
+  const onSubmit = (data) => {
+    // Simulate form submission and show a success message
+    toast.success("Message sent successfully!");
+    console.log(data);
+  };
+
   return (
-    <div className="mt-[30px] flex  flex-col gap-[50px] h-[1000px]">
+    <div className="flex flex-col gap-12 px-4 py-8">
       {/* Breadcrumb */}
       <Container>
-        <div className="flex flex-col gap-7 w-[550px] sm:w-full">
-          <div className="flex flex-row gap-1 justify-center items-center">
-            <Link href="/" className="p-1 font-bold text-sm">
+        <div className="flex mt-[20px] flex-col justify-center gap-4 w-full max-w-screen-md mx-auto">
+          <div className="flex justify-center items-center space-x-2">
+            <Link href="/" className="font-bold text-sm text-blue-600 hover:underline">
               Home
             </Link>
-            <FaArrowRight className='opacity-70' size={10} />
-            <p className="p-1 text-sm opacity-50">Contact Us</p>
+            <FaArrowRight className='opacity-70' size={12} />
+            <p className="text-sm text-gray-500">Contact Us</p>
           </div>
         </div>
       </Container>
 
       {/* Heading and Description */}
       <Container>
-        <div className="flex flex-col gap-2 justify-center items-center w-[550px] sm:w-full">
-          <div className="p-2 text-center">
-            <h1 className="text-2xl font-bold">We’d Love to Hear from You!</h1>
-          </div>
-          <div className="p-2 text-center max-w-lg">
-            <p>
-              Have questions, feedback, or need support? Get in touch with us through any of the following methods:
-            </p>
-          </div>
+        <div className="flex flex-col items-center text-center w-full max-w-screen-md mx-auto">
+          <h1 className="text-3xl font-bold mb-4">We’d Love to Hear from You!</h1>
+          <p className="text-lg text-gray-700">
+            Have questions, feedback, or need support? Get in touch with us through any of the following methods:
+          </p>
         </div>
       </Container>
 
       {/* Form and Contact Information */}
       <Container>
-        <div className="flex flex-col sm:flex-row justify-between sm:w-full gap-[60px] sm:gap-[150px]">
-          {/* Contact Information */}
-          <div className="flex flex-col gap-4 w-[550px] sm:w-[800px]">
-            {/* You can add contact information or social media links here */}
-            <div>
-              <h1>Full name</h1>
-              <input type='text' className='w-full border-[2px] p-1' placeholder='Full name'></input>
-            </div>
-            <div>
-              <h1>Email address</h1>
-              <input type='email' className='w-full border-[2px] p-1' placeholder='someone@example.com'></input>
-            </div>
-            <div>
-              <h1>Phone number</h1>
-              <input type='phone' className='w-full border-[2px] p-1' placeholder='000-000'></input>
-            </div>
-            <div>
-              <h1>Message</h1>
-              <textarea rows="4" cols="50" className='w-full h-[100px] border-[2px]' placeholder='Leave us a message'></textarea>
-            </div>
-            <div className='flex justify-center items-center bg-black  p-1'>
-              <button className='text-white'>Message</button>
-            </div>
-          </div>
-
+        <div className="flex flex-col md:flex-row gap-12 md:gap-40">
           {/* Contact Form */}
-          <div className="flex flex-col gap-6 w-[600px] mt-[10px]">
-            <div className='flex flex-col gap-1 font-bold'>
-              <h1 className='text-1xl font-bold'>Email Us</h1>
-              <p className='text-sm font-semibold opacity-70'>Email us if you have any query or something.</p>
-              <Link href=''> <p className='text-sm font-semibold opacity-70'>info@example.com</p></Link>
+          <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-6 w-full max-w-screen-lg mx-auto">
+            <div>
+              <label htmlFor="fullName" className="block text-sm font-semibold">Full Name</label>
+              <input
+                id="fullName"
+                type='text'
+                {...register('fullName')}
+                className='w-full border border-gray-300 p-2 rounded-md'
+                placeholder='Full name'
+              />
+              {errors.fullName && <p className='text-red-500 text-sm'>{errors.fullName.message}</p>}
+            </div>
+            <div>
+              <label htmlFor="email" className="block text-sm font-semibold">Email Address</label>
+              <input
+                id="email"
+                type='email'
+                {...register('email')}
+                className='w-full border border-gray-300 p-2 rounded-md'
+                placeholder='someone@example.com'
+              />
+              {errors.email && <p className='text-red-500 text-sm'>{errors.email.message}</p>}
+            </div>
+            <div>
+              <label htmlFor="phone" className="block text-sm font-semibold">Phone Number</label>
+              <input
+                id="phone"
+                type='text'
+                {...register('phone')}
+                className='w-full border border-gray-300 p-2 rounded-md'
+                placeholder='000-000'
+              />
+              {errors.phone && <p className='text-red-500 text-sm'>{errors.phone.message}</p>}
+            </div>
+            <div>
+              <label htmlFor="message" className="block text-sm font-semibold">Message</label>
+              <textarea
+                id="message"
+                rows="4"
+                {...register('message')}
+                className='w-full border border-gray-300 p-2 rounded-md'
+                placeholder='Leave us a message'
+              />
+              {errors.message && <p className='text-red-500 text-sm'>{errors.message.message}</p>}
+            </div>
+            <button
+              type='submit'
+              className='bg-black text-white py-2 px-4 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500'>
+              Send Message
+            </button>
+          </form>
+
+          {/* Contact Information */}
+          <div className="flex flex-col gap-6 w-full max-w-screen-md mx-auto">
+            <div>
+              <h2 className='text-xl font-bold'>Email Us</h2>
+              <p className='text-sm font-semibold text-gray-600'>Email us if you have any query or something.</p>
+              <Link href='mailto:info@example.com'>
+                <p className='text-sm font-semibold text-blue-600 hover:underline'>info@example.com</p>
+              </Link>
             </div>
 
-            <div className='flex flex-col gap-1'>
-              <h1 className='text-1xl font-bold'>Office Address</h1>
-              <p className='text-sm font-semibold opacity-70'>Email us if you have any query or something.</p>
-            </div>
-
-            <div className='flex flex-col gap-1'>
-              <p className='text-sm font-semibold opacity-70'>InfluencerCollab</p>
-              <p className='text-sm font-semibold opacity-70'>4567 Social Avenue</p>
-              <p className='text-sm font-semibold opacity-70'>Suite 890</p>
-              <p className='text-sm font-semibold opacity-70'>New York, NY 10010</p>
-              <p className='text-sm font-semibold opacity-70'>United States</p>
+            <div>
+              <h2 className='text-xl font-bold'>Office Address</h2>
+              <p className='text-sm font-semibold text-gray-600'>You can visit us at the following address:</p>
+              <p className='text-sm font-semibold text-gray-600'>InfluencerCollab</p>
+              <p className='text-sm font-semibold text-gray-600'>4567 Social Avenue</p>
+              <p className='text-sm font-semibold text-gray-600'>Suite 890</p>
+              <p className='text-sm font-semibold text-gray-600'>New York, NY 10010</p>
+              <p className='text-sm font-semibold text-gray-600'>United States</p>
             </div>
           </div>
         </div>
       </Container>
+      <Toaster />
     </div>
   );
 };

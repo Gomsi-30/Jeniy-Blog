@@ -6,15 +6,15 @@ import Header from '../../_components/header'
 import BlogCard from '../../_components/card/blog-card'
 import NewCard from '../../_components/new-card/newCard'
 
-const Influencers = () => {
+const InfluencerMarketing = () => {
   return (
     <div className=' flex flex-col gap-12 h-auto'>
-      <Banner label='Influencers' />
+      <Banner label='Influencer Marketing'/>
 
       {/* banner 2 */}
       <div className='px-[250px]'><Banner2 check='b' /></div>
 
-      <Header label='INFLUENCER' />
+      <Header label='INFLUENCER MARKETING' />
         
       {/* new card */}
       <NewCard />
@@ -38,5 +38,4 @@ const Influencers = () => {
   );
 }
 
-export default Influencers;
-
+export default InfluencerMarketing;

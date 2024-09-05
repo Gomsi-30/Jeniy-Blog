@@ -11,7 +11,7 @@ const Container = ({children}:containerProps) => {
                xl:px-20
                lg:px-20
                md:px-10
-               px-10
+               px-5
              ">
               {children}
            </div>
