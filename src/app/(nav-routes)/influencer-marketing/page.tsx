@@ -5,6 +5,7 @@ import Banner2 from "../../_components/banner2/banner2"
 import Header from '../../_components/header'
 import BlogCard from '../../_components/card/blog-card'
 import NewCard from '../../_components/new-card/newCard'
+import {influencersMarketData} from '../../_components/articles/influencer-market-data'
 
 const InfluencerMarketing = () => {
   return (
@@ -20,21 +21,21 @@ const InfluencerMarketing = () => {
       <Header label='INFLUENCER MARKETING' />
       
       {/* New Card Section */}
-      <NewCard />
+      <NewCard data={influencersMarketData} />
 
       {/* Header for Content Creation */}
       <Header label='CONTENT CREATION' />
 
       {/* Blog Card Section */}
       <div className='px-1'>
-        <BlogCard label="/Rectangle 3.png" />
+        <BlogCard data={influencersMarketData} />
       </div>
 
       {/* Header for Trends */}
       <Header label='Trends' />
       
       <div className='px-1]'>
-        <BlogCard label="/Rectangle 3.png" />
+        <BlogCard data={influencersMarketData}  />
       </div>
 
       {/* Influencer Marketing Section */}
@@ -42,7 +43,7 @@ const InfluencerMarketing = () => {
       
       {/* Grid Cards */}
       <div className='px-1'>
-        <GridCard />
+        <GridCard data={influencersMarketData} />
       </div>
     </div>
   );

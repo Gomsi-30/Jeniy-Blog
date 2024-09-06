@@ -4,13 +4,13 @@ import Header from '../../../_components/header';
 import Container from '../../../_components/container';
 import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa';
-import { data2 } from '../../../_components/data'; // Adjust the path as needed
+import { allData } from '../../../_components/articles/all-data'; // Adjust the path as needed
 
 const DynamicArticle = ({ params }: any) => {
     const { id } = params; // Extract the ID from the URL
 
     // Filter data based on the ID
-    const articleData = data2.find(item => item.id === parseInt(id));
+    const articleData = allData.find(item => item.id === parseInt(id));
 
     return (
         <div className="mt-[50px] flex flex-col gap-1 w-full">
@@ -61,7 +61,7 @@ const DynamicArticle = ({ params }: any) => {
           
                 <Header label="WHAT's MORE" />
                 <div className="mt-8">
-                    <GridCard />
+                    <GridCard data={articleData} />
                 </div>
           
         </div>

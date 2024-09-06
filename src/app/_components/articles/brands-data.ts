@@ -1,7 +1,7 @@
 
 const readTime = `${Math.floor(Math.random() * (8 - 4 + 1)) + 4} min read`;
 
-export let data2 = [
+export let brandsData = [
     {
       "id": 1,
       "image": "/Rectangle 3.png",
@@ -149,7 +149,7 @@ export let data2 = [
     {
       "id": 9,
       "image": "/Rectangle 3.png",
-      "text": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "text": "Brands quick example text to build on the card title and make up the bulk of the card's content.",
       "author": "George Ives",
       "authorImage": "/author9.png",
       "readTime": readTime,

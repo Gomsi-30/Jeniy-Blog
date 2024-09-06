@@ -4,33 +4,33 @@ import Banner2 from "./_components/banner2/banner2"
 import Header from './_components/header'
 import BlogCard from './_components/card/blog-card'
 import NewCard from './_components/new-card/newCard'
+import {brandsData} from './_components/articles/brands-data'
+import {socialData} from './_components/articles/social-media-data'
+import {influencersData} from './_components/articles/influencers-data'
+import {influencersMarketData} from './_components/articles/influencer-market-data'
 
 const Home = () => {
   return (
     <div className=' flex flex-col gap-12 h-auto'>
       <Banner />
-      <Header className='bg-pink-200' label='INFLUENCER' />
 
-      {/* new card */}
-      <NewCard />
+      {/* influencer */}
+      <Header label='INFLUENCER' />
+      <NewCard data={influencersData} />
 
-      {/* header */}
+     {/* socialmedia */}
       <Header label='SOCIAL MEDIA' />
+      <BlogCard data={socialData} />
 
-      {/* blog card */}
-      <BlogCard label="/Rectangle 3.png" />
-
-      {/* banner 2 */}
-      <Header label='BRANDS' />
       <Banner2 check='a' />
 
-      {/* BLOG-COMPONENT */}
-      <Header label='BLOGS' />
-      <GridCard />
+      {/* brands */}
+      <Header label='BRANDS' />
+      <GridCard data={brandsData} />
 
       {/* Influencer marketing */}
       <Header label='INFLUENCER MARKETING' />
-      <BlogCard label="/blog2png.png" />
+      <BlogCard data={influencersMarketData} />
     </div>
   );
 }

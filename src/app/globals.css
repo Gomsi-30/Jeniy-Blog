@@ -6,10 +6,12 @@
 
 
 
+h1{
+  font-family: "DM Serif Display", serif;
+}
 .hh{
   font-family: "DM Serif Display", serif;
 }
-
-.body{
+p{
 font-family: 'Arial', sans-serif;
 }

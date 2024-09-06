@@ -1,9 +1,9 @@
 
 const readTime = `${Math.floor(Math.random() * (8 - 4 + 1)) + 4} min read`;
 
-export let data2 = [
+export let influencersData = [
     {
-      "id": 1,
+      "id": 19,
       "image": "/Rectangle 3.png",
       "text": "Some quick example text to build on the card title and make up the bulk of the card's content.",
       "author": "John Doe",
@@ -21,7 +21,7 @@ export let data2 = [
     ]
     },
     {
-      "id": 2,
+      "id": 20,
       "image": "/Rectangle 3.png",
       "text": "Some quick example text to build on the card title and make up the bulk of the card's content.",
       "author": "Jane Smith",
@@ -39,7 +39,7 @@ export let data2 = [
     ]
     },
     {
-      "id": 3,
+      "id": 21,
       "image": "/Rectangle 3.png",
       "text": "Some quick example text to build on the card title and make up the bulk of the card's content.",
       "author": "Alice Johnson",
@@ -57,7 +57,7 @@ export let data2 = [
     ]
     },
     {
-      "id": 4,
+      "id": 22,
       "image": "/Rectangle 3.png",
       "text": "Some quick example text to build on the card title and make up the bulk of the card's content.",
       "author": "Bob Brown",
@@ -75,7 +75,7 @@ export let data2 = [
     ]
     },
     {
-      "id": 5,
+      "id": 23,
       "image": "/Rectangle 3.png",
       "text": "Some quick example text to build on the card title and make up the bulk of the card's content.",
       "author": "Charlie Davis",
@@ -93,7 +93,7 @@ export let data2 = [
     ]
     },
     {
-      "id": 6,
+      "id": 24,
       "image": "/Rectangle 3.png",
       "text": "Some quick example text to build on the card title and make up the bulk of the card's content.",
       "author": "Diana Evans",
@@ -111,7 +111,7 @@ export let data2 = [
     ]
     },
     {
-      "id": 7,
+      "id": 25,
       "image": "/Rectangle 3.png",
       "text": "Some quick example text to build on the card title and make up the bulk of the card's content.",
       "author": "Edward Green",
@@ -129,7 +129,7 @@ export let data2 = [
     ]
     },
     {
-      "id": 8,
+      "id": 26,
       "image": "/Rectangle 3.png",
       "text": "Some quick example text to build on the card title and make up the bulk of the card's content.",
       "author": "Fiona Harris",
@@ -147,9 +147,9 @@ export let data2 = [
     ]
     },
     {
-      "id": 9,
+      "id": 27,
       "image": "/Rectangle 3.png",
-      "text": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "text": "Influencers quick example text to build on the card title and make up the bulk of the card's content.",
       "author": "George Ives",
       "authorImage": "/author9.png",
       "readTime": readTime,

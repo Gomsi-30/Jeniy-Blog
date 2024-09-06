@@ -1,11 +1,27 @@
 import Image from 'next/image';
 import Container from '../container';
 import Link from 'next/link';
-import { data2 } from '../data'; // Import the data
 
-const BlogCard = () => {
-  const mainCard = data2[0]; // First item for the main card
-  const smallCards = data2.slice(1, 4); // Slice to get only the first 3 items
+type BlogCardData = {
+  id: number;
+  image: string;
+  text: string;
+  author?: string;
+  authorImage?: string;
+  readTime?: string;
+  description?: string[];
+  articleNumber?:number;
+};
+
+
+type BlogCardProps = {
+  data: BlogCardData[];
+};
+
+const BlogCard = ({ data }: BlogCardProps) => {
+  const mainCard = data?.[0]; // First item for the main card
+  const smallCards = data.length > 1 ? data.slice(1, 4) : []; 
+
 
   return (
     <Container>
@@ -23,7 +39,7 @@ const BlogCard = () => {
               layout="responsive"
             />
             <div>
-              <p className="font-semibold text-lg lg:text-2xl leading-7">
+              <p className="text-lg font-semibold lg:text-2xl leading-7 md:font-normal md:text-base">
                 {mainCard.text}
               </p>
             </div>
@@ -45,7 +61,7 @@ const BlogCard = () => {
                   />
                 </div>
                 <div className="flex-1">
-                  <p className="text-lg font-semibold md:text-md leading-8">
+                  <p className="text-lg font-semibold md:text-md leading-8 md:font-normal">
                     {card.text}
                   </p>
                 </div>

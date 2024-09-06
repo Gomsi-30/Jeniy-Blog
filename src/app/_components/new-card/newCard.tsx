@@ -1,11 +1,26 @@
 import Container from '../container';
 import Image from 'next/image';
 import Link from 'next/link';
-import {data2} from '../data'; // Adjust the path as needed
 
-const NewCard = () => {
+type NewCardData = {
+  id: number;
+  image: string;
+  text: string;
+  author?: string;
+  authorImage?: string;
+  readTime?: string;
+  description?: string[];
+  articleNumber?:number;
+};
+
+
+type NewCardProps = {
+  data: NewCardData[];
+};
+
+const NewCard = ({ data }: NewCardProps) => {
   // Limit to the first 4 items
-  const cardsToDisplay = data2.slice(0, 4);
+  const cardsToDisplay = data.slice(0, 4);
 
   return (
     <Container>
@@ -16,7 +31,7 @@ const NewCard = () => {
               <Image 
                 className="w-full h-auto"
                 src={card.image}
-                alt="Image description"
+                alt={card.text}
                 width={369}  
                 height={240} 
                 layout="responsive"

@@ -11,16 +11,16 @@ const Brands = ({color}:BrandProps)=>{
         <>
            <div className='hidden lg:flex flex-row gap-5 items-center opacity:50'>
                   <Link href="#!" className="opacity-80 hover:text-gray-300">
-                    <FaTwitter size={18} />
+                    <FaTwitter size={18} color='gray' />
                   </Link>
                   <Link href="#!" className="hover:text-gray-300">
-                    <FaXTwitter size={18} />
+                    <FaXTwitter size={18} color='gray' />
                   </Link>
                   <Link href="#!" className="hover:text-gray-300">
-                    <FaFacebookF size={18} />
+                    <FaFacebookF size={18} color='gray' />
                   </Link> 
                   <Link href="#!" className="hover:text-gray-300">
-                    <FaLinkedinIn size={19} />
+                    <FaLinkedinIn size={19} color='gray' />
                   </Link>
            </div>
         </>
