@@ -55,7 +55,7 @@ const Footer = () => {
             </div>
           </Container>
           <Container>
-            <div className="grid grid-cols-3 lg:grid-cols-4 lg:gap-0 gap-6 mt-8 lg:mt-[55px] text-center lg:text-left w-full">
+            <div className="grid grid-cols-3 lg:grid-cols-4 lg:gap-0 gap-6 mt-8 lg:mt-[55px] text-left text-center lg:text-left w-full">
               <div>
                 <ul className="mb-4 text-sm md:text-md lg:text-lg space-y-2">
                   <li>
@@ -112,8 +112,8 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/disclaimer" className="text-white hover:underline">
-                      Disclaimer
+                    <Link href="/desclaimer" className="text-white hover:underline">
+                      Desclaimer
                     </Link>
                   </li>
                 </ul>
@@ -140,11 +140,11 @@ const Footer = () => {
                   <input
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="p-1 text-sm bg-black text-white rounded-l-lg border border-white w-52"
+                    className="p-2 text-sm bg-black text-white rounded-l-lg border border-white w-52"
                     placeholder="Email address"
                     type="email"
                   />
-                  <button type="submit" className="p-1 text-sm bg-white text-black font-semibold rounded-r-lg w-21">
+                  <button type="submit" className="p-2 text-sm bg-white text-black font-semibold rounded-r-lg w-21">
                     Subscribe
                   </button>
                 </form>

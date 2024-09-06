@@ -28,18 +28,18 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="flex flex-col gap-12 px-4 py-8">
+    <div className="mt-[35px] flex flex-col gap-12 px-4 py-8">
       {/* Breadcrumb */}
       <Container>
-        <div className="flex mt-[20px] flex-col justify-center gap-4 w-full max-w-screen-md mx-auto">
-          <div className="flex justify-center items-center space-x-2">
-            <Link href="/" className="font-bold text-sm text-blue-600 hover:underline">
-              Home
-            </Link>
-            <FaArrowRight className='opacity-70' size={12} />
-            <p className="text-sm text-gray-500">Contact Us</p>
-          </div>
-        </div>
+              <div className=" flex flex-col gap-7 max-w-[550px] sm:max-w-full px-4">
+              <div className="flex flex-row gap-2 justify-center items-center">
+                <Link href="/" className="font-bold text-sm text-blue-600 hover:underline">
+                 Home
+                </Link>
+              <FaArrowRight color='gray' size={10} />
+              <p className="text-sm opacity-50">ContactUs</p>
+              </div>
+             </div>
       </Container>
 
       {/* Heading and Description */}
@@ -93,7 +93,6 @@ const ContactUs = () => {
             <div>
               <label htmlFor="message" className="block text-sm font-semibold">Message</label>
               <textarea
-                id="message"
                 rows="4"
                 {...register('message')}
                 className='w-full border border-gray-300 p-2 rounded-md'
@@ -120,12 +119,12 @@ const ContactUs = () => {
 
             <div>
               <h2 className='text-xl font-bold'>Office Address</h2>
-              <p className='text-sm font-semibold text-gray-600'>You can visit us at the following address:</p>
-              <p className='text-sm font-semibold text-gray-600'>InfluencerCollab</p>
-              <p className='text-sm font-semibold text-gray-600'>4567 Social Avenue</p>
-              <p className='text-sm font-semibold text-gray-600'>Suite 890</p>
-              <p className='text-sm font-semibold text-gray-600'>New York, NY 10010</p>
-              <p className='text-sm font-semibold text-gray-600'>United States</p>
+              <p className='text-sm font-medium text-gray-500'>You can visit us at the following address:</p>
+              <p className='text-sm font-medium text-gray-500'>InfluencerCollab</p>
+              <p className='text-sm font-medium text-gray-500'>4567 Social Avenue</p>
+              <p className='text-sm font-medium text-gray-500'>Suite 890</p>
+              <p className='text-sm font-medium text-gray-500'>New York, NY 10010</p>
+              <p className='text-sm font-medium text-gray-500'>United States</p>
             </div>
           </div>
         </div>

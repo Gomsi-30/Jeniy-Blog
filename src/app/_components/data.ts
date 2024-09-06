@@ -9,6 +9,7 @@ export const data : Array<string> = [
     ``,
     ``
 ]
+const readTime = `${Math.floor(Math.random() * (8 - 4 + 1)) + 4} min read`;
 
 export let data2 = [
     {
@@ -16,8 +17,8 @@ export let data2 = [
       "image": "/Rectangle 3.png",
       "text": "Some quick example text to build on the card title and make up the bulk of the card's content.",
       "author": "John Doe",
-      "date": "2024-09-01",
       "authorImage": "/author1.png",
+      "readTime": readTime,
       "description": [
         "We collect the content, communications and other information you provide when you use our products, including when you sign up for an account, create or share content, and message or communicate with others.",
         "This can include information in or about the content you provide (like metadata), such as the location of a photo or the date a file was created. It can also include what you see through features we provide, such as our camera, so we can do things like suggest masks and filters that you might like, or give you tips on using camera formats. Our systems automatically process content and communications you and others provide to analyze context and what's in them for the purpose of great user experience.",
@@ -34,8 +35,8 @@ export let data2 = [
       "image": "/Rectangle 3.png",
       "text": "Some quick example text to build on the card title and make up the bulk of the card's content.",
       "author": "Jane Smith",
-      "date": "2024-09-02",
       "authorImage": "/author2.png",
+      "readTime": readTime,
       "description": [
         "We collect the content, communications and other information you provide when you use our products, including when you sign up for an account, create or share content, and message or communicate with others.",
         "This can include information in or about the content you provide (like metadata), such as the location of a photo or the date a file was created. It can also include what you see through features we provide, such as our camera, so we can do things like suggest masks and filters that you might like, or give you tips on using camera formats. Our systems automatically process content and communications you and others provide to analyze context and what's in them for the purpose of great user experience.",
@@ -52,8 +53,8 @@ export let data2 = [
       "image": "/Rectangle 3.png",
       "text": "Some quick example text to build on the card title and make up the bulk of the card's content.",
       "author": "Alice Johnson",
-      "date": "2024-09-03",
       "authorImage": "/author3.png",
+      "readTime": readTime,
       "description": [
         "We collect the content, communications and other information you provide when you use our products, including when you sign up for an account, create or share content, and message or communicate with others.",
         "This can include information in or about the content you provide (like metadata), such as the location of a photo or the date a file was created. It can also include what you see through features we provide, such as our camera, so we can do things like suggest masks and filters that you might like, or give you tips on using camera formats. Our systems automatically process content and communications you and others provide to analyze context and what's in them for the purpose of great user experience.",
@@ -70,8 +71,8 @@ export let data2 = [
       "image": "/Rectangle 3.png",
       "text": "Some quick example text to build on the card title and make up the bulk of the card's content.",
       "author": "Bob Brown",
-      "date": "2024-09-04",
       "authorImage": "/author4.png",
+      "readTime": readTime,
       "description": [
         "We collect the content, communications and other information you provide when you use our products, including when you sign up for an account, create or share content, and message or communicate with others.",
         "This can include information in or about the content you provide (like metadata), such as the location of a photo or the date a file was created. It can also include what you see through features we provide, such as our camera, so we can do things like suggest masks and filters that you might like, or give you tips on using camera formats. Our systems automatically process content and communications you and others provide to analyze context and what's in them for the purpose of great user experience.",
@@ -88,8 +89,8 @@ export let data2 = [
       "image": "/Rectangle 3.png",
       "text": "Some quick example text to build on the card title and make up the bulk of the card's content.",
       "author": "Charlie Davis",
-      "date": "2024-09-05",
       "authorImage": "/author5.png",
+      "readTime": readTime,
       "description": [
         "We collect the content, communications and other information you provide when you use our products, including when you sign up for an account, create or share content, and message or communicate with others.",
         "This can include information in or about the content you provide (like metadata), such as the location of a photo or the date a file was created. It can also include what you see through features we provide, such as our camera, so we can do things like suggest masks and filters that you might like, or give you tips on using camera formats. Our systems automatically process content and communications you and others provide to analyze context and what's in them for the purpose of great user experience.",
@@ -106,8 +107,8 @@ export let data2 = [
       "image": "/Rectangle 3.png",
       "text": "Some quick example text to build on the card title and make up the bulk of the card's content.",
       "author": "Diana Evans",
-      "date": "2024-09-06",
       "authorImage": "/author6.png",
+      "readTime": readTime,
       "description": [
         "We collect the content, communications and other information you provide when you use our products, including when you sign up for an account, create or share content, and message or communicate with others.",
         "This can include information in or about the content you provide (like metadata), such as the location of a photo or the date a file was created. It can also include what you see through features we provide, such as our camera, so we can do things like suggest masks and filters that you might like, or give you tips on using camera formats. Our systems automatically process content and communications you and others provide to analyze context and what's in them for the purpose of great user experience.",
@@ -124,8 +125,8 @@ export let data2 = [
       "image": "/Rectangle 3.png",
       "text": "Some quick example text to build on the card title and make up the bulk of the card's content.",
       "author": "Edward Green",
-      "date": "2024-09-07",
       "authorImage": "/author7.png",
+      "readTime": readTime,
       "description": [
         "We collect the content, communications and other information you provide when you use our products, including when you sign up for an account, create or share content, and message or communicate with others.",
         "This can include information in or about the content you provide (like metadata), such as the location of a photo or the date a file was created. It can also include what you see through features we provide, such as our camera, so we can do things like suggest masks and filters that you might like, or give you tips on using camera formats. Our systems automatically process content and communications you and others provide to analyze context and what's in them for the purpose of great user experience.",
@@ -142,8 +143,8 @@ export let data2 = [
       "image": "/Rectangle 3.png",
       "text": "Some quick example text to build on the card title and make up the bulk of the card's content.",
       "author": "Fiona Harris",
-      "date": "2024-09-08",
       "authorImage": "/author8.png",
+      "readTime": readTime,
       "description": [
         "We collect the content, communications and other information you provide when you use our products, including when you sign up for an account, create or share content, and message or communicate with others.",
         "This can include information in or about the content you provide (like metadata), such as the location of a photo or the date a file was created. It can also include what you see through features we provide, such as our camera, so we can do things like suggest masks and filters that you might like, or give you tips on using camera formats. Our systems automatically process content and communications you and others provide to analyze context and what's in them for the purpose of great user experience.",
@@ -160,8 +161,8 @@ export let data2 = [
       "image": "/Rectangle 3.png",
       "text": "Some quick example text to build on the card title and make up the bulk of the card's content.",
       "author": "George Ives",
-      "date": "2024-09-09",
       "authorImage": "/author9.png",
+      "readTime": readTime,
       "description": [
         "We collect the content, communications and other information you provide when you use our products, including when you sign up for an account, create or share content, and message or communicate with others.",
         "This can include information in or about the content you provide (like metadata), such as the location of a photo or the date a file was created. It can also include what you see through features we provide, such as our camera, so we can do things like suggest masks and filters that you might like, or give you tips on using camera formats. Our systems automatically process content and communications you and others provide to analyze context and what's in them for the purpose of great user experience.",
@@ -173,5 +174,7 @@ export let data2 = [
         ""
     ]
     }
-  ];
+  ]
+  .reverse()
+  .map((article, i) => ({ ...article, articleNumber: i + 1 }));
   

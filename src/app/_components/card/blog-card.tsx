@@ -1,50 +1,56 @@
 import Image from 'next/image';
 import Container from '../container';
+import Link from 'next/link';
+import { data2 } from '../data'; // Import the data
 
-type BlogCardProps = {
-  label: string;
-};
+const BlogCard = () => {
+  const mainCard = data2[0]; // First item for the main card
+  const smallCards = data2.slice(1, 4); // Slice to get only the first 3 items
 
-const BlogCard = ({ label }: BlogCardProps) => {
   return (
     <Container>
-      <div className="flex flex-col md:flex-row md:justify-between gap-8 md:gap-8 w-full">
+      <div className="flex flex-col md:flex-row md:justify-between gap-8 w-full">
+        
         {/* Main Image Section */}
-        <div className="relative lg:flex flex-col gap-2 w-full max-w-full md:max-w-lg">
-          <Image 
-            className="object-cover"
-            src={label}
-            alt="Main Card Image"
-            width={769}
-            height={450}
-            layout="responsive"
-          />
-          <div className="">
-            <p className="font-semibold  text-lg text-1xl lg:text-2xl leaders-7">
-              Some quick example text to build on the card title and make up the bulk of the card's content.
-            </p>
-          </div>
-        </div>
-
-        {/* Small Images Section */}
-        <div className="flex flex-col gap-3 md:gap-6 w-full md:w-auto">
-          {[...Array(3)].map((_, index) => (
-            <div key={index} className="relative flex flex-col sm:flex-row gap-3 h-[250px] sm:h-[150px] overflow-hidden">
-              <div className="w-full sm:w-1/3 h-full relative">
-                <Image 
-                  className="object-cover"
-                  src={label}
-                  alt={`Small Card Image ${index + 1}`}
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </div>
-              <div className="flex-1">
-                <p className="text-semibold  text-lg md:text-md leaders-3 text-1xl">
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
-                </p>
-              </div>
+        <Link href={`/article/${mainCard.id}`} passHref>
+          <div className="relative flex flex-col gap-2 w-full max-w-full md:max-w-lg cursor-pointer">
+            <Image 
+              className="object-cover"
+              src={mainCard.image}
+              alt={mainCard.text}
+              width={769}
+              height={450}
+              layout="responsive"
+            />
+            <div>
+              <p className="font-semibold text-lg lg:text-2xl leading-7">
+                {mainCard.text}
+              </p>
             </div>
+          </div>
+        </Link>
+
+        {/* Small Cards Section */}
+        <div className="flex flex-col gap-3 md:gap-6 w-full md:w-auto">
+          {smallCards.map((card) => (
+            <Link key={card.id} href={`/article/${card.id}`} passHref>
+              <div className="relative flex flex-col sm:flex-row gap-3 h-[250px] sm:h-[150px] overflow-hidden cursor-pointer">
+                <div className="w-full sm:w-1/3 h-full relative">
+                  <Image 
+                    className="object-cover"
+                    src={card.image}
+                    alt={card.text}
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                </div>
+                <div className="flex-1">
+                  <p className="text-lg font-semibold md:text-md leading-8">
+                    {card.text}
+                  </p>
+                </div>
+              </div>
+            </Link>
           ))}
         </div>
       </div>
