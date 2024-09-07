@@ -1,10 +1,9 @@
-import Banner from '../../../_components/banner2/banner2';
-import GridCard from '../../../_components/grid-cards/grid-cards';
-import Header from '../../../_components/header';
-import Container from '../../../_components/container';
+import Banner from '../../_components/banner2/banner2';
+import GridCard from '../../_components/grid-cards/grid-cards';
+import Header from '../../_components/global/header';
 import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa';
-import { allData } from '../../../_components/articles/all-data'; // Adjust the path as needed
+import { allData } from '../../_components/articles/all-data'; // Adjust the path as needed
 
 const DynamicArticle = ({ params }: any) => {
     const { id } = params; // Extract the ID from the URL
@@ -15,8 +14,7 @@ const DynamicArticle = ({ params }: any) => {
     return (
         <div className="mt-[50px] flex flex-col gap-1 w-full">
             {/* Breadcrumb */}
-            <Container>
-              <div className=" flex flex-col gap-7 max-w-[550px] sm:max-w-full px-4">
+              <div className="container flex flex-col gap-7 max-w-[550px] sm:max-w-full px-4">
               <div className="flex flex-row gap-2 justify-center items-center">
                 <Link href="/" className="font-bold text-sm text-blue-600 hover:underline">
                  Home
@@ -25,7 +23,6 @@ const DynamicArticle = ({ params }: any) => {
               <p className="text-sm opacity-50">Article</p>
               </div>
              </div>
-            </Container>
 
             {/* Banner Section */}
             <div className="w-full">
@@ -61,7 +58,7 @@ const DynamicArticle = ({ params }: any) => {
           
                 <Header label="WHAT's MORE" />
                 <div className="mt-8">
-                    {/* <GridCard data={articleData} section='' /> */}
+                    <GridCard data={articleData} section='' />
                 </div>
           
         </div>

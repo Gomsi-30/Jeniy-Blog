@@ -1,11 +1,11 @@
 
-import Banner from "../../_components/banner/banner"
-import GridCard from "../../_components/grid-cards/grid-cards"
-import Banner2 from "../../_components/banner2/banner2"
-import Header from '../../_components/header'
-import BlogCard from '../../_components/card/blog-card'
-import NewCard from '../../_components/new-card/newCard'
-import {influencersData} from '../../_components/articles/influencers-data'
+import Banner from "../_components/banner/banner"
+import GridCard from "../_components/grid-cards/grid-cards"
+import Banner2 from "../_components/banner2/banner2"
+import Header from '../_components/global/header'
+import BlogCard from '../_components/card/blog-card'
+import NewCard from '../_components/new-card/newCard'
+import {influencersData} from '../_components/articles/influencers-data'
 
 const Influencers = () => {
   const section = 'influencers'

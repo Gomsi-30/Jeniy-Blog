@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Container from '../container';
 import Link from 'next/link';
 
 type BlogCardData = {
@@ -24,8 +23,8 @@ const BlogCard = ({ data,section }: BlogCardProps) => {
   const smallCards = data.length > 1 ? data.slice(1, 4) : []; 
 
   return (
-    <Container>
-      <div className="flex flex-col md:flex-row md:justify-between gap-5 w-full">
+   
+      <div className="container flex flex-col md:flex-row md:justify-between gap-5 w-full">
         
         <Link href={`/${section}/${mainCard.id}`} passHref>
           <div className="relative flex flex-col gap-2 h-auto  w-full  md:max-w-3xl cursor-pointer">
@@ -68,7 +67,6 @@ const BlogCard = ({ data,section }: BlogCardProps) => {
           ))}
         </div>
       </div>
-    </Container>
   );
 };
 

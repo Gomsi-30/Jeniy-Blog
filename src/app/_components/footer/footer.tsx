@@ -1,6 +1,5 @@
 "use client"
 import Logo from '../navbar/logo';
-import Container from '../container';
 import Link from 'next/link';
 import { FaTwitter, FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
@@ -32,8 +31,7 @@ const Footer = () => {
     <div className="bg-customGray w-full mt-[140px] lg:mt-[200px]">
       <div className="">
         <footer className="pt-10">
-          <Container>
-            <div className="flex flex-row justify-center lg:justify-between items-center">
+            <div className="container flex flex-row justify-center lg:justify-between items-center">
               <Logo label="/mainLogo.png" />
               {/* Social Media Icons */}
               <div className="hidden lg:flex space-x-4">
@@ -51,9 +49,8 @@ const Footer = () => {
                 </Link>
               </div>
             </div>
-          </Container>
-          <Container>
-            <div className="grid grid-cols-3 lg:grid-cols-4 lg:gap-0 gap-6 mt-8 lg:mt-[55px] text-left text-center lg:text-left w-full">
+          
+            <div className="container grid grid-cols-3 lg:grid-cols-4 lg:gap-0 gap-6 mt-8 lg:mt-[55px] text-left text-center lg:text-left w-full">
               <div>
                 <ul className="mb-4 text-sm md:text-md lg:text-lg space-y-2">
                   <li>
@@ -148,7 +145,6 @@ const Footer = () => {
                 </form>
               </div>
             </div>
-          </Container>
           <div className="text-center p-3 border-t border-white text-white mt-8 lg:mt-[35px]">
             © 2024 Incb. All rights reserved.
           </div>

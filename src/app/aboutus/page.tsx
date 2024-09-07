@@ -1,13 +1,13 @@
-import Container from '../../_components/container';
+import Container from '../_components/container';
 import Link from 'next/link';
 import Image from 'next/image';
 import { FaArrowRight } from 'react-icons/fa';
 
 const AboutUs = () => {
     return (
-        <div className='container mx-auto mt-[40px] flex flex-col gap-8 px-4 md:px-6 lg:px-8 py-8'>
+        <div className='container mt-[40px] flex flex-col gap-8 px-4 md:px-6 lg:px-3 py-8'>
             {/* Breadcrumbs */}
-            <Container>
+          
               <div className=" flex flex-col gap-7 max-w-[550px] sm:max-w-full px-4">
               <div className="flex flex-row gap-2 justify-center items-center">
                 <Link href="/" className="font-bold text-sm text-blue-600 hover:underline">
@@ -17,11 +17,11 @@ const AboutUs = () => {
               <p className="text-sm opacity-50">AboutUs</p>
               </div>
              </div>
-          </Container>
+          
 
             {/* Main Content */}
-            <Container>
-            <div className='w-full max-w-7xl mx-auto mt-[15px]'>
+            
+            <div className='container w-full max-w-7xl mt-[15px]'>
                 <div className='flex flex-col gap-11'>
                     {/* InfluencerCollab Section */}
                     <div className='flex flex-col gap-5'>
@@ -78,7 +78,7 @@ const AboutUs = () => {
                     </div>
                 </div>
             </div>
-            </Container>
+            
         </div>
     )
 }

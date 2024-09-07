@@ -1,6 +1,5 @@
 "use client"
 import { RxCross2 } from "react-icons/rx";
-import Container from "../container";
 import Logo from "./logo";
 import Items from "./items";
 import Brands from "./brands";
@@ -16,8 +15,8 @@ const Navbar = () => {
     <>
    
     <div className='fixed border-b-[1px] shadow w-full h-[85px] bg-white text-black py-5 px-2 z-20'>
-      <Container>
-        <div className='flex flex-row justify-between items-center'>
+     
+        <div className='container flex flex-row justify-between items-center'>
           {isOpen ? <h1></h1> : <div className=''><Logo label='/InCb.png' /></div>} 
           <Items checker={true} />
           <Brands color='black' />
@@ -27,7 +26,7 @@ const Navbar = () => {
           </div>
           
         </div>   
-      </Container>
+      
 
      
       </div>

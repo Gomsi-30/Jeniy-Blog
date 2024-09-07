@@ -5,7 +5,6 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import toast from 'react-hot-toast';
 import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa';
-import Container from '../../_components/container';
 import { Toaster } from 'react-hot-toast';
 
 // Define validation schema
@@ -30,8 +29,8 @@ const ContactUs = () => {
   return (
     <div className="mt-[35px] flex flex-col gap-12 px-4 py-8">
       {/* Breadcrumb */}
-      <Container>
-              <div className=" flex flex-col gap-7 max-w-[550px] sm:max-w-full px-4">
+     
+              <div className="container flex flex-col gap-7 max-w-[550px] sm:max-w-full px-4">
               <div className="flex flex-row gap-2 justify-center items-center">
                 <Link href="/" className="font-bold text-sm text-blue-600 hover:underline">
                  Home
@@ -40,21 +39,21 @@ const ContactUs = () => {
               <p className="text-sm opacity-50">ContactUs</p>
               </div>
              </div>
-      </Container>
+     
 
       {/* Heading and Description */}
-      <Container>
-        <div className="flex flex-col items-center text-center w-full max-w-screen-sm mx-auto  bg-pink-100 px-[50px]">
+      
+        <div className="container flex flex-col items-center text-center w-full max-w-screen-sm mx-auto px-[50px]">
           <h1 className="text-3xl font-bold mb-4">We’d Love to Hear from You!</h1>
           <p className="text-lg text-gray-700">
             Have questions, feedback, or need support? Get in touch with us through any of the following methods:
           </p>
         </div>
-      </Container>
+      
 
       {/* Form and Contact Information */}
-      <Container>
-        <div className="flex flex-col md:flex-row gap-12 md:gap-40">
+     
+        <div className="container flex flex-col md:flex-row gap-12 md:gap-40">
           {/* Contact Form */}
           <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-6 w-full max-w-screen-lg mx-auto">
             <div>
@@ -127,7 +126,7 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
-      </Container>
+     
       <Toaster />
     </div>
   );

@@ -23,8 +23,8 @@ const GridCards = ({ data = [],section }: GridCardsProps) => {
   const validData = Array.isArray(data) ? data.filter(item => item !== undefined) : [];
 
   return (
-    <Container>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
+    
+      <div className='container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
         {validData.map(({ id, image, text }) => (
           <Link key={id} href={`/${section}/${id}`} passHref>
             <div className="flex h-[130px] cursor-pointer overflow-hidden ">
@@ -47,7 +47,6 @@ const GridCards = ({ data = [],section }: GridCardsProps) => {
           </Link>
         ))}
       </div>
-    </Container>
   );
 };
 

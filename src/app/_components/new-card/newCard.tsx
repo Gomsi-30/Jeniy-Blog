@@ -1,4 +1,3 @@
-import Container from '../container';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -24,8 +23,8 @@ const NewCard = ({ data,section }: NewCardProps) => {
   const cardsToDisplay = data.slice(0, 4);
 
   return (
-    <Container>
-      <div className='grid grid-cols-2 lg:grid-cols-4 gap-4 w-full'>
+    
+      <div className='container grid grid-cols-2 lg:grid-cols-4 gap-4 w-full'>
         {cardsToDisplay.map(card => (
           <Link key={card.id} href={`/${section}/${card.id}`} passHref>
             <div className="relative overflow-hidden w-full h-auto cursor-pointer">
@@ -46,7 +45,6 @@ const NewCard = ({ data,section }: NewCardProps) => {
           </Link>
         ))}
       </div>
-    </Container>
   );
 };
 

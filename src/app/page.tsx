@@ -1,7 +1,7 @@
 import Banner from "./_components/banner/banner"
 import GridCard from "./_components/grid-cards/grid-cards"
 import Banner2 from "./_components/banner2/banner2"
-import Header from './_components/header'
+import Header from './_components/global/header'
 import BlogCard from './_components/card/blog-card'
 import NewCard from './_components/new-card/newCard'
 import {brandsData} from './_components/articles/brands-data'
@@ -11,7 +11,7 @@ import {influencersMarketData} from './_components/articles/influencer-market-da
 
 const Home = () => {
   return (
-    <div className=' flex flex-col gap-12 h-auto'>
+    <div className='flex flex-col gap-12 h-auto'>
       <Banner />
 
       {/* influencer */}
