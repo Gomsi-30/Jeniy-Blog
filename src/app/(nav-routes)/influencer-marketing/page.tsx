@@ -15,7 +15,7 @@ const InfluencerMarketing = () => {
 
        {/* Responsive Banner 2 */}
        <div className='px-4 md:px-[100px] lg:px-[250px]'>
-        <Banner2 check='b' />
+        <Banner2 check='b' articleImage={influencersMarketData[0].image} />
       </div>
 
       {/* Header for Brands */}

@@ -24,21 +24,28 @@ const Banner = ({
     <>
       {/* When check is 'a' */}
       {check === 'a' && (
-        <div className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] w-full">
-          {/* Linear Gradient Background */}
-          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,rgba(0,0,0,0.8)_60%)] bg-cover bg-center"></div>
-
-          {/* Background Image */}
-          <div className="absolute inset-0">
-            <Image src="/banner2.png" alt="Banner Image" layout="fill" objectFit="cover" />
-          </div>
-          {/* Content */}
-          <div className="absolute bottom-0 left-0 right-0 flex justify-center items-center p-4 lg:p-8">
-            <h1 className="text-white font-bold text-center text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl max-w-screen-lg">
-              {headingText}
-            </h1>
-          </div>
-        </div>
+   <div className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] w-full">
+   {/* Background Image */}
+   <Image 
+     src="/banner2.png" 
+     alt="Banner Image" 
+     layout="fill" 
+     objectFit="cover" 
+     className="absolute inset-0 z-0" 
+   />
+ 
+   {/* Linear Gradient Background */}
+   <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent via-black/60 to-black"></div>
+ 
+   {/* Content */}
+   <div className="absolute bottom-0 left-0 right-0 z-20 flex justify-center items-center p-4 lg:p-8">
+     <h1 className="text-white font-bold text-center text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl max-w-screen-lg">
+       {headingText}
+     </h1>
+   </div>
+ </div>
+ 
+     
       )}
 
       {/* When check is 'b' */}
@@ -47,7 +54,7 @@ const Banner = ({
           {/* Banner with Gradient */}
           <div className="relative h-[200px] sm:h-[300px] md:h-[400px] w-full">
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(0,0,0,0.6)_100%)] bg-cover bg-center"></div>
-            <Image src="/banner2.png" alt="Banner Image" layout="fill" objectFit="cover" />
+            <Image src={articleImage} alt="Banner Image" layout="fill" objectFit="cover" />
           </div>
           <h1 className="p-2 px-4 font-semibold text-center text-lg sm:text-xl md:text-2xl lg:text-3xl max-w-screen-lg">
             {headingText}
@@ -91,7 +98,7 @@ const Banner = ({
           <div className="relative h-[300px] md:h-[400px] lg:h-[500px] xl:h-[400px] w-full max-w-screen-lg">
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(0,0,0,0.6)_100%)] bg-cover bg-center"></div>
 
-            <Image src="/banner2.png" alt="Banner Image" layout="fill" objectFit="cover" />
+            <Image src={articleImage} alt="Banner Image" layout="fill" objectFit="cover" />
           </div>
         </div>
       )}
