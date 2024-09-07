@@ -11,6 +11,7 @@ type NewCardData = {
   readTime?: string;
   description?: string[];
   articleNumber?:number;
+  section?:string;
 };
 
 
@@ -18,7 +19,7 @@ type NewCardProps = {
   data: NewCardData[];
 };
 
-const NewCard = ({ data }: NewCardProps) => {
+const NewCard = ({ data,section }: NewCardProps) => {
   // Limit to the first 4 items
   const cardsToDisplay = data.slice(0, 4);
 
@@ -26,7 +27,7 @@ const NewCard = ({ data }: NewCardProps) => {
     <Container>
       <div className='grid grid-cols-2 lg:grid-cols-4 gap-4 w-full'>
         {cardsToDisplay.map(card => (
-          <Link key={card.id} href={`/article/${card.id}`} passHref>
+          <Link key={card.id} href={`/${section}/${card.id}`} passHref>
             <div className="relative overflow-hidden w-full h-auto cursor-pointer">
               <Image 
                 className="w-full h-auto"

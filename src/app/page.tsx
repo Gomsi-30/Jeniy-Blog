@@ -16,21 +16,21 @@ const Home = () => {
 
       {/* influencer */}
       <Header label='INFLUENCER' />
-      <NewCard data={influencersData} />
+      <NewCard data={influencersData} section='influencer'/>
 
      {/* socialmedia */}
       <Header label='SOCIAL MEDIA' />
-      <BlogCard data={socialData} />
+      <BlogCard data={socialData} section='socialmedia' />
 
       <Banner2 check='a' />
 
       {/* brands */}
       <Header label='BRANDS' />
-      <GridCard data={brandsData} />
+      <GridCard data={brandsData} section='brands' />
 
       {/* Influencer marketing */}
       <Header label='INFLUENCER MARKETING' />
-      <BlogCard data={influencersMarketData} />
+      <BlogCard data={influencersMarketData} section='influencer-marketing' />
     </div>
   );
 }

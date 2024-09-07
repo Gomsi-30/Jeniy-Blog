@@ -41,12 +41,12 @@ const DynamicArticle = ({ params }: any) => {
             </div>
 
             {/* Content Section */}
-            <Container>
-                <div className="px-4 sm:px-8 md:px-16 lg:px-24 mx-auto max-w-7xl">
+          
+                <div className="px-4 sm:px-8 md:px-16 lg:px-[280px] mx-auto max-w-7xl">
                     <div className="flex flex-col gap-6 md:gap-10">
                         {articleData ? (
                             articleData.description.map((desc, index) => (
-                                <p key={index} className="text-sm md:text-base text-gray-700 leading-relaxed">
+                                <p key={index} className="text-lg md:text-lg text-2xl text-gray-700 leading-relaxed">
                                     {desc}
                                 </p>
                             ))
@@ -55,13 +55,13 @@ const DynamicArticle = ({ params }: any) => {
                         )}
                     </div>
                 </div>
-            </Container>
+          
 
             {/* Additional Section */}
           
                 <Header label="WHAT's MORE" />
                 <div className="mt-8">
-                    <GridCard data={articleData} />
+                    {/* <GridCard data={articleData} section='' /> */}
                 </div>
           
         </div>

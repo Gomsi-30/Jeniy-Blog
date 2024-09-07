@@ -17,9 +17,10 @@ const AboutUs = () => {
               <p className="text-sm opacity-50">AboutUs</p>
               </div>
              </div>
-      </Container>
+          </Container>
 
             {/* Main Content */}
+            <Container>
             <div className='w-full max-w-7xl mx-auto mt-[15px]'>
                 <div className='flex flex-col gap-11'>
                     {/* InfluencerCollab Section */}
@@ -77,6 +78,7 @@ const AboutUs = () => {
                     </div>
                 </div>
             </div>
+            </Container>
         </div>
     )
 }

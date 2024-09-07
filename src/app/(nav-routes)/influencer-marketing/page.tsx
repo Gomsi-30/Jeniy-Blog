@@ -8,6 +8,7 @@ import NewCard from '../../_components/new-card/newCard'
 import {influencersMarketData} from '../../_components/articles/influencer-market-data'
 
 const InfluencerMarketing = () => {
+  const section = 'influencer-marketing'
   return (
     <div className=' flex flex-col gap-12 h-auto'>
       <Banner label='Influencer Marketing'/>
@@ -21,21 +22,21 @@ const InfluencerMarketing = () => {
       <Header label='INFLUENCER MARKETING' />
       
       {/* New Card Section */}
-      <NewCard data={influencersMarketData} />
+      <NewCard data={influencersMarketData} section={section}/>
 
       {/* Header for Content Creation */}
       <Header label='CONTENT CREATION' />
 
       {/* Blog Card Section */}
       <div className='px-1'>
-        <BlogCard data={influencersMarketData} />
+        <BlogCard data={influencersMarketData} section={section}/>
       </div>
 
       {/* Header for Trends */}
       <Header label='Trends' />
       
       <div className='px-1]'>
-        <BlogCard data={influencersMarketData}  />
+        <BlogCard data={influencersMarketData} section={section}/>
       </div>
 
       {/* Influencer Marketing Section */}
@@ -43,7 +44,7 @@ const InfluencerMarketing = () => {
       
       {/* Grid Cards */}
       <div className='px-1'>
-        <GridCard data={influencersMarketData} />
+        <GridCard data={influencersMarketData} section={section}/>
       </div>
     </div>
   );

@@ -9,23 +9,21 @@ import { z } from 'zod';
 import { toast } from 'react-hot-toast';
 import { Toaster } from 'react-hot-toast';
 
-// Zod schema for email validation
 const emailSchema = z.string().email({ message: 'Invalid email address' });
 
 const Footer = () => {
   const [email, setEmail] = useState('');
 
-  // Function to handle form submission
-  const handleSubscribe = (e) => {
+
+  const handleSubscribe = (e:any) => {
     e.preventDefault();
     try {
-      // Validate email using zod
+      
       emailSchema.parse(email);
-      // Show success toast if validation passes
+     
       toast.success('Subscribed successfully!');
-      setEmail(''); // Reset the email input after success
+      setEmail('');
     } catch (error:any) {
-      // Show error toast if validation fails
       toast.error(error.errors[0].message);
     }
   };
@@ -113,7 +111,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link href="/desclaimer" className="text-white hover:underline">
-                      Desclaimer
+                      Disclaimer
                     </Link>
                   </li>
                 </ul>
@@ -140,11 +138,11 @@ const Footer = () => {
                   <input
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="p-2 text-sm bg-black text-white rounded-l-lg border border-white w-52"
+                    className="p-2 text-sm bg-black text-white  border border-white w-52"
                     placeholder="Email address"
                     type="email"
                   />
-                  <button type="submit" className="p-2 text-sm bg-white text-black font-semibold rounded-r-lg w-21">
+                  <button type="submit" className="p-2 text-sm bg-white text-black font-semibold  w-21">
                     Subscribe
                   </button>
                 </form>

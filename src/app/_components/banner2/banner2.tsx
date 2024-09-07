@@ -26,7 +26,8 @@ const Banner = ({
       {check === 'a' && (
         <div className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] w-full">
           {/* Linear Gradient Background */}
-          <div className="absolute inset-0 bg-[linear-gradient(180deg,#00000000_0%,#00000000_60%)] bg-cover bg-center"></div>
+          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,rgba(0,0,0,0.8)_60%)] bg-cover bg-center"></div>
+
           {/* Background Image */}
           <div className="absolute inset-0">
             <Image src="/banner2.png" alt="Banner Image" layout="fill" objectFit="cover" />
@@ -45,7 +46,7 @@ const Banner = ({
         <div className="flex flex-col items-center gap-5 p-4 sm:p-6 md:p-8 lg:p-10">
           {/* Banner with Gradient */}
           <div className="relative h-[200px] sm:h-[300px] md:h-[400px] w-full">
-            <div className="absolute inset-0 bg-[linear-gradient(180deg,#00000000_0%,#00000000_60%)] bg-cover bg-center"></div>
+          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(0,0,0,0.6)_100%)] bg-cover bg-center"></div>
             <Image src="/banner2.png" alt="Banner Image" layout="fill" objectFit="cover" />
           </div>
           <h1 className="p-2 px-4 font-semibold text-center text-lg sm:text-xl md:text-2xl lg:text-3xl max-w-screen-lg">
@@ -87,8 +88,9 @@ const Banner = ({
           </div>
 
           {/* Banner with Gradient */}
-          <div className="relative h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px] w-full max-w-screen-xl">
-            <div className="absolute inset-0 bg-[linear-gradient(180deg,#00000000_0%,#00000000_60%)] bg-cover bg-center"></div>
+          <div className="relative h-[300px] md:h-[400px] lg:h-[500px] xl:h-[400px] w-full max-w-screen-lg">
+          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(0,0,0,0.6)_100%)] bg-cover bg-center"></div>
+
             <Image src="/banner2.png" alt="Banner Image" layout="fill" objectFit="cover" />
           </div>
         </div>

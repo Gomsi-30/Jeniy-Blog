@@ -12,24 +12,23 @@ type GridCardData = {
   authorImage?: string;
   readTime?: string;
   description?: string[];
+  section?:string;
 };
 
 type GridCardsProps = {
-  data?: GridCardData[]; // data is now optional
+  data?: GridCardData[]; 
 };
 
-const GridCards = ({ data = [] }: GridCardsProps) => {
-  // Check if `data` is an array and filter out undefined items
+const GridCards = ({ data = [],section }: GridCardsProps) => {
   const validData = Array.isArray(data) ? data.filter(item => item !== undefined) : [];
 
   return (
     <Container>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
         {validData.map(({ id, image, text }) => (
-          <Link key={id} href={`/article/${id}`} passHref>
-            <div className="flex h-[170px] cursor-pointer overflow-hidden ">
-              {/* Image Container with increased width */}
-              <div className="relative w-[60%] h-full">
+          <Link key={id} href={`/${section}/${id}`} passHref>
+            <div className="flex h-[130px] cursor-pointer overflow-hidden ">
+              <div className="relative w-[40%] h-full">
                 <Image
                   src={image}
                   alt={text}
@@ -38,9 +37,9 @@ const GridCards = ({ data = [] }: GridCardsProps) => {
                   className="absolute inset-0 w-full h-full"
                 />
               </div>
-              {/* Text Container */}
-              <div className="w-1/2 px-3 flex items-start justify-start">
-                <p className="text-md font-medium leading-6">
+              
+              <div className="w-[60%] px-3 flex items-start justify-start">
+                <p className="text-sm font-medium leading-6">
                   {text}
                 </p>
               </div>

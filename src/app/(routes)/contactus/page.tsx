@@ -44,7 +44,7 @@ const ContactUs = () => {
 
       {/* Heading and Description */}
       <Container>
-        <div className="flex flex-col items-center text-center w-full max-w-screen-md mx-auto">
+        <div className="flex flex-col items-center text-center w-full max-w-screen-sm mx-auto  bg-pink-100 px-[50px]">
           <h1 className="text-3xl font-bold mb-4">We’d Love to Hear from You!</h1>
           <p className="text-lg text-gray-700">
             Have questions, feedback, or need support? Get in touch with us through any of the following methods:
@@ -75,7 +75,7 @@ const ContactUs = () => {
                 type='email'
                 {...register('email')}
                 className='w-full border border-gray-300 p-2 rounded-md'
-                placeholder='someone@example.com'
+                placeholder='Someone@example.com'
               />
               {errors.email && <p className='text-red-500 text-sm'>{errors.email.message}</p>}
             </div>
@@ -86,7 +86,7 @@ const ContactUs = () => {
                 type='text'
                 {...register('phone')}
                 className='w-full border border-gray-300 p-2 rounded-md'
-                placeholder='000-000'
+                placeholder='Phone number'
               />
               {errors.phone && <p className='text-red-500 text-sm'>{errors.phone.message}</p>}
             </div>
@@ -111,7 +111,6 @@ const ContactUs = () => {
           <div className="flex flex-col gap-6 w-full max-w-screen-md mx-auto">
             <div>
               <h2 className='text-xl font-bold'>Email Us</h2>
-              <p className='text-sm font-semibold text-gray-600'>Email us if you have any query or something.</p>
               <Link href='mailto:info@example.com'>
                 <p className='text-sm font-semibold text-blue-600 hover:underline'>info@example.com</p>
               </Link>
@@ -119,12 +118,12 @@ const ContactUs = () => {
 
             <div>
               <h2 className='text-xl font-bold'>Office Address</h2>
-              <p className='text-sm font-medium text-gray-500'>You can visit us at the following address:</p>
-              <p className='text-sm font-medium text-gray-500'>InfluencerCollab</p>
-              <p className='text-sm font-medium text-gray-500'>4567 Social Avenue</p>
-              <p className='text-sm font-medium text-gray-500'>Suite 890</p>
-              <p className='text-sm font-medium text-gray-500'>New York, NY 10010</p>
-              <p className='text-sm font-medium text-gray-500'>United States</p>
+             
+              <p className='text-sm font-regular text-gray-500'>InfluencerCollab</p>
+              <p className='text-sm font-regular text-gray-500'>4567 Social Avenue</p>
+              <p className='text-sm font-regular text-gray-500'>Suite 890</p>
+              <p className='text-sm font-regular text-gray-500'>New York, NY 10010</p>
+              <p className='text-sm font-regular text-gray-500'>United States</p>
             </div>
           </div>
         </div>

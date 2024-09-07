@@ -8,6 +8,7 @@ import NewCard from '../../_components/new-card/newCard'
 import {socialData} from '../../_components/articles/social-media-data'
 
 const SocialMedia = () => {
+  const section = 'social-media'
   return (
     <div className=' flex flex-col gap-12 h-auto'>
       <Banner label='Social Media'/>
@@ -21,21 +22,21 @@ const SocialMedia = () => {
       <Header label='SOCIAL MEDIA' />
       
       {/* New Card Section */}
-      <NewCard data={socialData} />
+      <NewCard data={socialData} section={section}/>
 
       {/* Header for Content Creation */}
       <Header label='CONTENT CREATION' />
 
       {/* Blog Card Section */}
       <div className='px-1'>
-        <BlogCard data={socialData} />
+        <BlogCard data={socialData} section={section}/>
       </div>
 
       {/* Header for Trends */}
       <Header label='Trends' />
       
       <div className='px-1]'>
-        <BlogCard data={socialData} />
+        <BlogCard data={socialData} section={section}/>
       </div>
 
       {/* Influencer Marketing Section */}
@@ -43,7 +44,7 @@ const SocialMedia = () => {
       
       {/* Grid Cards */}
       <div className='px-1'>
-        <GridCard data={socialData} />
+        <GridCard data={socialData} section={section}/>
       </div>
     </div>
   );
