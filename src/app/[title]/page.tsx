@@ -3,10 +3,10 @@ import GridCard from '../_components/grid-cards/grid-cards';
 import Header from '../_components/global/header';
 import Link from 'next/link';
 import { allData } from '../_components/articles/all-data';
-import Brands from '../_components/navbar/brands'
 
 
-// type Params = { params: { info: string } };
+
+type Params = { params: { title: string } };
 
 export const generateStaticParams = () => {
     return allData.map(({ title }) => ({
@@ -14,38 +14,39 @@ export const generateStaticParams = () => {
     }));
   };
   
-//   export const generateMetadata = ({ params: { title } }: Params) => {
-   
-//     const article = allData.find(({ title }) => {
-//       return title.replace(/[^A-Za-z0-9]+/g, "-") === title;
-//     }) as Article;
-//     return {
-//       title: article.title,
-//       description: article.contents.at(-1),
-//       openGraph: {
-//         url: `/${articleTitle}`,
-//         title: article.title,
-//         description: article.contents.at(-1),
-//         images: [`/articleassets/${article.imgUrl}`],
-//       },
-//       twitter: {
-//         card: "summary_large_image",
-//         title: article.title,
-//         description: article.contents.at(-1),
-//         images: [`/articleassets/${article.imgUrl}`],
-//       },
-//     };
-//   };
-  
-// Dynamic article page component
-interface Params {
-    title: string;
-  }
-const DynamicArticle = ({ params }: { params: Params }) => {
-     const {title} = params;
+  export const generateMetadata = ({ params}:any) => {
+    const {title} = params;
     const parts = title ? title.split('-') : [];
     const category = parts[0];
-    const remainingParts = parts.slice(1).join('-'); // Remaining parts joined by `-`
+    const remainingParts = parts.slice(1).join('-'); 
+    const article = allData.find(({ title }) => {
+      return title.replace(/[^A-Za-z0-9]+/g, "-") === remainingParts;
+    }) as Article;
+    return {
+      title: article.title,
+      description: article.contents.at(-1),
+      openGraph: {
+        url: `/${article.title}`,
+        title: article.title,
+        description: article.contents.at(-1),
+        images: [`/articleassets/${article.imgUrl}`],
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: article.title,
+        description: article.contents.at(-1),
+        images: [`/articleassets/${article.imgUrl}`],
+      },
+    };
+};
+  
+
+
+const DynamicArticle = ({ params }:any) => {
+    const {title} = params;
+    const parts = title ? title.split('-') : [];
+    const category = parts[0];
+    const remainingParts = parts.slice(1).join('-'); 
    
     let articleData = allData.find(item => item.title?.replace(/[^A-Za-z0-9]+/g, "-") === remainingParts);
 
