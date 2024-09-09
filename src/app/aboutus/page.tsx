@@ -58,7 +58,7 @@ const AboutUs = () => {
                         <div className='flex-1'>
                             <Image
                                 className='w-full h-auto'
-                                src='/football.png'
+                                src='/aboutus2.jpg'
                                 alt='InfluencerCollab Image'
                                 height={100}
                                 width={100}
@@ -68,7 +68,7 @@ const AboutUs = () => {
                         <div className='flex-1'>
                             <Image
                                 className='w-full h-auto'
-                                src='/football.png'
+                                src='/aboutus1.jpg'
                                 alt='InfluencerCollab Image'
                                 height={100}
                                 width={100}

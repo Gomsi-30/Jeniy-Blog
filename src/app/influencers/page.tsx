@@ -6,7 +6,11 @@ import Header from '../_components/global/header'
 import BlogCard from '../_components/card/blog-card'
 import NewCard from '../_components/new-card/newCard'
 import {influencersData} from '../_components/articles/influencers-data'
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Influencers",
+};
 const Influencers = () => {
   const section = 'influencers'
   return (

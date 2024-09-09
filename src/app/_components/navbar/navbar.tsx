@@ -25,7 +25,7 @@ const Navbar = () => {
              <RiMenu3Fill size={34}/>
           </div>
           
-        </div>   
+          </div>   
       
 
      

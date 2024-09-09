@@ -6,7 +6,11 @@ import Header from '../_components/global/header'
 import BlogCard from '../_components/card/blog-card'
 import NewCard from '../_components/new-card/newCard'
 import {socialData} from '../_components/articles/social-media-data'
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Social Media",
+};
 const SocialMedia = () => {
   const section = 'social-media'
   return (

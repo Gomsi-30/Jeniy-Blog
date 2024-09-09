@@ -24,11 +24,9 @@ const GridCards = ({ data = [], section = '' }: GridCardsProps) => {
   return (
     <div className='container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
       {validData.map(({ id, image, text }, index) => (
-        <Link key={id} href={`/${section}/${text.replace(/[^A-Za-z0-9]+/g, "-")}/${id}`} passHref>
+        <Link key={id} href={`/${section}/${text.replace(/[^A-Za-z0-9]+/g, "-")}`}>
           <div
-            className={`flex h-[130px] cursor-pointer overflow-hidden ${
-              index >= validData.length - 4 && index!=validData.length-1 ? 'hidden sm:hidden md:block' : '' // Hide last 3 items on xs and sm
-            } ${index === validData.length - 1 ? 'md:hidden' : ''}`} // Hide the last item on md
+            className={`flex h-[130px] cursor-pointer overflow-hidden ${index === validData.length - 1 ? ' ' : ''}`} 
           >
             <div className="relative w-[40%] h-full">
               <Image

@@ -75,13 +75,12 @@ const Banner = ({
           {/* Circle Image with Name and Date */}
           <div className="flex items-center gap-2 mt-4">
             {profileImage && (
-              <div className="w-5 h-5 md:w-5 md:h-5 rounded-full overflow-hidden bg-gray-400">
-                <Image
-                  src={profileImage}
-                  alt={profileName || 'Profile'}
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-full"
+              <div className="w-12 h-12 relative">
+                <Image 
+                src={`/football.png`}
+                alt="profile-image"
+                fill
+                className = "object-cover object-center rounded-full"
                 />
               </div>
             )}

@@ -26,7 +26,7 @@ const BlogCard = ({ data,section = ''}: BlogCardProps) => {
    
       <div className="container flex flex-col md:flex-row md:justify-between gap-9 md:gap-5 w-full">
         
-        <Link href={`/${section}/${mainCard.text.replace(/[^A-Za-z0-9]+/g, "-")}/${mainCard.id}`} passHref>
+        <Link href={`/${section}/${mainCard.text.replace(/[^A-Za-z0-9]+/g, "-")}`} passHref>
           <div className="relative flex flex-col gap-2 md:h-[400px] lg:h-auto w-full md:max-w-3xl  cursor-pointer">
             <Image 
               // className="object-fit"
@@ -46,7 +46,7 @@ const BlogCard = ({ data,section = ''}: BlogCardProps) => {
 
         <div className="flex flex-col gap-3 lg:gap-5 w-full md:w-auto">
           {smallCards.map((card) => (
-            <Link key={card.id} href={`/${section}/${card.text.replace(/[^A-Za-z0-9]+/g, "-")}/${card.id}`} passHref>
+            <Link key={card.id} href={`/${section}/${card.text.replace(/[^A-Za-z0-9]+/g, "-")}`} passHref>
               <div className="relative flex flex-row gap-3 h-[150px] sm:h-[120px] overflow-hidden cursor-pointer">
                 <div className="w-1/3 sm:w-1/3 h-[110px] lg:h-full relative">
                   <Image 

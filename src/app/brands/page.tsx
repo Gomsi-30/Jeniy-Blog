@@ -5,7 +5,11 @@ import Header from "../_components/global/header";
 import BlogCard from "../_components/card/blog-card";
 import NewCard from "../_components/new-card/newCard";
 import {brandsData} from '../_components/articles/brands-data'
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Brands",
+};
 const Brands = () => {
   const section = 'brands';
   return (

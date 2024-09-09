@@ -149,7 +149,7 @@ export let influencersData = [
     {
       "id": 27,
       "image": "/Rectangle 3.png",
-      "text": "Influencers quick example text to build on the card title and make up the bulk of the card's content.",
+      "text": "Influencers quick example text to build on the card title and make up the bulk of the card's content",
       "author": "George Ives",
       "authorImage": "/author9.png",
       "readTime": readTime,

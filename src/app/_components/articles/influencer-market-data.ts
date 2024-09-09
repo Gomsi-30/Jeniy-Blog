@@ -7,7 +7,7 @@ export let influencersMarketData = [
       "image": "/Rectangle 3.png",
       "text": "Some quick example text to build on the card title and make up the bulk of the card's content.",
       "author": "John Doe",
-      "authorImage": "/author1.png",
+      "authorImage": "/Rectangle 3.png",
       "readTime": readTime,
       "description": [
         "We collect the content, communications and other information you provide when you use our products, including when you sign up for an account, create or share content, and message or communicate with others.",
@@ -25,7 +25,7 @@ export let influencersMarketData = [
       "image": "/Rectangle 3.png",
       "text": "Some quick example text to build on the card title and make up the bulk of the card's content.",
       "author": "Jane Smith",
-      "authorImage": "/author2.png",
+      "authorImage": "/Rectangle 3.png",
       "readTime": readTime,
       "description": [
         "We collect the content, communications and other information you provide when you use our products, including when you sign up for an account, create or share content, and message or communicate with others.",
@@ -43,7 +43,7 @@ export let influencersMarketData = [
       "image": "/Rectangle 3.png",
       "text": "Some quick example text to build on the card title and make up the bulk of the card's content.",
       "author": "Alice Johnson",
-      "authorImage": "/author3.png",
+      "authorImage": "/Rectangle 3.png",
       "readTime": readTime,
       "description": [
         "We collect the content, communications and other information you provide when you use our products, including when you sign up for an account, create or share content, and message or communicate with others.",
@@ -61,7 +61,7 @@ export let influencersMarketData = [
       "image": "/Rectangle 3.png",
       "text": "Some quick example text to build on the card title and make up the bulk of the card's content.",
       "author": "Bob Brown",
-      "authorImage": "/author4.png",
+      "authorImage": "/Rectangle 3.png",
       "readTime": readTime,
       "description": [
         "We collect the content, communications and other information you provide when you use our products, including when you sign up for an account, create or share content, and message or communicate with others.",
@@ -79,7 +79,7 @@ export let influencersMarketData = [
       "image": "/Rectangle 3.png",
       "text": "Some quick example text to build on the card title and make up the bulk of the card's content.",
       "author": "Charlie Davis",
-      "authorImage": "/author5.png",
+      "authorImage": "/Rectangle 3.png",
       "readTime": readTime,
       "description": [
         "We collect the content, communications and other information you provide when you use our products, including when you sign up for an account, create or share content, and message or communicate with others.",
@@ -97,7 +97,7 @@ export let influencersMarketData = [
       "image": "/Rectangle 3.png",
       "text": "Some quick example text to build on the card title and make up the bulk of the card's content.",
       "author": "Diana Evans",
-      "authorImage": "/author6.png",
+      "authorImage": "/Rectangle 3.png",
       "readTime": readTime,
       "description": [
         "We collect the content, communications and other information you provide when you use our products, including when you sign up for an account, create or share content, and message or communicate with others.",
@@ -115,7 +115,7 @@ export let influencersMarketData = [
       "image": "/Rectangle 3.png",
       "text": "Some quick example text to build on the card title and make up the bulk of the card's content.",
       "author": "Edward Green",
-      "authorImage": "/author7.png",
+      "authorImage": "/Rectangle 3.png",
       "readTime": readTime,
       "description": [
         "We collect the content, communications and other information you provide when you use our products, including when you sign up for an account, create or share content, and message or communicate with others.",
@@ -133,7 +133,7 @@ export let influencersMarketData = [
       "image": "/Rectangle 3.png",
       "text": "Some quick example text to build on the card title and make up the bulk of the card's content.",
       "author": "Fiona Harris",
-      "authorImage": "/author8.png",
+      "authorImage": "/football.png",
       "readTime": readTime,
       "description": [
         "We collect the content, communications and other information you provide when you use our products, including when you sign up for an account, create or share content, and message or communicate with others.",
@@ -151,7 +151,7 @@ export let influencersMarketData = [
       "image": "/Rectangle 3.png",
       "text": "InfluencersMarket quick example text to build on the card title and make up the bulk of the card's content.",
       "author": "George Ives",
-      "authorImage": "/author9.png",
+      "authorImage": "/football.png",
       "readTime": readTime,
       "description": [
         "We collect the content, communications and other information you provide when you use our products, including when you sign up for an account, create or share content, and message or communicate with others.",

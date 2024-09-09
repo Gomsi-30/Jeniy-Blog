@@ -27,7 +27,7 @@ const NewCard = ({ data,section = ''  }: NewCardProps) => {
     
       <div className='container grid grid-cols-2 lg:grid-cols-4 gap-4 w-full'>
         {cardsToDisplay.map(card => (
-          <Link key={card.id} href={`/${section}/${card.text.replace(/[^A-Za-z0-9]+/g, "-")}/${card.id}`} passHref>
+          <Link key={card.id} href={`/${section}/${card.text.replace(/[^A-Za-z0-9]+/g, "-")}`}>
             <div className="relative overflow-hidden w-full h-auto cursor-pointer">
               <Image 
                 className="w-full h-auto"
