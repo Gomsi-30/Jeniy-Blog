@@ -22,9 +22,7 @@ const config: Config = {
       },
     },
     extend: {
-      fontFamily: {
-        sans: ['Arial', 'sans-serif'],      
-      },
+     
       colors: {
         customGray: '#121221',
       },
