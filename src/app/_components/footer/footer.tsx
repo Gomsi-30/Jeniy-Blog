@@ -106,7 +106,7 @@ const Footer = () => {
               {/* The social media icons will remain hidden on small screens */}
               <div className="flex justify-center lg:justify-start lg:col-span-1 col-span-3 lg:hidden">
                 <div className="flex space-x-4">
-                  <Brands check={false} sectionName='' articleTitle='' />
+                  <Brands check={false} />
                 </div>
               </div>
               <div className="flex justify-center lg:col-span-1 col-span-3 ">
