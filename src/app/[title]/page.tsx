@@ -6,7 +6,7 @@ import { allData } from '../_components/articles/all-data';
 import Brands from '../_components/navbar/brands'
 
 
-type Params = { params: { info: string } };
+// type Params = { params: { info: string } };
 
 // export const generateStaticParams = () => {
 //     return allData.map(({ title }) => ({
@@ -38,7 +38,10 @@ type Params = { params: { info: string } };
 //   };
   
 // Dynamic article page component
-const DynamicArticle = ({ params }:{params:{title:string}}) => {
+interface Params {
+    title: string;
+  }
+const DynamicArticle = ({ params }: { params: Params }) => {
      const {title} = params;
     const parts = title ? title.split('-') : [];
     const category = parts[0];
