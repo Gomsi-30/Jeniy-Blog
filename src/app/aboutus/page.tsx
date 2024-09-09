@@ -9,9 +9,8 @@ export const metadata: Metadata = {
 const AboutUs = () => {
     return (
         <div className='container mt-[40px] flex flex-col gap-8 px-4 md:px-6 lg:px-3 py-8'>
-            {/* Breadcrumbs */}
           
-              <div className=" flex flex-col gap-7 max-w-[550px] sm:max-w-full px-4">
+              <div className="flex flex-col gap-7 max-w-[550px] sm:max-w-full px-4">
               <div className="flex flex-row gap-2 justify-center items-center">
               <Link href="/" className="font-regular text-sm text-red-400 hover:underline">
             Home

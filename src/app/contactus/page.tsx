@@ -7,9 +7,6 @@ import Link from 'next/link';
 import { Toaster } from 'react-hot-toast';
 import { Metadata } from 'next';
 
-export const metadata: Metadata = {
-    title: "Contact-Us",
-};
 // Define validation schema
 const schema = z.object({
   fullName: z.string().min(1, "Full name is required"),
