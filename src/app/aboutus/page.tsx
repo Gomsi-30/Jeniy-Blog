@@ -1,7 +1,10 @@
-
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaArrowRight } from 'react-icons/fa';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: "About-Us",
+};
 
 const AboutUs = () => {
     return (

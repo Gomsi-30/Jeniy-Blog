@@ -3,6 +3,7 @@ import GridCard from '../_components/grid-cards/grid-cards';
 import Header from '../_components/global/header';
 import Link from 'next/link';
 import { allData } from '../_components/articles/all-data';
+import Brands from '../_components/navbar/brands';
 
 
 // type Params = { params: { title: string } };
@@ -109,7 +110,7 @@ const DynamicArticle = ({ params }:any) => {
                 />
             </div>
             <div className='flex justify-center w-full items-center'>
-               {/* <Brands sectionName={category} articleTitle={title} /> */}
+               <Brands articleTitle={remainingParts} />
             </div>
             {/* Article Content */}
             <div className="px-4 sm:px-8 md:px-16 lg:px-[280px] mx-auto max-w-7xl mt-[10px]">

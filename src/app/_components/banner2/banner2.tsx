@@ -79,7 +79,7 @@ const Banner = ({
           {/* Circle Image with Name and Date */}
           <div className="flex items-center gap-2 mt-4">
             {profileImage && (
-              <div className="w-12 h-12 relative">
+              <div className="w-9 h-9 relative">
                 <Image 
                   src={profileImage}
                   alt="profile-image"
