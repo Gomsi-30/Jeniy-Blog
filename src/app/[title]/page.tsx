@@ -8,11 +8,11 @@ import Brands from '../_components/navbar/brands'
 
 // type Params = { params: { info: string } };
 
-// export const generateStaticParams = () => {
-//     return allData.map(({ title }) => ({
-//       title: title.replace(/[^A-Za-z0-9]+/g, "-"),
-//     }));
-//   };
+export const generateStaticParams = () => {
+    return allData.map(({ title }) => ({
+      title: title.replace(/[^A-Za-z0-9]+/g, "-"),
+    }));
+  };
   
 //   export const generateMetadata = ({ params: { title } }: Params) => {
    
