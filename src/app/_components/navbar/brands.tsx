@@ -12,7 +12,7 @@ const Brands = ({check}:a) => {
       // articleTitle = articleTitle.replace(/[^A-Za-z0-9]+/g, "-");
       // sectionName = sectionName.replace(/[^A-Za-z0-9]+/g, "-").toLowerCase();
   return (
-    <div className='flex gap-2 items-center text-xl'>
+    <div className='hidden lg:flex flex-row gap-2 items-center text-xl'>
       {/* <TwitterShareButton url={`https://jeniy.us/${sectionName}/${articleTitle}`}> */}
             <FaSquareXTwitter  className={`text-gray-500 transition-all ease-in-out ${check ? 'hover:text-black' : 'hover:text-white'} `}/>
       {/* </TwitterShareButton> */}

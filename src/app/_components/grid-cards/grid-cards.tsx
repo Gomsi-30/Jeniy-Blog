@@ -21,7 +21,7 @@ const GridCards = ({ data = [], section = '' }: GridCardsProps) => {
   let validData = Array.isArray(data) ? data.filter(item => item !== undefined) : [];
   validData = validData.slice(0, 9);
   return (
-    <div className='container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
+    <div className='container grid grid-cols-1  lg:grid-cols-3 gap-5'>
       {validData.map(({ imgUrl, title,articleNumber }, index) => (
         <Link key={articleNumber} href={`${section}-${title?.replace(/[^A-Za-z0-9]+/g, "-")}`}>
           <div
@@ -37,7 +37,7 @@ const GridCards = ({ data = [], section = '' }: GridCardsProps) => {
               />
             </div>
             <div className="w-[60%] px-3 flex items-start justify-start">
-              <p className="line-clamp-4 text-md sm:text-lg md:text-md xl:text-sm font-medium leading-6">
+              <p className="line-clamp-4 text-md sm:text-lg md:text-md xl:text-sm font-medium leading-6 xl:text-md">
                 {title}
               </p>
             </div>

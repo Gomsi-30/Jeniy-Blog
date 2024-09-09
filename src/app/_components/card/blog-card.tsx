@@ -21,9 +21,9 @@ const BlogCard = ({ data, section = '' }: BlogCardProps) => {
   const smallCards = data.length > 1 ? data.slice(1, 4) : [];
 
   return (
-    <div className="container flex flex-col md:flex-row md:justify-between gap-9 md:gap-5 w-full">
+    <div className="container flex flex-col lg:flex-row md:justify-between gap-9 lg:gap-5 w-full">
       <Link href={`/${section}-${mainCard.title?.replace(/[^A-Za-z0-9]+/g, '-')}`}>
-        <div className="relative flex flex-col gap-2 md:h-[400px] lg:h-auto w-full md:max-w-3xl cursor-pointer">
+        <div className="relative flex flex-col gap-2 md:h-[496px] lg:h-auto w-full md:max-w-3xl cursor-pointer">
           <Image
             src={mainCard.imgUrl}
             alt={mainCard.title || 'Blog Image'}
@@ -32,7 +32,7 @@ const BlogCard = ({ data, section = '' }: BlogCardProps) => {
             layout="responsive"
           />
           <div>
-            <p className="line-clamp-3 text-lg font-semibold lg:text-2xl md:leading-12 lg:leading-7 md:font-semibold md:text-1xl">
+            <p className="line-clamp-3 text-lg font-semibold lg:text-2xl md:leading-12 lg:leading-7 md:font-bold md:text-2xl">
               {mainCard.title}
             </p>
           </div>
@@ -56,7 +56,7 @@ const BlogCard = ({ data, section = '' }: BlogCardProps) => {
                 />
               </div>
               <div className="flex-1">
-                <p className="line-clamp-3 font-regular text-lg lg:text-lg md:leading-5.5 lg:leading-6 lg:font-semibold">
+                <p className="line-clamp-3 font-regular md:text-1xl text-lg lg:text-lg md:leading-5.5 lg:leading-6 lg:font-semibold">
                   {card.title}
                 </p>
               </div>
