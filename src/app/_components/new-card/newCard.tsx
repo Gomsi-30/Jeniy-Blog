@@ -38,7 +38,7 @@ const NewCard = ({ data, section = '' }: NewCardProps) => {
               layout="responsive"
             />
             <div className="py-2 md:py-4">
-              <p className="line-clamp-3 text-lg lg:text-md">
+              <p className="font-sans line-clamp-3 text-lg lg:text-md">
                 {card.title}
               </p>
             </div>
