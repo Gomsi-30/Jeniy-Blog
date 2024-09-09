@@ -4,20 +4,20 @@ import Navbar from "./_components/navbar/navbar";
 import Footer from "./_components/footer/footer";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://punkbuzz.com"),
-  title: { default: "Punkbuzz", template: `%s | Punkbuzz` },
+  metadataBase: new URL("https://incb.us"),
+  title: { default: "InCb", template: `%s | InCb` },
   description: "",
   openGraph: {
     url: "/",
     title: "Influencer Collaboration",
     description: "",
-    images: ["/meta.png"],
+    images: ["/InCb.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Punkbuzz",
+    title: "Influencer Collaboration",
     description: "",
-    images: ["/meta.png"],
+    images: ["/InCb.png"],
   },
 };
 

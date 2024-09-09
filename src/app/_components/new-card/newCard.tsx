@@ -26,7 +26,7 @@ const NewCard = ({ data, section = '' }: NewCardProps) => {
       {cardsToDisplay.map((card, index) => (
         <Link 
           key={index} // Use index as key if there's no unique identifier
-          href={`/${section}/${card.title?.replace(/[^A-Za-z0-9]+/g, "-")}`}
+          href={`/${section}-${card.title?.replace(/[^A-Za-z0-9]+/g, "-")}`}
         >
           <div className="relative overflow-hidden w-full h-auto cursor-pointer">
             <Image 

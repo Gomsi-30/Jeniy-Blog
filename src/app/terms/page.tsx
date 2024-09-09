@@ -1,6 +1,4 @@
 import Link from 'next/link';
-import { FaArrowRight } from 'react-icons/fa';
-import { data } from '../../constants/terms-data'
 
 const Terms = () => {
   return (

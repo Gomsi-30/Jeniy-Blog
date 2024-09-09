@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 const SocialMedia = () => {
-  const section = 'social-media'
+  const section = 'Social Media'
   return (
     <div className=' flex flex-col gap-12 h-auto'>
       <Banner label='Social Media'/>

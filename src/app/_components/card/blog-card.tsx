@@ -22,7 +22,7 @@ const BlogCard = ({ data, section = '' }: BlogCardProps) => {
 
   return (
     <div className="container flex flex-col md:flex-row md:justify-between gap-9 md:gap-5 w-full">
-      <Link href={`/${section}/${mainCard.title?.replace(/[^A-Za-z0-9]+/g, '-')}`}>
+      <Link href={`/${section}-${mainCard.title?.replace(/[^A-Za-z0-9]+/g, '-')}`}>
         <div className="relative flex flex-col gap-2 md:h-[400px] lg:h-auto w-full md:max-w-3xl cursor-pointer">
           <Image
             src={mainCard.imgUrl}
@@ -43,7 +43,7 @@ const BlogCard = ({ data, section = '' }: BlogCardProps) => {
         {smallCards.map((card) => (
           <Link
             key={card.articleNumber} // Use articleNumber as the key
-            href={`/${section}/${card.title?.replace(/[^A-Za-z0-9]+/g, '-')}`}
+            href={`/${section}-${card.title?.replace(/[^A-Za-z0-9]+/g, '-')}`}
           >
             <div className="relative flex flex-row gap-3 h-[150px] sm:h-[120px] overflow-hidden cursor-pointer">
               <div className="w-1/3 sm:w-1/3 h-[110px] lg:h-full relative">

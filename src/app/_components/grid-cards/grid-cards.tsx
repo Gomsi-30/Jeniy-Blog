@@ -23,7 +23,7 @@ const GridCards = ({ data = [], section = '' }: GridCardsProps) => {
   return (
     <div className='container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
       {validData.map(({ imgUrl, title,articleNumber }, index) => (
-        <Link key={articleNumber} href={`/${section}/${title?.replace(/[^A-Za-z0-9]+/g, "-")}`}>
+        <Link key={articleNumber} href={`${section}-${title?.replace(/[^A-Za-z0-9]+/g, "-")}`}>
           <div
             className={`flex h-[130px] cursor-pointer overflow-hidden ${index === validData.length - 1 ? ' ' : ''}`} 
           >

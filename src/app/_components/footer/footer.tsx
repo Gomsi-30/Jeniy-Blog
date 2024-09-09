@@ -8,6 +8,7 @@ import { z } from 'zod';
 import { toast } from 'react-hot-toast';
 import { Toaster } from 'react-hot-toast';
 import Brands from '../navbar/brands'
+
 const emailSchema = z.string().email({ message: 'Invalid email address' });
 
 const Footer = () => {
@@ -105,18 +106,7 @@ const Footer = () => {
               {/* The social media icons will remain hidden on small screens */}
               <div className="flex justify-center lg:justify-start lg:col-span-1 col-span-3 lg:hidden">
                 <div className="flex space-x-4">
-                  <Link href="#!" className="text-white hover:text-gray-300">
-                    <FaTwitter size={20} />
-                  </Link>
-                  <Link href="#!" className="text-white hover:text-gray-300">
-                    <FaXTwitter size={20} />
-                  </Link>
-                  <Link href="#!" className="text-white hover:text-gray-300">
-                    <FaLinkedinIn size={20} />
-                  </Link>
-                  <Link href="#!" className="text-white hover:text-gray-300">
-                    <FaFacebookF size={20} />
-                  </Link>
+                  <Brands check={false} sectionName='' articleTitle='' />
                 </div>
               </div>
               <div className="flex justify-center lg:col-span-1 col-span-3 ">

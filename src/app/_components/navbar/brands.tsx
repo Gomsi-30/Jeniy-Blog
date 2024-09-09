@@ -5,24 +5,26 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaSquareFacebook } from "react-icons/fa6";
-type BrandsProps = {
-  check? : boolean
+type a = {
+  check?:boolean;
 }
-const Brands = ({check}:BrandsProps) => {
+const Brands = ({check}) => {
+      // articleTitle = articleTitle.replace(/[^A-Za-z0-9]+/g, "-");
+      // sectionName = sectionName.replace(/[^A-Za-z0-9]+/g, "-").toLowerCase();
   return (
     <div className='flex gap-2 items-center text-xl'>
-      <TwitterShareButton url="https://www.marriott.com/default.mi">
+      {/* <TwitterShareButton url={`https://jeniy.us/${sectionName}/${articleTitle}`}> */}
             <FaSquareXTwitter  className={`text-gray-500 transition-all ease-in-out ${check ? 'hover:text-black' : 'hover:text-white'} `}/>
-      </TwitterShareButton>
-      <LinkedinShareButton url="https://www.marriott.com/default.mi">
-            <FaLinkedin className={`text-gray-500 transition-all ease-in-out ${check ? 'hover:text-black' : 'hover:text-white'} `}/>
-      </LinkedinShareButton>
-      <InstapaperShareButton url="https://www.marriott.com/default.mi">
-            <FaSquareInstagram className={`text-gray-500 transition-all ease-in-out ${check ? 'hover:text-black' : 'hover:text-white'} `}/>
-      </InstapaperShareButton>
-      <FacebookShareButton url="https://www.marriott.com/default.mi">
-            <FaSquareFacebook className={`text-gray-500 transition-all ease-in-out ${check ? 'hover:text-black' : 'hover:text-white'} `}/>
-      </FacebookShareButton>
+      {/* </TwitterShareButton> */}
+      {/* <LinkedinShareButton url={`https://jeniy.us/${sectionName}/${articleTitle}`}> */}
+            <FaLinkedin  className={`text-gray-500 transition-all ease-in-out ${check ? 'hover:text-black' : 'hover:text-white'} `}/>
+      {/* </LinkedinShareButton> */}
+      {/* <InstapaperShareButton url={`https://jeniy.us/${sectionName}/${articleTitle}`}> */}
+            <FaSquareInstagram  className={`text-gray-500 transition-all ease-in-out ${check ? 'hover:text-black' : 'hover:text-white'} `}/>
+      {/* </InstapaperShareButton> */}
+      {/* <FacebookShareButton url={`https://jeniy.us/${sectionName}/${articleTitle}`}> */}
+            <FaSquareFacebook  className={`text-gray-500 transition-all ease-in-out ${check ? 'hover:text-black' : 'hover:text-white'} `}/>
+      {/* </FacebookShareButton> */}
     </div>
   )
 }

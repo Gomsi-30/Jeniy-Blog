@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Brands",
 };
 const Brands = () => {
-  const section = 'brands';
+  const section = 'Brands';
   return (
     <div className='flex flex-col gap-12 h-auto'>
       {/* Main Banner */}
