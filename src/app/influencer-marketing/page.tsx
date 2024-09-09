@@ -9,7 +9,7 @@ import {influencersMarketData} from '../_components/articles/influencer-market-d
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Influencer Marketing",
+  title: "InfluencerMarketing",
 };
 const InfluencerMarketing = () => {
   const section = 'Influencer Marketing'

@@ -9,11 +9,11 @@ import {socialData} from '../_components/articles/social-media-data'
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Social Media",
+  title: "SocialMedia",
 };
 
 const SocialMedia = () => {
-  const section = 'Social Media'
+  const section = 'SocialMedia'
   return (
     <div className=' flex flex-col gap-12 h-auto'>
       <Banner label='Social Media'/>

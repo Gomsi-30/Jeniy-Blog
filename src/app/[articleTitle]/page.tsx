@@ -5,49 +5,62 @@ import Link from 'next/link';
 import { allData } from '../_components/articles/all-data';
 
 
-
-type Params = { params: { title: string } };
+// type Params = { params: { title: string } };
+const segments = ['socialmedia', 'brands', 'influencer','influencer-marketing'];
 
 export const generateStaticParams = () => {
-    return allData.map(({ title }) => ({
-      title: title.replace(/[^A-Za-z0-9]+/g, "-"),
+  return allData.flatMap(({ title }) => {
+    const formattedTitle = title.replace(/[^A-Za-z0-9]+/g, "-"); // Clean and format the title
+
+    return segments.map(segment => ({
+      articleTitle: `${segment}-${formattedTitle}`, // Combine title with each segment
     }));
-  };
+  });
+};
+
   
-  export const generateMetadata = ({ params}:any) => {
-    const {title} = params;
-    const parts = title ? title.split('-') : [];
-    const category = parts[0];
+  export const generateMetadata = ({ params }: any) => {
+    const { articleTitle } = params;
+    const parts = articleTitle ? articleTitle.split('-') : [];
     const remainingParts = parts.slice(1).join('-'); 
+
     const article = allData.find(({ title }) => {
-      return title.replace(/[^A-Za-z0-9]+/g, "-") === remainingParts;
+        return title.replace(/[^A-Za-z0-9]+/g, "-") === remainingParts;
     }) as Article;
+
+    if (article) {
+        return {
+            title: article.title,
+            description: article.contents.at(-1),
+            openGraph: {
+                url: `/${articleTitle}`,
+                title: article.title,
+                description: article.contents.at(-1),
+                images: [`/articleassets/${article.imgUrl}`],
+            },
+            twitter: {
+                card: "summary_large_image",
+                title: article.title,
+                description: article.contents.at(-1),
+                images: [`/articleassets/${article.imgUrl}`],
+            },
+        };
+    }
+
     return {
-      title: article.title,
-      description: article.contents.at(-1),
-      openGraph: {
-        url: `/${article.title}`,
-        title: article.title,
-        description: article.contents.at(-1),
-        images: [`/articleassets/${article.imgUrl}`],
-      },
-      twitter: {
-        card: "summary_large_image",
-        title: article.title,
-        description: article.contents.at(-1),
-        images: [`/articleassets/${article.imgUrl}`],
-      },
+        title: 'Article Not Found',
+        description: 'No article found for the given parameters',
     };
 };
   
 
 
 const DynamicArticle = ({ params }:any) => {
-    const {title} = params;
-    const parts = title ? title.split('-') : [];
+    const {articleTitle} = params;
+    const parts = articleTitle ? articleTitle.split('-') : [];
     const category = parts[0];
     const remainingParts = parts.slice(1).join('-'); 
-   
+    console.log(remainingParts)
     let articleData = allData.find(item => item.title?.replace(/[^A-Za-z0-9]+/g, "-") === remainingParts);
 
     const updateHeadings = (articleData: any) => {
