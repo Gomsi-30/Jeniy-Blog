@@ -16,17 +16,18 @@ type NewCardData = {
 
 type NewCardProps = {
   data: NewCardData[];
+  section?: string;
 };
 
-const NewCard = ({ data,section }: NewCardProps) => {
+const NewCard = ({ data,section = ''  }: NewCardProps) => {
   // Limit to the first 4 items
   const cardsToDisplay = data.slice(0, 4);
-
+  
   return (
     
       <div className='container grid grid-cols-2 lg:grid-cols-4 gap-4 w-full'>
         {cardsToDisplay.map(card => (
-          <Link key={card.id} href={`/${section}/${card.id}`} passHref>
+          <Link key={card.id} href={`/${section}/${card.text.replace(/[^A-Za-z0-9]+/g, "-")}/${card.id}`} passHref>
             <div className="relative overflow-hidden w-full h-auto cursor-pointer">
               <Image 
                 className="w-full h-auto"
@@ -37,7 +38,7 @@ const NewCard = ({ data,section }: NewCardProps) => {
                 layout="responsive"
               />
               <div className="py-2 md:py-4">
-                <p className="text-md">
+                <p className="line-clamp-3 text-lg lg:text-md">
                   {card.text}
                 </p>
               </div>

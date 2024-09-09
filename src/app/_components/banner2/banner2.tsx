@@ -73,9 +73,9 @@ const Banner = ({
           </div>
 
           {/* Circle Image with Name and Date */}
-          <div className="flex items-center gap-4 mt-4">
+          <div className="flex items-center gap-2 mt-4">
             {profileImage && (
-              <div className="w-5 h-5 md:w-7 md:h-7 rounded-full overflow-hidden bg-gray-400">
+              <div className="w-5 h-5 md:w-5 md:h-5 rounded-full overflow-hidden bg-gray-400">
                 <Image
                   src={profileImage}
                   alt={profileName || 'Profile'}
@@ -88,7 +88,7 @@ const Banner = ({
 
             {/* Name and Date */}
             <div className="flex flex-row items-center gap-2">
-              {profileName && <div className="font-semibold">{profileName}   |   </div>} 
+              {profileName && <div className="font-regular text-gray-500">{profileName}   |   </div>} 
               {profileReadTime && <div className="text-sm text-gray-500">{profileReadTime}   |   </div>}
               {articleNumber && <div className="text-sm text-gray-500">{<CreationDate articleNumber={articleNumber} />}</div>}
             </div>

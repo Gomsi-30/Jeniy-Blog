@@ -5,21 +5,33 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/**/*.{js,ts,jsx,tsx}',
+    './public/index.html',
   ],
   theme: {
     container:{
       center:true,
-      padding:'8rem', 
+      padding: {
+        DEFAULT:'1rem',
+        xs:'2rem',
+        sm: '2rem',     
+        md: '4rem',     
+        lg: '1rem',     
+        xl: '8rem',     
+        '2xl': '10rem',
+      },
     },
     extend: {
       colors: {
-        customGray: '#121221', // You can name it anything you like
+        customGray: '#121221',
       },
       backgroundImage: {
         'blog1' : "url('/blog2png.png')",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+  ],
 };
 export default config;
