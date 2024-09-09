@@ -7,7 +7,7 @@ import { useState } from 'react';
 import { z } from 'zod';
 import { toast } from 'react-hot-toast';
 import { Toaster } from 'react-hot-toast';
-
+import Brands from '../navbar/brands'
 const emailSchema = z.string().email({ message: 'Invalid email address' });
 
 const Footer = () => {
@@ -35,18 +35,7 @@ const Footer = () => {
               <Logo label="/mainLogo.png" />
               {/* Social Media Icons */}
               <div className="hidden lg:flex space-x-4">
-                <Link href="#!" className="text-white hover:text-gray-300">
-                  <FaTwitter size={20} />
-                </Link>
-                <Link href="#!" className="text-white hover:text-gray-300">
-                  <FaXTwitter size={20} />
-                </Link>
-                <Link href="#!" className="text-white hover:text-gray-300">
-                  <FaLinkedinIn size={20} />
-                </Link>
-                <Link href="#!" className="text-white hover:text-gray-300">
-                  <FaFacebookF size={20} />
-                </Link>
+                <Brands check={false} />
               </div>
             </div>
           

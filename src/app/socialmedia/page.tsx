@@ -11,6 +11,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Social Media",
 };
+
 const SocialMedia = () => {
   const section = 'social-media'
   return (
@@ -19,7 +20,7 @@ const SocialMedia = () => {
 
      {/* Responsive Banner 2 */}
      <div className='px-4 md:px-[100px] lg:px-[250px]'>
-        <Banner2 check='b' articleImage={socialData[0].image} />
+        <Banner2 check='b' articleImage={socialData[socialData.length-1].imgUrl} headingText={socialData[socialData.length-1].title} />
       </div>
 
       {/* Header for Brands */}

@@ -1,5 +1,6 @@
 import CreationDate from '../articles/creationDate';
 import Image from 'next/image';
+import { socialData } from '../articles/social-media-data';
 
 type BannerProps = {
   check: 'a' | 'b' | 'c';
@@ -8,44 +9,45 @@ type BannerProps = {
   profileName?: string;
   articleImage?: string;
   profileReadTime?: string;
-  articleNumber?: any;
+  articleNumber?: number; // Use number if articleNumber is a number
 };
 
 const Banner = ({
   check,
-  headingText = "Sidebar has been collecting the best design links of the day since October 2012. It's maintained by",
+  headingText,
   profileImage,
   profileName,
   articleImage,
   profileReadTime,
   articleNumber
 }: BannerProps) => {
+
+  const data = Math.floor(Math.random() * socialData.length);
+  const bannerImg = socialData[data].imgUrl;
+  const bannerTitle = socialData[data].title;
+
   return (
     <>
       {/* When check is 'a' */}
       {check === 'a' && (
-   <div className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] w-full">
-   {/* Background Image */}
-   <Image 
-     src="/banner2.png" 
-     alt="Banner Image" 
-     layout="fill" 
-     objectFit="cover" 
-     className="absolute inset-0 z-0" 
-   />
- 
-   {/* Linear Gradient Background */}
-   <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent via-black/60 to-black"></div>
- 
-   {/* Content */}
-   <div className="absolute bottom-0 left-0 right-0 z-20 flex justify-center items-center p-4 lg:p-8">
-     <h1 className="text-white font-bold text-center text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl max-w-screen-lg">
-       {headingText}
-     </h1>
-   </div>
- </div>
- 
-     
+        <div className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] w-full">
+          {/* Background Image */}
+          <Image 
+            src={bannerImg}
+            alt="Banner Image" 
+            layout="fill" 
+            objectFit="cover" 
+            className="absolute inset-0 z-0" 
+          />
+          {/* Linear Gradient Background */}
+          <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent via-black/60 to-black"></div>
+          {/* Content */}
+          <div className="absolute bottom-0 left-0 right-0 z-20 flex justify-center items-center p-4 lg:p-8">
+            <h1 className="text-white font-bold text-center text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl max-w-screen-lg">
+              {bannerTitle}
+            </h1>
+          </div>
+        </div>
       )}
 
       {/* When check is 'b' */}
@@ -53,8 +55,10 @@ const Banner = ({
         <div className="flex flex-col items-center gap-5 p-4 sm:p-6 md:p-8 lg:p-10">
           {/* Banner with Gradient */}
           <div className="relative h-[200px] sm:h-[300px] md:h-[400px] w-full">
-          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(0,0,0,0.6)_100%)] bg-cover bg-center"></div>
-            <Image src={articleImage} alt="Banner Image" layout="fill" objectFit="cover" />
+            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(0,0,0,0.6)_100%)] bg-cover bg-center"></div>
+            {articleImage && (
+              <Image src={articleImage} alt="Banner Image" layout="fill" objectFit="cover" />
+            )}
           </div>
           <h1 className="p-2 px-4 font-semibold text-center text-lg sm:text-xl md:text-2xl lg:text-3xl max-w-screen-lg">
             {headingText}
@@ -77,27 +81,27 @@ const Banner = ({
             {profileImage && (
               <div className="w-12 h-12 relative">
                 <Image 
-                src={`/football.png`}
-                alt="profile-image"
-                fill
-                className = "object-cover object-center rounded-full"
+                  src={profileImage}
+                  alt="profile-image"
+                  fill
+                  className="object-cover object-center rounded-full"
                 />
               </div>
             )}
-
             {/* Name and Date */}
             <div className="flex flex-row items-center gap-2">
               {profileName && <div className="font-regular text-gray-500">{profileName}   |   </div>} 
               {profileReadTime && <div className="text-sm text-gray-500">{profileReadTime}   |   </div>}
-              {articleNumber && <div className="text-sm text-gray-500">{<CreationDate articleNumber={articleNumber} />}</div>}
+              {articleNumber !== undefined && <div className="text-sm text-gray-500"><CreationDate articleNumber={articleNumber} /></div>}
             </div>
           </div>
 
           {/* Banner with Gradient */}
           <div className="relative h-[300px] md:h-[400px] lg:h-[500px] xl:h-[400px] w-full max-w-screen-lg">
-          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(0,0,0,0.6)_100%)] bg-cover bg-center"></div>
-
-            <Image src={articleImage} alt="Banner Image" layout="fill" objectFit="cover" />
+            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(0,0,0,0.6)_100%)] bg-cover bg-center"></div>
+            {articleImage && (
+              <Image src={articleImage} alt="Banner Image" layout="fill" objectFit="cover" />
+            )}
           </div>
         </div>
       )}

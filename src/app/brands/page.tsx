@@ -19,7 +19,7 @@ const Brands = () => {
 
       {/* Responsive Banner 2 */}
       <div className='px-4 md:px-[100px] lg:px-[250px]'>
-        <Banner2 check='b' articleImage={brandsData[0].image} />
+        <Banner2 check='b' articleImage={brandsData[0].imgUrl} />
       </div>
 
       {/* Header for Brands */}
