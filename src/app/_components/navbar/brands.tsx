@@ -8,7 +8,7 @@ import { FaSquareFacebook } from "react-icons/fa6";
 type BrandsProps = {
   check? : boolean
 }
-const Brands = ({check}:{BrandsProps}) => {
+const Brands = ({check}:BrandsProps) => {
   return (
     <div className='flex gap-2 items-center text-xl'>
       <TwitterShareButton url="https://www.marriott.com/default.mi">

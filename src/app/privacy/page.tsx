@@ -232,8 +232,8 @@ const Privacy = () => {
           parties.
         </p>
         <p>
-          Ensure your comments are uniquely tailored for each person. Don’t post unauthorized
-          commercial communications or spam on Punkbuzz Platform.
+          {`Ensure your comments are uniquely tailored for each person. Don’t post unauthorized
+          commercial communications or spam on Punkbuzz Platform.`}
         </p>
         <p>
           Respect the limits we’ve placed on Punkbuzz functionality and the way Punkbuzz looks and

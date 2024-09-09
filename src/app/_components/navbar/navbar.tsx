@@ -19,7 +19,7 @@ const Navbar = () => {
         <div className='container flex flex-row justify-between items-center'>
           {isOpen ? <h1></h1> : <div className=''><Logo label='/InCb.png' /></div>} 
           <Items checker={true} />
-          <Brands color='black' />
+          <Brands />
          
           <div onClick={handle} className='sm:hidden'>
              <RiMenu3Fill size={34}/>
