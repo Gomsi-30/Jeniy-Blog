@@ -8,7 +8,7 @@ import { FaSquareFacebook } from "react-icons/fa6";
 type a = {
   check?:boolean;
 }
-const Brands = ({check}) => {
+const Brands = ({check}:a) => {
       // articleTitle = articleTitle.replace(/[^A-Za-z0-9]+/g, "-");
       // sectionName = sectionName.replace(/[^A-Za-z0-9]+/g, "-").toLowerCase();
   return (

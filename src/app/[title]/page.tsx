@@ -38,7 +38,7 @@ type Params = { params: { info: string } };
 //   };
   
 // Dynamic article page component
-const DynamicArticle = ({ params }) => {
+const DynamicArticle = ({ params }:{params:{title:string}}) => {
      const {title} = params;
     const parts = title ? title.split('-') : [];
     const category = parts[0];
