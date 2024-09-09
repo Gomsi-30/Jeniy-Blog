@@ -20,7 +20,7 @@ const SocialMedia = () => {
 
      {/* Responsive Banner 2 */}
      <div className='px-4 md:px-[100px] lg:px-[250px]'>
-        <Banner2 check='b' articleImage={socialData[socialData.length-1].imgUrl} headingText={socialData[socialData.length-1].title} />
+        <Banner2 check='b' articleImage={socialData[Math.floor(Math.random()*socialData.length)].imgUrl} headingText={socialData[Math.floor(Math.random()*socialData.length)].title} />
       </div>
 
       {/* Header for Brands */}

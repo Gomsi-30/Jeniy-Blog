@@ -19,7 +19,7 @@ const InfluencerMarketing = () => {
 
        {/* Responsive Banner 2 */}
        <div className='px-4 md:px-[100px] lg:px-[250px]'>
-        <Banner2 check='b' articleImage={influencersMarketData[0].imgUrl} />
+        <Banner2 check='b' articleImage={influencersMarketData[Math.floor(Math.random()*influencersMarketData.length)].imgUrl}  headingText={influencersMarketData[Math.floor(Math.random()*influencersMarketData.length)].title} />
       </div>
 
       {/* Header for Brands */}

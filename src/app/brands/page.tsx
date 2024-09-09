@@ -10,6 +10,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Brands",
 };
+
 const Brands = () => {
   const section = 'Brands';
   return (
@@ -19,7 +20,7 @@ const Brands = () => {
 
       {/* Responsive Banner 2 */}
       <div className='px-4 md:px-[100px] lg:px-[250px]'>
-        <Banner2 check='b' articleImage={brandsData[0].imgUrl} />
+        <Banner2 check='b' articleImage={brandsData[Math.floor(Math.random()*brandsData.length)].imgUrl} headingText={brandsData[Math.floor(Math.random()*brandsData.length)].title} />
       </div>
 
       {/* Header for Brands */}
