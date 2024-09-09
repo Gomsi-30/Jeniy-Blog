@@ -37,7 +37,7 @@ const GridCards = ({ data = [], section = '' }: GridCardsProps) => {
               />
             </div>
             <div className="w-[60%] px-3 flex items-start justify-start">
-              <p className="font-sans line-clamp-4 text-md sm:text-lg md:text-md xl:text-sm font-medium leading-6 xl:text-md">
+              <p className="line-clamp-4 text-md sm:text-lg md:text-md xl:text-sm font-medium leading-6 xl:text-md">
                 {title}
               </p>
             </div>
