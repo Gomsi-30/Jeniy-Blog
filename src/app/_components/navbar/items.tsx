@@ -1,18 +1,17 @@
 'use client'
 import Link from 'next/link'
 import Logo from './logo'
-import { useState } from 'react'
+
 
 type itemsProps = {
     checker: boolean,
     isOpen: boolean,
-    setIsOpen: (open: boolean) => void, // Function to control menu state
+    setIsOpen: (open: boolean) => void, 
 }
 
 const Items = ({ checker, isOpen, setIsOpen }: itemsProps) => {
-    // Function to close the menu when item is clicked
     const handleItemClick = () => {
-        setIsOpen(false); // Close the menu when an item is clicked
+        setIsOpen(false); 
     }
 
     return (
