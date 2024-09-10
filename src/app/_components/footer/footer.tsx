@@ -98,7 +98,7 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/desclaimer" className="text-white hover:underline">
+                    <Link href="/disclaimer" className="text-white hover:underline">
                       Disclaimer
                     </Link>
                   </li>
