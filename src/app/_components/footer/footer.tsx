@@ -2,6 +2,7 @@
 import { usePathname } from 'next/navigation';
 import Logo from '../navbar/logo';
 import Link from 'next/link';
+
 import { useState } from 'react';
 import { z } from 'zod';
 import { toast } from 'react-hot-toast';
