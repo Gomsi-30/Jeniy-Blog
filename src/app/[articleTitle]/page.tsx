@@ -5,9 +5,7 @@ import Link from 'next/link';
 import { allData } from '../_components/articles/all-data';
 import Brands from '../_components/navbar/brands';
 
-
-// type Params = { params: { title: string } };
-const segments = ['socialmedia', 'brands', 'influencer','influencer-marketing'];
+const segments = ['socialmedia', 'brands', 'influencer','influencermarketing'];
 
 export const generateStaticParams = () => {
   return allData.flatMap(({ title }) => {
@@ -18,7 +16,6 @@ export const generateStaticParams = () => {
     }));
   });
 };
-
   
   export const generateMetadata = ({ params }: any) => {
     const { articleTitle } = params;
@@ -60,6 +57,13 @@ const DynamicArticle = ({ params }:any) => {
     const {articleTitle} = params;
     const parts = articleTitle ? articleTitle.split('-') : [];
     const category = parts[0];
+    // const segments = ['socialmedia', 'brands', 'influencer','influencermarketing'];
+    // segments.forEach((i)=>{
+    //     if(i===category){
+           
+    //         const modStr = i[0].toUpperCase() + str.slice(1);
+    //     }
+    // })
     const remainingParts = parts.slice(1).join('-'); 
     console.log(remainingParts)
     let articleData = allData.find(item => item.title?.replace(/[^A-Za-z0-9]+/g, "-") === remainingParts);
@@ -83,7 +87,7 @@ const DynamicArticle = ({ params }:any) => {
     const filteredData = allData
         .filter(item => item.title?.replace(/[^A-Za-z0-9]+/g, "-") !== remainingParts)
         .slice(0, 6);
-
+    
     return (
         <div className="mt-[50px] h-auto flex flex-col gap-1 w-full">
             {/* Breadcrumb */}
@@ -93,7 +97,7 @@ const DynamicArticle = ({ params }:any) => {
                         Home
                     </Link>
                     /
-                    <p className="text-sm font-semibold opacity-70">{category}</p>
+                    <p className="font-regular text-sm opacity-70">{category}</p>
                 </div>
             </div>
 

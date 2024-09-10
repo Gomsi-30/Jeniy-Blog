@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 const Brands = () => {
-  const section = 'Brands';
+  const section = 'brands';
   return (
     <div className='flex flex-col gap-12 h-auto'>
       {/* Main Banner */}

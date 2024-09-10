@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Influencers",
 };
 const Influencers = () => {
-  const section = 'Influencers'
+  const section = 'influencer'
   return (
     <div className=' flex flex-col gap-12 h-auto'>
       <Banner label='Influencers' />

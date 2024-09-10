@@ -30,7 +30,7 @@ const Home = () => {
 
       {/* Influencer marketing */}
       <Header label='INFLUENCER MARKETING' />
-      <BlogCard data={influencersMarketData} section='influencer-marketing' />
+      <BlogCard data={influencersMarketData} section='influencermarketing' />
     </div>
   );
 }

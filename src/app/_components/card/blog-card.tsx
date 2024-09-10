@@ -39,7 +39,7 @@ const BlogCard = ({ data, section = '' }: BlogCardProps) => {
         </div>
       </Link>
 
-      <div className="flex flex-col gap-3 lg:gap-5 w-full md:w-auto">
+      <div className="flex flex-col gap-2  lg:gap-5 w-full md:w-auto">
         {smallCards.map((card) => (
           <Link
             key={card.articleNumber} // Use articleNumber as the key
