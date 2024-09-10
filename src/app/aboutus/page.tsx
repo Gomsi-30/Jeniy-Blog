@@ -16,7 +16,7 @@ const AboutUs = () => {
             Home
           </Link>
           /
-          <p className="text-sm font-semibold opacity-70">Aboutus</p>
+          <p className="text-sm font-semibold opacity-70">About us</p>
               </div>
              </div>
           

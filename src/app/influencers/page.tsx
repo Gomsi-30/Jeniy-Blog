@@ -19,7 +19,7 @@ const Influencers = () => {
 
       {/* Responsive Banner 2 */}
       <div className='px-4 md:px-[100px] lg:px-[250px]'>
-        <Banner2 check='b' articleImage={influencersData[Math.floor(Math.random()*influencersData.length)].imgUrl} headingText={influencersData[Math.floor(Math.random()*influencersData.length)].title} /> 
+        <Banner2 check='b' articleImage={influencersData[Math.floor(Math.random()*influencersData.length)].imgUrl} headingText={influencersData[Math.floor(Math.random()*influencersData.length)].title} section={section} /> 
       </div>
 
       {/* Header for Brands */}

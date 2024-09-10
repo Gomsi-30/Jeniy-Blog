@@ -16,7 +16,7 @@ const Items = ({ checker, isOpen, setIsOpen }: itemsProps) => {
     }
 
     return (
-        <div className={`px-4 py-2 ${checker ? 'hidden sm:flex flex-row items-center gap-5' : 'flex flex-col gap-[40px] z-20'}`}>
+        <div className={`px-4 py-2 ${checker ? 'hidden sm:flex flex-row items-center gap-5 z-20' : 'flex flex-col gap-[40px] z-20'}`}>
             {checker ? '' : <Logo label='/InCb.png' />}
             <div className='hover:underline text-sm font-semibold border-b-[1px]' onClick={handleItemClick}>
                 <Link href='/'>Home</Link>

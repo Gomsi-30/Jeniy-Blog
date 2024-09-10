@@ -6,20 +6,21 @@ import Footer from "./_components/footer/footer";
 export const metadata: Metadata = {
   metadataBase: new URL("https://incb.us"),
   title: { default: "InCb", template: `%s | InCb` },
-  description: "",
+  description: "Influencer collaboration platform for connecting influencers with brands.",
   openGraph: {
     url: "/",
     title: "Influencer Collaboration",
-    description: "",
-    images: ["/InCb.png"],
+    description: "Connect with top influencers for brand collaborations.",
+    images: ["/articleassets/mainLogo.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Influencer Collaboration",
-    description: "",
-    images: ["/InCb.png"],
+    description: "Connect with top influencers for brand collaborations.",
+    images: ["/articleassets/mainLogo.png"],
   },
 };
+
 
 export default function RootLayout({
   children,

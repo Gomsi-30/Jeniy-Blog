@@ -56,14 +56,8 @@ export const generateStaticParams = () => {
 const DynamicArticle = ({ params }:any) => {
     const {articleTitle} = params;
     const parts = articleTitle ? articleTitle.split('-') : [];
-    const category = parts[0];
-    // const segments = ['socialmedia', 'brands', 'influencer','influencermarketing'];
-    // segments.forEach((i)=>{
-    //     if(i===category){
-           
-    //         const modStr = i[0].toUpperCase() + str.slice(1);
-    //     }
-    // })
+    let category1 = parts[0];
+    let category2 = category1[0].toUpperCase() + category1.slice(1);
     const remainingParts = parts.slice(1).join('-'); 
     console.log(remainingParts)
     let articleData = allData.find(item => item.title?.replace(/[^A-Za-z0-9]+/g, "-") === remainingParts);
@@ -97,7 +91,7 @@ const DynamicArticle = ({ params }:any) => {
                         Home
                     </Link>
                     /
-                    <p className="font-regular text-sm opacity-70">{category}</p>
+                    <p className="font-regular text-sm opacity-70">{category2}</p>
                 </div>
             </div>
 
@@ -136,7 +130,7 @@ const DynamicArticle = ({ params }:any) => {
             {/* Related Articles */}
             <Header label="WHAT'S MORE" />
             <div className="mt-8">
-                <GridCard data={filteredData} section={articleData?.title || 'Related'} />
+                <GridCard data={filteredData} section={category1} />
             </div>
         </div>
     );

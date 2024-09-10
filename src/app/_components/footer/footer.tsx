@@ -1,8 +1,7 @@
 "use client"
+import { usePathname } from 'next/navigation';
 import Logo from '../navbar/logo';
 import Link from 'next/link';
-import { FaTwitter, FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
-import { FaXTwitter } from 'react-icons/fa6';
 import { useState } from 'react';
 import { z } from 'zod';
 import { toast } from 'react-hot-toast';
@@ -13,7 +12,8 @@ const emailSchema = z.string().email({ message: 'Invalid email address' });
 
 const Footer = () => {
   const [email, setEmail] = useState('');
-
+  const path = usePathname();
+  const firstPath = path?.split('/')[1]?.toLowerCase(); 
 
   const handleSubscribe = (e:any) => {
     e.preventDefault();
@@ -33,10 +33,10 @@ const Footer = () => {
       <div className="">
         <footer className="pt-10">
             <div className="container flex flex-row justify-center lg:justify-between items-center">
-              <Logo label="/mainLogo.png" />
+              <Logo label="/articleassets/mainLogo.png" />
               {/* Social Media Icons */}
               <div className="hidden lg:flex space-x-4">
-                <Brands check={false} />
+                <Brands check={false} articleTitle={firstPath} />
               </div>
             </div>
           

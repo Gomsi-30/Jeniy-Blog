@@ -1,9 +1,11 @@
 import CreationDate from '../articles/creationDate';
 import Image from 'next/image';
 import { socialData } from '../articles/social-media-data';
+import Link from 'next/link';
 
 type BannerProps = {
   check: 'a' | 'b' | 'c';
+  section?:string;
   headingText?: string;
   profileImage?: string;
   profileName?: string;
@@ -13,6 +15,7 @@ type BannerProps = {
 };
 
 const Banner = ({
+  section,
   check,
   headingText,
   profileImage,
@@ -42,7 +45,7 @@ const Banner = ({
           {/* Linear Gradient Background */}
           <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent via-black/60 to-black"></div>
           {/* Content */}
-          <div className="absolute bottom-0 left-0 right-0 z-20 flex justify-center items-center p-4 lg:p-8">
+          <div className="absolute bottom-0 left-0 right-0 z-10 flex justify-center items-center p-4 lg:p-8">
             <h1 className="text-white font-bold text-center text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl max-w-screen-lg">
               {bannerTitle}
             </h1>
@@ -54,7 +57,9 @@ const Banner = ({
       {check === 'b' && (
         <div className="flex flex-col items-center gap-5 p-4 sm:p-6 md:p-8 lg:p-10">
           {/* Banner with Gradient */}
+          <Link href={`${section}-${headingText?.replace(/[^A-Za-z0-9]+/g, "-")}`}>
           <div className="relative h-[200px] sm:h-[300px] md:h-[400px] w-full">
+           
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(0,0,0,0.6)_100%)] bg-cover bg-center"></div>
             {articleImage && (
               <Image src={articleImage} alt="Banner Image" layout="fill" objectFit="cover" />
@@ -63,6 +68,7 @@ const Banner = ({
           <h1 className="p-2 px-4 font-semibold text-center text-lg sm:text-xl md:text-2xl lg:text-3xl max-w-screen-lg">
             {headingText}
           </h1>
+          </Link>
         </div>
       )}
 

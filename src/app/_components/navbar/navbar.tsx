@@ -1,4 +1,5 @@
 'use client'
+import { usePathname } from 'next/navigation';
 import { RxCross2 } from "react-icons/rx";
 import Logo from "./logo";
 import Items from "./items";
@@ -8,7 +9,8 @@ import { useState } from 'react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  
+  const path = usePathname();
+  const firstPath = path?.split('/')[1]?.toLowerCase(); 
   const handle = (): void => {
     setIsOpen(!isOpen);
   };
@@ -19,7 +21,7 @@ const Navbar = () => {
         <div className='container flex flex-row justify-between items-center'>
           {isOpen ? <h1></h1> : <div className=''><Logo label='/InCb.png' /></div>} 
           <Items isOpen={isOpen} checker={true} setIsOpen={setIsOpen} />
-          <Brands />
+          <Brands articleTitle={firstPath} />
           <div onClick={handle} className='sm:hidden'>
             <RiMenu3Fill size={34} />
           </div>

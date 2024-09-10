@@ -1,17 +1,32 @@
+'use client'
 import Image from 'next/image';
-import {allData} from '../articles/all-data'
+import { usePathname } from 'next/navigation';
+
 type BannerProps = {
   label?: string;
+  params?: string;
 };
 
-const Banner = ({ label }: BannerProps) => {
-  const data = Math.floor(Math.random() * allData.length);
-  const bannerImg = allData[data].imgUrl;
+const Banner = ({ label, params }: BannerProps) => {
+  const path = usePathname();
+  
+  // Define banner images for corresponding paths
+  const banner = [
+   
+    { path: 'brands', image: '/Brands.png' },
+    { path: 'influencer-marketing', image: '/Influencer Marketing.png' },
+    { path: 'influencers', image: '/Influencers.png' },
+    { path: 'socialmedia', image: '/Social Media.png' }
+  ];
+
+ 
+  const firstPath = path?.split('/')[1]?.toLowerCase(); 
+  
+  const matchedBanner = banner.find(b => b.path === firstPath)?.image || '/home.png'; 
   return (
     <div className="relative h-[260px] md:h-[300px] lg:h-[360px] w-full min-w-full">
-      
       <Image
-        src={bannerImg}
+        src={matchedBanner} 
         alt="Banner Image"
         layout="fill"
         objectFit="cover"

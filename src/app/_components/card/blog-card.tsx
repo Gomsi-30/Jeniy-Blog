@@ -56,7 +56,7 @@ const BlogCard = ({ data, section = '' }: BlogCardProps) => {
                 />
               </div>
               <div className="flex-1">
-                <p className="line-clamp-3 font-regular md:text-1xl text-lg lg:text-lg md:leading-5.5 lg:leading-7 lg:font-regular">
+                <p className="line-clamp-3 font-regular md:text-1xl text-lg lg:text-lg md:leading-5.5 lg:leading-7 lg:font-semibold">
                   {card.title}
                 </p>
               </div>
