@@ -32,9 +32,9 @@ const BlogCard = ({ data, section = '' }: BlogCardProps) => {
             layout="responsive"
           />
           <div>
-            <p className="line-clamp-3 text-lg font-semibold lg:text-2xl md:leading-12 lg:leading-7 md:font-bold md:text-2xl">
+            <h1 className="line-clamp-3 text-lg font-regular lg:text-2xl md:leading-12 lg:leading-8 md:font-semibold md:text-2xl">
               {mainCard.title}
-            </p>
+            </h1>
           </div>
         </div>
       </Link>
@@ -56,7 +56,7 @@ const BlogCard = ({ data, section = '' }: BlogCardProps) => {
                 />
               </div>
               <div className="flex-1">
-                <p className="line-clamp-3 font-regular md:text-1xl text-lg lg:text-lg md:leading-5.5 lg:leading-6 lg:font-semibold">
+                <p className="line-clamp-3 font-regular md:text-1xl text-lg lg:text-lg md:leading-5.5 lg:leading-7 lg:font-regular">
                   {card.title}
                 </p>
               </div>
