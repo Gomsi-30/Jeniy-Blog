@@ -34,7 +34,7 @@ const Footer = () => {
       <div className="">
         <footer className="pt-10">
             <div className="container flex flex-row justify-center lg:justify-between items-center">
-              <Logo label="/articleassets/mainLogo.png" />
+              <Logo label="/mainLogo.png" />
               {/* Social Media Icons */}
               <div className="hidden lg:flex space-x-4">
                 <Brands check={false} articleTitle={firstPath} />
