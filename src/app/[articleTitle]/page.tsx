@@ -17,7 +17,7 @@ export const generateStaticParams = () => {
   });
 };
   
-  export const generateMetadata = ({ params }: any) => {
+  export const generateMetadata = ({ params }: {params:{articleTitle:string}}) => {
     const { articleTitle } = params;
     const parts = articleTitle ? articleTitle.split('-') : [];
     const remainingParts = parts.slice(1).join('-'); 
@@ -34,13 +34,13 @@ export const generateStaticParams = () => {
                 url: `/${articleTitle}`,
                 title: article.title,
                 description: article.contents.at(-1),
-                images: [`/articleassets/${article.imgUrl}`],
+                images: [article.imgUrl],
             },
             twitter: {
                 card: "summary_large_image",
                 title: article.title,
                 description: article.contents.at(-1),
-                images: [`/articleassets/${article.imgUrl}`],
+                images: [article.imgUrl],
             },
         };
     }
