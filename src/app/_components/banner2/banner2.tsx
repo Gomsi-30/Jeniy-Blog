@@ -32,26 +32,28 @@ const Banner = ({
   return (
     <>
       {/* When check is 'a' */}
-      {check === 'a' && (
-        <div className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] w-full">
-          {/* Background Image */}
-          <Image 
-            src={bannerImg}
-            alt="Banner Image" 
-            layout="fill" 
-            objectFit="cover" 
-            className="absolute inset-0 z-0" 
-          />
-          {/* Linear Gradient Background */}
-          <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent via-black/60 to-black"></div>
-          {/* Content */}
-          <div className="absolute bottom-0 left-0 right-0 z-10 flex justify-center items-center p-4 lg:p-8">
-            <h1 className="text-white font-bold text-center text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl max-w-screen-lg">
-              {bannerTitle}
-            </h1>
-          </div>
-        </div>
-      )}
+
+
+{check === 'a' && (
+  <Link href={`/festiveandpartydecor-${bannerTitle.replace(/\s+/g, '-')}`} className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] w-full">
+    {/* Background Image */}
+    <Image 
+      src={bannerImg}
+      alt="Banner Image" 
+      layout="fill" 
+      objectFit="cover" 
+      className="absolute inset-0 z-0" 
+    />
+    {/* Linear Gradient Background */}
+    <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent via-black/60 to-black"></div>
+    {/* Content */}
+    <div className="absolute bottom-0 left-0 right-0 z-10 flex justify-center items-center p-4 lg:p-8">
+      <h1 className="text-white font-bold text-center text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl max-w-screen-lg">
+        {bannerTitle}
+      </h1>
+    </div>
+  </Link>
+)}
 
       {/* When check is 'b' */}
       {check === 'b' && (
@@ -84,10 +86,10 @@ const Banner = ({
 
           {/* Circle Image with Name and Date */}
           <div className="flex items-center gap-2 mt-4">
-            {profileImage && (
+            {profileName && (
               <div className="w-9 h-9 relative">
                 <Image 
-                  src={profileImage}
+                  src={`/authors/${profileName}.jpg`}
                   alt="profile-image"
                   fill
                   className="object-cover object-center rounded-full"

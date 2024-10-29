@@ -35,10 +35,7 @@ const Footer = () => {
         <footer className="pt-10">
             <div className="container flex flex-row justify-center lg:justify-between items-center">
               <Logo label="/mainLogo.png" />
-              {/* Social Media Icons */}
-              <div className="hidden lg:flex space-x-4">
-                <Brands check={false} articleTitle={firstPath} />
-              </div>
+              
             </div>
           
             <div className="container grid grid-cols-3 lg:grid-cols-4 lg:gap-0 gap-6 mt-8 lg:mt-[55px] text-left text-center lg:text-left w-full">
@@ -55,8 +52,8 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/influencers" className="text-white hover:underline">
-                      Influencers
+                    <Link href="/interiors" className="text-white hover:underline">
+                      Interiors
                     </Link>
                   </li>
                 </ul>
@@ -64,18 +61,18 @@ const Footer = () => {
               <div>
                 <ul className="mb-4 text-sm md:text-md lg:text-lg space-y-2">
                   <li>
-                    <Link href="/socialmedia" className="text-white hover:underline">
-                      Social Media
+                    <Link href="/homedecor" className="text-white hover:underline">
+                      Home Decor
                     </Link>
                   </li>
                   <li>
-                    <Link href="/brands" className="text-white hover:underline">
-                      Brands
+                    <Link href="/festiveandpartydecor" className="text-white hover:underline">
+                      Festive & Party decor
                     </Link>
                   </li>
                   <li>
-                    <Link href="/influencer-marketing" className="text-white hover:underline">
-                      Influencer Marketing
+                    <Link href="/giftsandcards" className="text-white hover:underline">
+                      Gifts & Cards
                     </Link>
                   </li>
                 </ul>
@@ -104,12 +101,7 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-              {/* The social media icons will remain hidden on small screens */}
-              <div className="flex justify-center lg:justify-start lg:col-span-1 col-span-3 lg:hidden">
-                <div className="flex space-x-4">
-                  <Brands check={false}  />
-                </div>
-              </div>
+              
               <div className="flex justify-center lg:col-span-1 col-span-3 ">
                 <form onSubmit={handleSubscribe} className="flex items-center space-x-1">
                   <input
@@ -126,7 +118,7 @@ const Footer = () => {
               </div>
             </div>
           <div className="text-center p-3 border-t border-white text-white mt-8 lg:mt-[35px]">
-            © 2024 Incb. All rights reserved.
+            © 2024 InstantDIY. All rights reserved.
           </div>
         </footer>
       </div>

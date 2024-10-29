@@ -19,7 +19,7 @@ const Navbar = () => {
     <>
       <div className='fixed border-b-[1px] shadow w-full h-[85px] bg-white text-black py-5 px-2 z-20'>
         <div className='container flex flex-row justify-between items-center'>
-          {isOpen ? <h1></h1> : <div className=''><Logo label='/InCb.png' /></div>} 
+          {isOpen ? <h1></h1> : <div className=''><Logo label='/InstantDIY.png' /></div>} 
           <Items isOpen={isOpen} checker={true} setIsOpen={setIsOpen} />
           <Brands articleTitle={firstPath} />
           <div onClick={handle} className='sm:hidden'>

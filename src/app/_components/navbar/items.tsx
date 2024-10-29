@@ -21,16 +21,16 @@ const Items = ({ checker, isOpen, setIsOpen }: itemsProps) => {
                 <Link href='/'>Home</Link>
             </div>
             <div className='hover:underline text-sm font-semibold border-b-[1px]' onClick={handleItemClick}>
-                <Link href='/influencers'>Influencers</Link>
+                <Link href='/interiors'>Interiors</Link>
             </div>
             <div className='hover:underline text-sm font-semibold border-b-[1px]' onClick={handleItemClick}>
-                <Link href='/socialmedia'>Social Media</Link>
+                <Link href='/homedecor'>Home Decor</Link>
             </div>
             <div className='hover:underline text-sm font-semibold border-b-[1px]' onClick={handleItemClick}>
-                <Link href='/brands'>Brands</Link>
+                <Link href='/giftsandcards'>Gifts & Cards</Link>
             </div>
             <div className='hover:underline text-sm font-semibold border-b-[1px]' onClick={handleItemClick}>
-                <Link href='/influencer-marketing'>Influencer Marketing</Link>
+                <Link href='/festiveandpartydecor'>Festive & Party Decor</Link>
             </div>
         </div>
     )

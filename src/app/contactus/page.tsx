@@ -110,14 +110,14 @@ const ContactUs = () => {
         <div className="flex flex-col gap-6 w-full max-w-screen-md mx-auto">
           <div>
             <h2 className="text-xl font-bold">Email Us</h2>
-            <Link href="mailto:info@example.com">
-              <p className="text-sm font-semibold text-blue-600 hover:underline">info@example.com</p>
+            <Link href="mailto:contact@instantdiy.com">
+              <p className="text-sm font-semibold text-blue-600 hover:underline">contact@instantdiy.com</p>
             </Link>
           </div>
 
           <div>
             <h2 className="text-xl font-bold">Office Address</h2>
-            <p className="text-sm font-regular text-gray-500">InfluencerCollab</p>
+            <p className="text-sm font-regular text-gray-500">InstantDIY</p>
             <p className="text-sm font-regular text-gray-500">4567 Social Avenue</p>
             <p className="text-sm font-regular text-gray-500">Suite 890</p>
             <p className="text-sm font-regular text-gray-500">New York, NY 10010</p>

@@ -5,14 +5,14 @@ import Link from 'next/link';
 import { allData } from '../_components/articles/all-data';
 import Brands from '../_components/navbar/brands';
 
-const segments = ['socialmedia', 'brands', 'influencer','influencermarketing'];
+const segments = ['interiors', 'homedecor', 'giftsandcards','festiveandpartydecor'];
 
 export const generateStaticParams = () => {
   return allData.flatMap(({ title }) => {
-    const formattedTitle = title.replace(/[^A-Za-z0-9]+/g, "-"); // Clean and format the title
+    const formattedTitle = title.replace(/[^A-Za-z0-9]+/g, "-"); 
 
     return segments.map(segment => ({
-      articleTitle: `${segment}-${formattedTitle}`, // Combine title with each segment
+      articleTitle: `${segment}-${formattedTitle}`,
     }));
   });
 };

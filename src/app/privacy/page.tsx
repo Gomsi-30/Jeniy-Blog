@@ -171,21 +171,21 @@ const Privacy = () => {
         </p>
         <p className="text-lg">Platform Policy</p>
         <p>
-          By using this platform, you agree that Punkbuzz can use a set of APIs, SDKs, plugins,
+          By using this platform, you agree that Instantdiy can use a set of APIs, SDKs, plugins,
           code, specifications, documentation, technology, and services (such as content) that
           enables others, including application developers and website operators, to retrieve data
-          from Punkbuzz or provide data to us. We reserve the right to change this policy at any
-          time without notice, so please check it regularly. Your continued use of the Punkbuzz
+          from Instantdiy or provide data to us. We reserve the right to change this policy at any
+          time without notice, so please check it regularly. Your continued use of the Instantdiy
           Platform constitutes acceptance of any changes. You also agree to and are responsible for
-          ensuring that you comply with the Punkbuzz Terms of Use and Punkbuzz Community Guidelines.
+          ensuring that you comply with the Instantdiy Terms of Use and Instantdiy Community Guidelines.
         </p>
         <p>
-          We provide the Punkbuzz Platform to support several types of apps and services. First, we
+          We provide the Instantdiy Platform to support several types of apps and services. First, we
           provide them to help members of our community share their own content with apps or
           services. We also support apps and services that help brands and advertisers understand
           and manage their audience, develop their content strategy, and obtain digital rights.
-          Finally, we provide the Punkbuzz Platform to help broadcasters and publishers discover
-          content, get digital rights to media, and share media using web embeds. The Punkbuzz
+          Finally, we provide the Instantdiy Platform to help broadcasters and publishers discover
+          content, get digital rights to media, and share media using web embeds. The Instantdiy
           platform is not intended for other types of apps or services.
         </p>
         <p>
@@ -193,7 +193,7 @@ const Privacy = () => {
           deceive, defraud, mislead, or harass anyone. Be transparent about your identity and your
           app’s identity. Don’t use the platform for any app that constitutes, promotes or is used
           in connection with spyware, adware, or any other malicious programs or code. Don’t store
-          or cache Punkbuzz login credentials.
+          or cache Instantdiy login credentials.
         </p>
         <p>
           You ensure that the app is stable and easily navigable. For example, verify that you have
@@ -204,7 +204,7 @@ const Privacy = () => {
           you.
         </p>
         <p>
-          Comply with any requirements or restrictions imposed on usage of Punkbuzz user photos and
+          Comply with any requirements or restrictions imposed on usage of Instantdiy user photos and
           videos (“User Content”) by their respective owners. You are solely responsible for making
           use of user content in compliance with owners’ requirements or restrictions.
         </p>
@@ -221,8 +221,8 @@ const Privacy = () => {
         </p>
         <p>If you store or cache User Content, keep it up to date.</p>
         <p>
-          Don’t use the Punkbuzz Platform to simply display User Content, import or backup content,
-          or manage Punkbuzz relationships, without our prior permission.
+          Don’t use the Instantdiy Platform to simply display User Content, import or backup content,
+          or manage Instantdiy relationships, without our prior permission.
         </p>
         <p>Don’t participate in any “like”, “share”, “comment” or “follower” exchange programs.</p>
         <p>
@@ -236,13 +236,13 @@ const Privacy = () => {
         </p>
         <p>
           {`Ensure your comments are uniquely tailored for each person. Don’t post unauthorized
-          commercial communications or spam on Punkbuzz Platform.`}
+          commercial communications or spam on Instantdiy Platform.`}
         </p>
         <p>
-          Respect the limits we’ve placed on Punkbuzz functionality and the way Punkbuzz looks and
+          Respect the limits we’ve placed on Instantdiy functionality and the way Instantdiy looks and
           functions. Don’t offer experiences that change it.
         </p>
-        <p>Don’t attempt to build an ad network on Punkbuzz.</p>
+        <p>Don’t attempt to build an ad network on Instantdiy.</p>
         <p>
           Don’t ask users to like, comment or share your post in return of money or any unauthorized
           manner.
@@ -267,17 +267,17 @@ const Privacy = () => {
         </p>
         <p>
           Don’t use an unreasonable amount of bandwidth, or adversely impact the stability of
-          Punkbuzz servers or the behavior of other apps using the Punkbuzz Platform.
+          Instantdiy servers or the behavior of other apps using the Instantdiy Platform.
         </p>
         <p>
-          Don’t reverse engineer the Punkbuzz apps source code or APIs or any of Punkbuzz’s apps.
+          Don’t reverse engineer the Instantdiy apps source code or APIs or any of Instantdiy’s apps.
         </p>
         <p>
           Don’t attempt to identify groups of individuals or create demographic clusters for the
-          purpose of contacting or targeting Punkbuzz members on or off Punkbuzz.
+          purpose of contacting or targeting Instantdiy members on or off Instantdiy.
         </p>
         <p>
-          Don’t sell, lease, or sublicense the Punkbuzz Platform or any data derived through the
+          Don’t sell, lease, or sublicense the Instantdiy Platform or any data derived through the
           Platform.
         </p>
         <p>
@@ -288,10 +288,10 @@ const Privacy = () => {
         <p>
           Don’t post anyone’s copyrighted pictures, videos or other contents that you don’t have
           rights upon. In that case seek permission from that creator and only if he/she agrees then
-          post their content on Punkbuzz platform.
+          post their content on Instantdiy platform.
         </p>
         <p>
-          Make sure that you comply with all terms and conditions of the Punkbuzz platform else
+          Make sure that you comply with all terms and conditions of the Instantdiy platform else
           severe steps like legal action, account ban, may take place.
         </p>
         <p>
@@ -304,7 +304,7 @@ const Privacy = () => {
           ensure you direct them to an experience that enhances the post.
         </p>
         <p>
-          Punkbuzz may put a limit or block accounts that make a large number of posts that are not
+          Instantdiy may put a limit or block accounts that make a large number of posts that are not
           primarily in response to direct user actions.
         </p>
         <p>Apart from our policies you must follow these policies too –</p>
@@ -336,30 +336,30 @@ const Privacy = () => {
         </p>
         <p>
           Enforcement is both automated and manual, and can include disabling your account,
-          restricting you and your app’s access to Punkbuzz Platform, requiring that you delete
+          restricting you and your app’s access to Instantdiy Platform, requiring that you delete
           data, terminating our agreements with you or any other action that we deem appropriate.
         </p>
         <p>
-          Punkbuzz may change, suspend, or discontinue the availability of any Punkbuzz Platform at
-          any time. In addition, Punkbuzz may impose limits on certain features and services or
-          restrict your access to parts or all of the Punkbuzz APIs or the Punkbuzz website without
+          Instantdiy may change, suspend, or discontinue the availability of any Instantdiy Platform at
+          any time. In addition, Instantdiy may impose limits on certain features and services or
+          restrict your access to parts or all of the Instantdiy APIs or the Instantdiy website without
           notice or liability.
         </p>
         <p>
-          If Punkbuzz elects to provide you with support or modifications for the Punkbuzz Platform,
-          this support may be terminated at any time without notice to you. • Punkbuzz reserves the
+          If Instantdiy elects to provide you with support or modifications for the Instantdiy Platform,
+          this support may be terminated at any time without notice to you. • Instantdiy reserves the
           right to charge the prices it pays to users for their post and any changes can be made to
-          it without any prior notice . • Punkbuzz doesn’t guarantee that the Punkbuzz Platform is
+          it without any prior notice . • Instantdiy doesn’t guarantee that the Instantdiy Platform is
           free of inaccuracies, errors, bugs, or interruptions, or is reliable, accurate, complete,
           or otherwise valid. • You represent and warrant that you own or have secured all rights
           necessary to display, distribute and deliver all content in your app or website. To the
           extent your users are able to share content from your app or website on or through
-          Punkbuzz, you represent and warrant that you own or have secured all necessary rights for
-          them to do so in accordance with Punkbuzz’s available functionality.
+          Instantdiy, you represent and warrant that you own or have secured all necessary rights for
+          them to do so in accordance with Instantdiy’s available functionality.
         </p>
         <p>
-          Punkbuzz primarily communicates with creators through email. Please ensure that the email
-          addresses associated with your Punkbuzz account are current and correct and that you don’t
+          Instantdiy primarily communicates with creators through email. Please ensure that the email
+          addresses associated with your Instantdiy account are current and correct and that you don’t
           filter out these messages.
         </p>
         <p>
@@ -367,12 +367,12 @@ const Privacy = () => {
           obligations to third parties in connection with your app or website.
         </p>
         <p>
-          You give us all rights necessary to enable your app to work with Punkbuzz, including the
-          right to incorporate information you provide to us into other parts of Punkbuzz, and the
+          You give us all rights necessary to enable your app to work with Instantdiy, including the
+          right to incorporate information you provide to us into other parts of Instantdiy, and the
           right to attribute the source of information using your name and logos.
         </p>
         <p>
-          You also give as all rights to use the content posted by you on Punkbuzz and Punkbuzz can
+          You also give as all rights to use the content posted by you on Instantdiy and Instantdiy can
           use this wherever and whenever required.
         </p>
         <p>
@@ -390,60 +390,60 @@ const Privacy = () => {
           features is deemed part of your app.
         </p>
         <p>
-          Disclaimer of Any Warranty: Punkbuzz Platform and all data derived through such Platform
+          Disclaimer of Any Warranty: Instantdiy Platform and all data derived through such Platform
           are provided “as is” with no warranty, express or implied, of any kind and Instagram
           expressly disclaims any and all warranties and conditions, including but not limited to,
           any implied warranty of merchantability, fitness for a particular purpose, availability,
           security, title and non-infringement. You are solely responsible for any damage that
-          results from the use of any Punkbuzz Platform and all any data derived through such
+          results from the use of any Instantdiy Platform and all any data derived through such
           Platform including, but not limited to, any damage to your computer system or loss of
           data.
         </p>
         <p>
-          Limitation of Liability: Punkbuzz shall not, under any circumstances, be liable to you for
+          Limitation of Liability: Instantdiy shall not, under any circumstances, be liable to you for
           any indirect, incidental, consequential, special or exemplary damages arising out of or in
-          connection with use of the Punkbuzz Platform and any data derived through such Platform,
+          connection with use of the Instantdiy Platform and any data derived through such Platform,
           whether based on breach of contract, breach of warranty, tort (including negligence,
-          product liability or otherwise), or any other pecuniary loss, whether or not Punkbuzz has
-          been advised of the possibility of such damages. Under no circumstances shall Punkbuzz be
+          product liability or otherwise), or any other pecuniary loss, whether or not Instantdiy has
+          been advised of the possibility of such damages. Under no circumstances shall Instantdiy be
           liable to you for any amount.
         </p>
         <p>
           Release and Waiver: To the maximum extent permitted by applicable law, you hereby release
-          and waive all claims against Punkbuzz, and its subsidiaries, affiliates, officers, agents,
+          and waive all claims against Instantdiy, and its subsidiaries, affiliates, officers, agents,
           licensors, co-branders or other partners, and employees from any and all liability for
           claims, damages (actual and/or consequential), costs and expenses (including litigation
           costs and attorneys’ fees) of every kind and nature, arising from or in any way related to
-          your use of the Punkbuzz Platform and data derived through such Platform.
+          your use of the Instantdiy Platform and data derived through such Platform.
         </p>
         <p>
           Hold Harmless and Indemnify: To the maximum extent permitted by applicable law, you agree
-          to hold harmless and indemnify Punkbuzz and its subsidiaries, affiliates, officers,
+          to hold harmless and indemnify Instantdiy and its subsidiaries, affiliates, officers,
           agents, licensors, co-branders or other partners, and employees from and against any
-          third-party claim arising from or in any way related to your use of the Punkbuzz Platform
+          third-party claim arising from or in any way related to your use of the Instantdiy Platform
           and any data derived through the Platform, including any liability or expense arising from
           all claims, losses, damages (actual and/or consequential), suits, judgments, litigation
-          costs and attorneys’ fees, of every kind and nature. Punkbuzz shall use good faith efforts
+          costs and attorneys’ fees, of every kind and nature. Instantdiy shall use good faith efforts
           to provide you with written notice of such claim, suit or action.
         </p>
         <p>
           Relationship of the Parties: Notwithstanding any provision hereof, for all purposes of the
-          Punkbuzz Platform Terms, you and Punkbuzz shall be and act independently and not as
+          Instantdiy Platform Terms, you and Instantdiy shall be and act independently and not as
           partner, joint venturer, agent, employee or employer of the other. You don’t have any
-          authority to assume or create any obligation for or on behalf of Punkbuzz, express or
+          authority to assume or create any obligation for or on behalf of Instantdiy, express or
           implied, and you must not attempt to bind Instagram to any contract. • Also note that User
-          Content is owned by users and not by Punkbuzz. All rights not expressly granted to you are
-          reserved by Punkbuzz.
+          Content is owned by users and not by Instantdiy. All rights not expressly granted to you are
+          reserved by Instantdiy.
         </p>
         <p>
-          Invalidity of Specific Terms: If any provision of the Punkbuzz Platform Terms is found by
+          Invalidity of Specific Terms: If any provision of the Instantdiy Platform Terms is found by
           a court of competent jurisdiction to be invalid, the parties nevertheless agree that the
           court should endeavor to give effect to the parties’ intentions as reflected in the
           provision and that the other provisions remain in full force and effect.
         </p>
         <p>
-          No Waiver of Rights by Punkbuzz: Punkbuzz’s failure to exercise or enforce any right or
-          provision of the Punkbuzz Platform Terms shall not constitute a waiver of such right or
+          No Waiver of Rights by Instantdiy: Instantdiy’s failure to exercise or enforce any right or
+          provision of the Instantdiy Platform Terms shall not constitute a waiver of such right or
           provision.
         </p>
         <p>

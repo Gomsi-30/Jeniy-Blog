@@ -14,23 +14,19 @@ const Home = () => {
     <div className='flex flex-col gap-12 h-auto'>
       <Banner />
 
-      {/* influencer */}
-      <Header label='INFLUENCER' />
-      <NewCard data={influencersData} section='influencer'/>
+      <Header label='Interiors' />
+      <BlogCard data={socialData} section='interiors' />
 
-     {/* socialmedia */}
-      <Header label='SOCIAL MEDIA' />
-      <BlogCard data={socialData} section='socialmedia' />
+      <Header label='Gift & Cards' />
+      <NewCard data={influencersData} section='giftandcards'/>
 
       <Banner2 check='a' />
 
-      {/* brands */}
-      <Header label='BRANDS' />
-      <GridCard data={brandsData} section='brands' />
+      <Header label='Home Decor' />
+      <GridCard data={brandsData} section='homedecor' />
 
-      {/* Influencer marketing */}
-      <Header label='INFLUENCER MARKETING' />
-      <BlogCard data={influencersMarketData} section='influencermarketing' />
+      <Header label='Festive & Party Decor' />
+      <BlogCard data={influencersMarketData} section='festiveandpartydecor' />
     </div>
   );
 }

@@ -24,7 +24,7 @@ const Terms = () => {
       <div className='container px-6 sm:px-[50px] md:px-[120px] lg:px-[177px]'>
         <div className='flex flex-col gap-10 max-w-full'>
         <p>
-          We use data from Punkbuzz app and other Punkbuzz Company Products, as well as from
+          We use data from Instantdiy app and other Instantdiy Company Products, as well as from
           third-party partners, to show you ads, offers, and other sponsored content that we believe
           will be meaningful to you. And we try to make that content as relevant as possible to you.
         </p>
@@ -37,7 +37,7 @@ const Terms = () => {
           Ensuring a stable global infrastructure for our Service – To provide our global Service,
           we must store and transfer data across our systems around the world, including outside of
           your country of residence. Try your luck with This infrastructure may or may not be owned
-          or operated by Punkbuzz Developers Pvt. Ltd. or their affiliates.
+          or operated by Instantdiy Developers Pvt. Ltd. or their affiliates.
         </p>
         <p>
           Developing and using technologies that help us consistently serve our growing community.
@@ -54,8 +54,8 @@ const Terms = () => {
           about. So we build systems that try to understand who and what you and others care about,
           and use that information to help you create, find, join, and share in experiences that
           matter to you. Part of that is highlighting content, features, offers, and accounts you
-          might be interested in, and offering ways for you to experience Punkbuzz, based on things
-          you and others do on and off Punkbuzz.
+          might be interested in, and offering ways for you to experience Instantdiy, based on things
+          you and others do on and off Instantdiy.
         </p>
         <p>
           Fostering a positive, inclusive, and safe environment – We develop and use tools and offer
@@ -69,7 +69,7 @@ const Terms = () => {
         <p>
           Your commitments – We require you to make the below commitments to us, in return for our
           commitment to provide the service. Who Can Use You must be at least 13 years old or the
-          minimum legal age in your country to use Punkbuzz. You must not be prohibited from
+          minimum legal age in your country to use Instantdiy. You must not be prohibited from
           receiving any aspect of our service under applicable laws or engaging in payments related
           services if you are on an applicable denied party listing. We must not have previously
           disabled your account for violation of law or any of our policies. You must not be a
@@ -77,7 +77,7 @@ const Terms = () => {
         </p>
         <p>
           You can’t impersonate others or provide inaccurate information. You don’t have to disclose
-          your identity on Punkbuzz, but you must provide us with accurate and up to date
+          your identity on Instantdiy, but you must provide us with accurate and up to date
           information (including registration information). Also, you may not impersonate someone
           you aren’t, and you can’t create an account for someone else unless you have their express
           permission.
@@ -88,8 +88,8 @@ const Terms = () => {
         </p>
         <p>
           You can’t violate (or help or encourage others to violate) these Terms or our policies,
-          including in particular the Punkbuzz Community Guidelines, Punkbuzz Platform Policy, and
-          Punkbuzz Payment Guidelines.
+          including in particular the Instantdiy Community Guidelines, Instantdiy Platform Policy, and
+          Instantdiy Payment Guidelines.
         </p>
         <p>
           We also use various social media platform’s API’s. Hence you must follow their Terms of
@@ -136,9 +136,9 @@ const Terms = () => {
           and actions with accounts, ads, and sponsored content. You give us permission to show your
           username, profile picture, and information about your actions (such as likes) or
           relationships (such as follows) next to or in connection with accounts, ads, offers, and
-          other sponsored content that you follow or engage with that are displayed on Punkbuzz
+          other sponsored content that you follow or engage with that are displayed on Instantdiy
           Products, without any compensation to you. For example, we may show that you liked a
-          sponsored post created by a brand that has paid us to display its ads on Punkbuzz. As with
+          sponsored post created by a brand that has paid us to display its ads on Instantdiy. As with
           actions on other content and followers of other accounts, actions on sponsored content and
           followers of sponsored accounts can be seen only by people who have permission to see that
           content or follow.

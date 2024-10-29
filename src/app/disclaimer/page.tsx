@@ -8,8 +8,6 @@ const data : Array<string> = [
     `If  you use our Products for purchase or any other financial transactions,  we collect information about the purchase or transaction. This includes  payment information, such as your credit or debit card number and other  card information; other account and authentication information; and  billing, shipping and contact details.`,
     `All these details are  stored in our database and are used for improving user experience such  as when the user is making any transaction again then we suggest to use  the same debit or credit card to ensure hassle free experience for the  user.`,
     `We collect information about the people, pages, accounts,  hashtags and groups you are connected to and how you interact with them  across our platforms, such as people you communicate with the most or  groups you are part of. We also collect contact information if you  choose to upload, sync or import it from a device (such as an address  book or call log or SMS log history), which we use for things like  helping you and others find people you may know.`,
-    ``,
-    ``
 ]
 
 const Desclaimer = () => {
