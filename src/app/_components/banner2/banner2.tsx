@@ -32,10 +32,8 @@ const Banner = ({
   return (
     <>
       {/* When check is 'a' */}
-
-
 {check === 'a' && (
-  <Link href={`/festiveandpartydecor-${bannerTitle.replace(/\s+/g, '-')}`} className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] w-full">
+  <Link href={`/festiveandpartydecor-${bannerTitle?.replace(/[^A-Za-z0-9]+/g, "-")}`} className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] w-full">
     {/* Background Image */}
     <Image 
       src={bannerImg}

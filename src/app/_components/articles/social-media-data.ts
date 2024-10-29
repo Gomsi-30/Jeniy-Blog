@@ -1530,8 +1530,6 @@ export const socialData = [
     ],
 },
 
-
-
 {
     title: `Why Brands Are Paying Millions for TikTok Challenges`,
     imgUrl: `/articleassets/106.jpg`,
@@ -1717,8 +1715,6 @@ export const socialData = [
 },
 
 
-
-
 {
     title: `How Instagram’s Shadowban Could Be Ruining Your Engagement`,
     imgUrl: `/articleassets/111.jpg`,
@@ -1856,9 +1852,6 @@ export const socialData = [
         `Viral social media challenges can seem enticing, but many carry serious risks. Always prioritize safety and avoid participating in challenges that can harm yourself or others. Instead, focus on creating and sharing content that is both entertaining and safe. Remember, no challenge is worth risking your health or well-being.`,
     ],
 },
-
-
-
 
 {
     title: `Why Social Media Isn’t as Free as You Think (And How It’s Costing You)`,

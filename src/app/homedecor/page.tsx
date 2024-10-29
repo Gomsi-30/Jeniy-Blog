@@ -13,11 +13,9 @@ export const metadata: Metadata = {
 
 const Brands = () => {
   const section = 'homedecor';
-
  
   const randomIndex = Math.floor(Math.random() * brandsData.length);
   const randomBrand = brandsData[randomIndex];
-
 
   const newCardData = brandsData.slice(0, 4);
   const blogCardData1 = brandsData.slice(4, 8);
