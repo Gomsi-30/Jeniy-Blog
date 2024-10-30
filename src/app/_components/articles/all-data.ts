@@ -1,6 +1,6 @@
-import {brandsData} from './brands-data'
-import {socialData} from './social-media-data'
-import {influencersData} from './influencers-data'
-import {influencersMarketData} from './influencer-market-data'
+import { gifts } from "./gifts";
+import { festive} from "./festive";
+import { interiors } from "./interiors";
+import { homedecor } from "./homedecor";
 
-export const allData = [...brandsData,...socialData,...influencersData,...influencersMarketData] ;
+export const allData = [...gifts,...festive,...interiors,...homedecor] ;

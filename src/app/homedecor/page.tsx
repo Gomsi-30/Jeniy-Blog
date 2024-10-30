@@ -4,7 +4,7 @@ import Banner2 from "../_components/banner2/banner2";
 import Header from "../_components/global/header";
 import BlogCard from "../_components/card/blog-card";
 import NewCard from "../_components/new-card/newCard";
-import { brandsData } from '../_components/articles/brands-data';
+import { homedecor } from "../_components/articles/homedecor";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -14,13 +14,13 @@ export const metadata: Metadata = {
 const Brands = () => {
   const section = 'homedecor';
  
-  const randomIndex = Math.floor(Math.random() * brandsData.length);
-  const randomBrand = brandsData[randomIndex];
+  const randomIndex = Math.floor(Math.random() * homedecor.length);
+  const randomBrand = homedecor[randomIndex];
 
-  const newCardData = brandsData.slice(0, 4);
-  const blogCardData1 = brandsData.slice(4, 8);
-  const blogCardData2 = brandsData.slice(8, 12);
-  const gridCardData = brandsData.slice(12, 18); 
+  const newCardData = homedecor.slice(0, 4);
+  const blogCardData1 = homedecor.slice(4, 8);
+  const blogCardData2 = homedecor.slice(8, 12);
+  const gridCardData = homedecor.slice(12, 18); 
 
   return (
     <div className='flex flex-col gap-12 h-auto'>

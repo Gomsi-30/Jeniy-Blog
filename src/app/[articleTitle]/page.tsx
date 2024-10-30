@@ -26,7 +26,6 @@ export const generateStaticParams = () => {
         return title.replace(/[^A-Za-z0-9]+/g, "-") === remainingParts;
     }) as Article;
 
-    if (article) {
         return {
             title: article.title,
             description: article.contents.at(-1),
@@ -34,24 +33,17 @@ export const generateStaticParams = () => {
                 url: `/${articleTitle}`,
                 title: article.title,
                 description: article.contents.at(-1),
-                images: [article.imgUrl],
+                images: [`/articleassets/${article.imgUrl}`],
             },
             twitter: {
                 card: "summary_large_image",
                 title: article.title,
                 description: article.contents.at(-1),
-                images: [article.imgUrl],
+                images: [`/articleassets/${article.imgUrl}`],
             },
         };
-    }
-
-    return {
-        title: 'Article Not Found',
-        description: 'No article found for the given parameters',
-    };
 };
   
-
 
 const DynamicArticle = ({ params }:any) => {
     const {articleTitle} = params;

@@ -4,7 +4,7 @@ import Banner2 from "../_components/banner2/banner2";
 import Header from '../_components/global/header';
 import BlogCard from '../_components/card/blog-card';
 import NewCard from '../_components/new-card/newCard';
-import { influencersMarketData } from '../_components/articles/influencer-market-data';
+import { gifts } from "../_components/articles/gifts";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -14,14 +14,14 @@ export const metadata: Metadata = {
 const InfluencerMarketing = () => {
   const section = 'giftsandcards';
 
-  const randomIndex = Math.floor(Math.random() * influencersMarketData.length);
-  const randomInfluencer = influencersMarketData[randomIndex];
+  const randomIndex = Math.floor(Math.random() * gifts.length);
+  const randomInfluencer = gifts[randomIndex];
 
  
-  const newCardData = influencersMarketData.slice(0, 4);
-  const blogCardData1 = influencersMarketData.slice(4, 8); 
-  const blogCardData2 = influencersMarketData.slice(8, 12); 
-  const gridCardData = influencersMarketData.slice(12, 18); 
+  const newCardData = gifts.slice(0, 4);
+  const blogCardData1 = gifts.slice(4, 8); 
+  const blogCardData2 = gifts.slice(8, 12); 
+  const gridCardData = gifts.slice(12, 18); 
 
   return (
     <div className='flex flex-col gap-12 h-auto'>

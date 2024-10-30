@@ -1,6 +1,6 @@
 import CreationDate from '../articles/creationDate';
 import Image from 'next/image';
-import { socialData } from '../articles/social-media-data';
+import { festive } from '../articles/festive';
 import Link from 'next/link';
 
 type BannerProps = {
@@ -25,9 +25,9 @@ const Banner = ({
   articleNumber
 }: BannerProps) => {
 
-  const data = Math.floor(Math.random() * socialData.length);
-  const bannerImg = socialData[data].imgUrl;
-  const bannerTitle = socialData[data].title;
+  const data = Math.floor(Math.random() * festive.length);
+  const bannerImg = festive[data].imgUrl;
+  const bannerTitle = festive[data].title;
 
   return (
     <>
