@@ -31,7 +31,7 @@ const NewCard = ({ data, section = '' }: NewCardProps) => {
           <div className="w-full cursor-pointer">
             <div className="relative w-full h-[240px] overflow-hidden rounded-md">
               <Image 
-                src={card.imgUrl}
+                src={`/articleassets/${card.imgUrl}`}
                 alt={card.title || 'Image'}
                 layout="fill"
                 objectFit="cover"

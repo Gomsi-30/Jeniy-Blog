@@ -1050,6 +1050,46 @@ export const interiors = [
 
 
 
+{
+    title: `Top Interior Design Trends for the Upcoming Year`,
+    imgUrl: `30.jpg`,
+    authorName: `Prince Matthews`,
+    readTime: `${Math.floor(Math.random() * (5 - 2 + 1)) + 2} min read`,
+    contents: [
+        `As we move into a new year, the world of interior design continues to evolve, reflecting changes in lifestyle, technology, and aesthetics. Staying updated on the latest trends is essential for creating spaces that feel fresh and inviting. Here are some of the top interior design trends to watch for in the upcoming year.`,
+
+        `***Sustainable and Eco-Friendly Designs`,
+        `Sustainability remains a significant focus in interior design. Homeowners are increasingly seeking eco-friendly materials and practices that minimize environmental impact. Expect to see more designs that incorporate recycled materials, sustainable textiles, and energy-efficient appliances. Incorporating plants and biophilic design elements will also play a crucial role in creating a healthy indoor environment.`,
+
+        `***Multifunctional Spaces`,
+        `As remote work continues to be prevalent, multifunctional spaces are becoming a necessity. Homeowners are looking to maximize their space by creating areas that serve multiple purposes. For example, a guest bedroom may double as a home office, or a living room might incorporate a workspace. Furniture pieces that can be easily transformed or adapted, such as foldable desks or storage ottomans, will be in high demand.`,
+
+        `***Bold Colors and Patterns`,
+        `In contrast to the neutral palettes of recent years, bold colors and patterns are making a comeback. Homeowners are becoming more adventurous with their color choices, opting for vibrant hues like deep greens, rich blues, and warm terracotta. Patterns, from geometric shapes to floral designs, will also see a resurgence, providing a dynamic visual element to interiors.`,
+
+        `***Textured Surfaces`,
+        `Adding texture is essential to creating depth and interest in interior design. Expect to see an increase in the use of textured materials such as bouclé fabrics, rattan, and reclaimed wood. These elements can be incorporated into furniture, accent walls, or decor accessories, adding a tactile quality that enhances the overall aesthetic of a space.`,
+
+        `***Smart Home Integration`,
+        `As technology continues to advance, the integration of smart home features will remain a prominent trend. Homeowners are increasingly looking for ways to enhance convenience and efficiency through smart lighting, heating, and security systems. The challenge for designers will be to integrate these technologies seamlessly into the decor, ensuring they complement the overall design without being intrusive.`,
+
+        `***Artisanal and Handmade Touches`,
+        `There is a growing appreciation for artisanal and handmade products as people seek unique and personal touches in their spaces. This trend encompasses everything from handcrafted furniture to artisanal textiles and decor items. Incorporating these elements adds character and a sense of authenticity to interiors, making them feel more personalized and inviting.`,
+
+        `***Global Influences`,
+        `With travel becoming more accessible, global influences are inspiring interior design. Homeowners are seeking to bring a sense of the world into their spaces by incorporating elements from different cultures. Expect to see a blend of traditional craftsmanship with modern aesthetics, showcasing textiles, art, and decor from various regions, creating an eclectic and inviting atmosphere.`,
+
+        `***Minimalist Luxury`,
+        `Minimalism continues to be a strong influence in interior design, but it’s evolving into a new form of luxury. The focus is shifting towards quality over quantity, emphasizing high-quality materials, refined craftsmanship, and clean lines. This trend promotes a sense of calm and tranquility, allowing homeowners to appreciate the beauty of simplicity in their spaces.`,
+
+        `***Vintage and Retro Revival`,
+        `Nostalgia plays a significant role in interior design trends for the upcoming year. Vintage and retro styles are making a comeback, with homeowners embracing the charm of bygone eras. Expect to see bold colors, geometric patterns, and iconic furniture pieces from the mid-20th century finding their way back into modern homes. Mixing vintage finds with contemporary design can create a unique and visually appealing space.`,
+
+        `***Conclusion`,
+        `As we look ahead, these interior design trends reflect a desire for sustainability, comfort, and personal expression. By embracing eco-friendly practices, creating multifunctional spaces, and incorporating bold colors and textures, homeowners can create inviting environments that reflect their unique styles. Whether you’re redesigning a single room or your entire home, staying attuned to these trends can help you make informed design choices that resonate with the changing landscape of interior aesthetics.`,
+    ],
+},
+
 
 
 
@@ -1261,46 +1301,6 @@ export const interiors = [
 
 
 
-
-{
-    title: `Top Interior Design Trends for the Upcoming Year`,
-    imgUrl: `30.jpg`,
-    authorName: `Prince Matthews`,
-    readTime: `${Math.floor(Math.random() * (5 - 2 + 1)) + 2} min read`,
-    contents: [
-        `As we move into a new year, the world of interior design continues to evolve, reflecting changes in lifestyle, technology, and aesthetics. Staying updated on the latest trends is essential for creating spaces that feel fresh and inviting. Here are some of the top interior design trends to watch for in the upcoming year.`,
-
-        `***Sustainable and Eco-Friendly Designs`,
-        `Sustainability remains a significant focus in interior design. Homeowners are increasingly seeking eco-friendly materials and practices that minimize environmental impact. Expect to see more designs that incorporate recycled materials, sustainable textiles, and energy-efficient appliances. Incorporating plants and biophilic design elements will also play a crucial role in creating a healthy indoor environment.`,
-
-        `***Multifunctional Spaces`,
-        `As remote work continues to be prevalent, multifunctional spaces are becoming a necessity. Homeowners are looking to maximize their space by creating areas that serve multiple purposes. For example, a guest bedroom may double as a home office, or a living room might incorporate a workspace. Furniture pieces that can be easily transformed or adapted, such as foldable desks or storage ottomans, will be in high demand.`,
-
-        `***Bold Colors and Patterns`,
-        `In contrast to the neutral palettes of recent years, bold colors and patterns are making a comeback. Homeowners are becoming more adventurous with their color choices, opting for vibrant hues like deep greens, rich blues, and warm terracotta. Patterns, from geometric shapes to floral designs, will also see a resurgence, providing a dynamic visual element to interiors.`,
-
-        `***Textured Surfaces`,
-        `Adding texture is essential to creating depth and interest in interior design. Expect to see an increase in the use of textured materials such as bouclé fabrics, rattan, and reclaimed wood. These elements can be incorporated into furniture, accent walls, or decor accessories, adding a tactile quality that enhances the overall aesthetic of a space.`,
-
-        `***Smart Home Integration`,
-        `As technology continues to advance, the integration of smart home features will remain a prominent trend. Homeowners are increasingly looking for ways to enhance convenience and efficiency through smart lighting, heating, and security systems. The challenge for designers will be to integrate these technologies seamlessly into the decor, ensuring they complement the overall design without being intrusive.`,
-
-        `***Artisanal and Handmade Touches`,
-        `There is a growing appreciation for artisanal and handmade products as people seek unique and personal touches in their spaces. This trend encompasses everything from handcrafted furniture to artisanal textiles and decor items. Incorporating these elements adds character and a sense of authenticity to interiors, making them feel more personalized and inviting.`,
-
-        `***Global Influences`,
-        `With travel becoming more accessible, global influences are inspiring interior design. Homeowners are seeking to bring a sense of the world into their spaces by incorporating elements from different cultures. Expect to see a blend of traditional craftsmanship with modern aesthetics, showcasing textiles, art, and decor from various regions, creating an eclectic and inviting atmosphere.`,
-
-        `***Minimalist Luxury`,
-        `Minimalism continues to be a strong influence in interior design, but it’s evolving into a new form of luxury. The focus is shifting towards quality over quantity, emphasizing high-quality materials, refined craftsmanship, and clean lines. This trend promotes a sense of calm and tranquility, allowing homeowners to appreciate the beauty of simplicity in their spaces.`,
-
-        `***Vintage and Retro Revival`,
-        `Nostalgia plays a significant role in interior design trends for the upcoming year. Vintage and retro styles are making a comeback, with homeowners embracing the charm of bygone eras. Expect to see bold colors, geometric patterns, and iconic furniture pieces from the mid-20th century finding their way back into modern homes. Mixing vintage finds with contemporary design can create a unique and visually appealing space.`,
-
-        `***Conclusion`,
-        `As we look ahead, these interior design trends reflect a desire for sustainability, comfort, and personal expression. By embracing eco-friendly practices, creating multifunctional spaces, and incorporating bold colors and textures, homeowners can create inviting environments that reflect their unique styles. Whether you’re redesigning a single room or your entire home, staying attuned to these trends can help you make informed design choices that resonate with the changing landscape of interior aesthetics.`,
-    ],
-},
 ]
 
 .reverse()

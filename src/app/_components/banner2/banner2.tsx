@@ -36,7 +36,7 @@ const Banner = ({
   <Link href={`/festiveandpartydecor-${bannerTitle?.replace(/[^A-Za-z0-9]+/g, "-")}`} className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] w-full">
     {/* Background Image */}
     <Image 
-      src={bannerImg}
+      src={`/articleassets/${bannerImg}`}
       alt="Banner Image" 
       layout="fill" 
       objectFit="cover" 
@@ -62,7 +62,7 @@ const Banner = ({
            
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(0,0,0,0.6)_100%)] bg-cover bg-center"></div>
             {articleImage && (
-              <Image src={articleImage} alt="Banner Image" layout="fill" objectFit="cover" />
+              <Image src={`/articleassets/${articleImage}`} alt="Banner Image" layout="fill" objectFit="cover" />
             )}
           </div>
           <h1 className="p-2 px-4 font-semibold text-center text-lg sm:text-xl md:text-2xl lg:text-3xl max-w-screen-lg">
@@ -106,7 +106,7 @@ const Banner = ({
           <div className="relative h-[300px] md:h-[400px] lg:h-[500px] xl:h-[400px] w-full max-w-screen-lg">
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(0,0,0,0.6)_100%)] bg-cover bg-center"></div>
             {articleImage && (
-              <Image src={articleImage} alt="Banner Image" layout="fill" objectFit="cover" />
+              <Image src={`/articleassets/${articleImage}`} alt="Banner Image" layout="fill" objectFit="cover" />
             )}
           </div>
         </div>
