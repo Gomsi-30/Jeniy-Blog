@@ -1,6 +1,6 @@
 import CreationDate from '../articles/creationDate';
 import Image from 'next/image';
-import { festive } from '../articles/festive';
+import { travel } from '../articles/travel';
 import Link from 'next/link';
 
 type BannerProps = {
@@ -25,9 +25,9 @@ const Banner = ({
   articleNumber
 }: BannerProps) => {
 
-  const data = Math.floor(Math.random() * festive.length);
-  const bannerImg = festive[data].imgUrl;
-  const bannerTitle = festive[data].title;
+  const data = Math.floor(Math.random() * travel.length);
+  const bannerImg = travel[data].imgUrl;
+  const bannerTitle = travel[data].title;
 
   return (
     <>
@@ -36,7 +36,7 @@ const Banner = ({
   <Link href={`/festiveandpartydecor-${bannerTitle?.replace(/[^A-Za-z0-9]+/g, "-")}`} className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] w-full">
     {/* Background Image */}
     <Image 
-      src={`/articleassets/${bannerImg}`}
+      src={`/${section}/${bannerImg}`}
       alt="Banner Image" 
       layout="fill" 
       objectFit="cover" 
@@ -62,7 +62,7 @@ const Banner = ({
            
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(0,0,0,0.6)_100%)] bg-cover bg-center"></div>
             {articleImage && (
-              <Image src={`/articleassets/${articleImage}`} alt="Banner Image" layout="fill" objectFit="cover" />
+              <Image src={`/${section}/${articleImage}`} alt="Banner Image" layout="fill" objectFit="cover" />
             )}
           </div>
           <h1 className="p-2 px-4 font-semibold text-center text-lg sm:text-xl md:text-2xl lg:text-3xl max-w-screen-lg">
@@ -106,7 +106,7 @@ const Banner = ({
           <div className="relative h-[300px] md:h-[400px] lg:h-[500px] xl:h-[400px] w-full max-w-screen-lg">
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(0,0,0,0.6)_100%)] bg-cover bg-center"></div>
             {articleImage && (
-              <Image src={`/articleassets/${articleImage}`} alt="Banner Image" layout="fill" objectFit="cover" />
+              <Image src={`/${section}/${articleImage}`} alt="Banner Image" layout="fill" objectFit="cover" />
             )}
           </div>
         </div>

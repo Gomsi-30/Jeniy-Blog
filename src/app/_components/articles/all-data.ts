@@ -1,6 +1,6 @@
-import { gifts } from "./gifts";
-import { festive} from "./festive";
-import { interiors } from "./interiors";
-import { homedecor } from "./homedecor";
+import { celebrity } from "./celebrity";
+import { hollywood } from "./hollywood";
+import { socialmedia } from "./social-media";
+import { travel } from "./travel";
 
-export const allData = [...gifts,...festive,...interiors,...homedecor] ;
+export const allData = [...celebrity,...hollywood,...socialmedia,...travel] ;

@@ -29,7 +29,7 @@ const GridCards = ({ data = [], section = '' }: GridCardsProps) => {
           >
             <div className="relative w-[40%] h-full">
               <Image
-                src={`/articleassets/${imgUrl}`} 
+                src={`/${section}/${imgUrl}`} 
                 alt='Not-found'
                 layout="fill"
                 objectFit="cover"

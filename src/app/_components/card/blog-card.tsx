@@ -25,7 +25,7 @@ const BlogCard = ({ data, section = '' }: BlogCardProps) => {
       <Link href={`/${section}-${mainCard.title?.replace(/[^A-Za-z0-9]+/g, '-')}`}>
         <div className="relative flex flex-col gap-2 md:h-[496px] lg:h-auto w-full md:max-w-3xl cursor-pointer">
           <Image
-            src={`articleassets/${mainCard.imgUrl}`}
+            src={`${section}/${mainCard.imgUrl}`}
             alt={mainCard.title || 'Blog Image'}
             width={250}
             height={350}
@@ -49,7 +49,7 @@ const BlogCard = ({ data, section = '' }: BlogCardProps) => {
               <div className="w-1/3 sm:w-1/3 h-[110px] lg:h-full relative">
                 <Image
                   className="object-cover"
-                  src={`articleassets/${card.imgUrl}`}
+                  src={`${section}/${card.imgUrl}`}
                   alt={card.title || 'Blog Image'}
                   layout="fill"
                   objectFit="cover"

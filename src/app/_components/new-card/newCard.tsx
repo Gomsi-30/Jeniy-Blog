@@ -18,20 +18,19 @@ type NewCardProps = {
 };
 
 const NewCard = ({ data, section = '' }: NewCardProps) => {
-  // Limit to the first 4 items
   const cardsToDisplay = data.slice(0, 4);
 
   return (
     <div className="container grid grid-cols-2 lg:grid-cols-4 gap-4 w-full">
       {cardsToDisplay.map((card, index) => (
         <Link 
-          key={index} // Use index as key if there's no unique identifier
+          key={index} 
           href={`/${section}-${card.title?.replace(/[^A-Za-z0-9]+/g, "-")}`}
         >
           <div className="w-full cursor-pointer">
             <div className="relative w-full h-[240px] overflow-hidden rounded-md">
               <Image 
-                src={`/articleassets/${card.imgUrl}`}
+                src={`/${section}/${card.imgUrl}`}
                 alt={card.title || 'Image'}
                 layout="fill"
                 objectFit="cover"

@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { allData } from '../_components/articles/all-data';
 import Brands from '../_components/navbar/brands';
 
-const segments = ['interiors', 'homedecor', 'giftsandcards','festiveandpartydecor'];
+const segments = ['travel', 'celebrity', 'hollywood', 'socialmedia'];
 
 export const generateStaticParams = () => {
   return allData.flatMap(({ title }) => {
@@ -68,7 +68,6 @@ const DynamicArticle = ({ params }:any) => {
     if (articleData) {
         updateHeadings(articleData);
     }
-
     
     const filteredData = allData
         .filter(item => item.title?.replace(/[^A-Za-z0-9]+/g, "-") !== remainingParts)

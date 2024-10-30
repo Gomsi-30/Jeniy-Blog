@@ -52,8 +52,8 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/interiors" className="text-white hover:underline">
-                      Interiors
+                    <Link href="/travel" className="text-white hover:underline">
+                      Travel
                     </Link>
                   </li>
                 </ul>
@@ -61,18 +61,18 @@ const Footer = () => {
               <div>
                 <ul className="mb-4 text-sm md:text-md lg:text-lg space-y-2">
                   <li>
-                    <Link href="/homedecor" className="text-white hover:underline">
-                      Home Decor
+                    <Link href="/celebrity" className="text-white hover:underline">
+                      Celebrity
                     </Link>
                   </li>
                   <li>
-                    <Link href="/festiveandpartydecor" className="text-white hover:underline">
-                      Festive & Party decor
+                    <Link href="/hollywood" className="text-white hover:underline">
+                      Hollywood
                     </Link>
                   </li>
                   <li>
-                    <Link href="/giftsandcards" className="text-white hover:underline">
-                      Gifts & Cards
+                    <Link href="/socialmedia" className="text-white hover:underline">
+                      Social Media
                     </Link>
                   </li>
                 </ul>

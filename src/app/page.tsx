@@ -4,10 +4,10 @@ import Banner2 from "./_components/banner2/banner2"
 import Header from './_components/global/header'
 import BlogCard from './_components/card/blog-card'
 import NewCard from './_components/new-card/newCard'
-import { gifts } from "./_components/articles/gifts"
-import { festive } from "./_components/articles/festive"
-import { homedecor } from "./_components/articles/homedecor"
-import { interiors } from "./_components/articles/interiors"
+import { celebrity } from "./_components/articles/celebrity"
+import { travel } from "./_components/articles/travel"
+import { socialmedia } from "./_components/articles/social-media"
+import { hollywood } from "./_components/articles/hollywood"
 
 const Home = () => {
   return (
@@ -15,18 +15,18 @@ const Home = () => {
       <Banner />
 
       <Header label='Interiors' />
-      <BlogCard data={interiors} section='interiors' />
+      <BlogCard data={celebrity} section='celebrity' />
 
       <Header label='Gift & Cards' />
-      <NewCard data={gifts} section='giftandcards'/>
+      <NewCard data={travel} section='travel'/>
 
-      <Banner2 check='a' />
+      <Banner2 check='a' section='travel' />
 
       <Header label='Home Decor' />
-      <GridCard data={homedecor} section='homedecor' />
+      <GridCard data={socialmedia} section='socialmedia' />
 
       <Header label='Festive & Party Decor' />
-      <BlogCard data={festive} section='festiveandpartydecor' />
+      <BlogCard data={hollywood} section='hollywood' />
     </div>
   );
 }

@@ -11,10 +11,10 @@ const Banner = ({ label, params }: BannerProps) => {
   const path = usePathname();
   const banner = [
    
-    { path: 'interiors', image: '/interior.jpg' },
-    { path: 'homedecor', image: '/homedecor.jpg' },
-    { path: 'festiveandpartydecor', image: '/festive.jpg' },
-    { path: 'giftsandcards', image: '/giftandcard.jpg' }
+    { path: 'travel', image: '/interior.jpg' },
+    { path: 'socialmedia', image: '/homedecor.jpg' },
+    { path: 'celebrity', image: '/festive.jpg' },
+    { path: 'hollywood', image: '/giftandcard.jpg' }
   ];
 
  
