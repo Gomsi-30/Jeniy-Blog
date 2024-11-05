@@ -8,11 +8,11 @@ import { socialmedia } from "../_components/articles/social-media";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "HomeandDecor",
+  title: "Social media",
 };
 
 const Brands = () => {
-  const section = 'homedecor';
+  const section = 'socialmedia';
  
   const randomIndex = Math.floor(Math.random() * socialmedia.length);
   const randomBrand = socialmedia[randomIndex];

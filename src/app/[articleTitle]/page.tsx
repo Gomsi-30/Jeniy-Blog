@@ -50,6 +50,8 @@ const DynamicArticle = ({ params }:any) => {
     const parts = articleTitle ? articleTitle.split('-') : [];
     let category1 = parts[0];
     let category2 = category1[0].toUpperCase() + category1.slice(1);
+    let category3 = category1[0] + category1.slice(1);
+    console.log(category3)
     const remainingParts = parts.slice(1).join('-'); 
     console.log(remainingParts)
     let articleData = allData.find(item => item.title?.replace(/[^A-Za-z0-9]+/g, "-") === remainingParts);
@@ -92,7 +94,8 @@ const DynamicArticle = ({ params }:any) => {
                     check="c"
                     headingText={articleData?.title || 'Default Heading'}
                     profileImage={articleData?.imgUrl}
-                    profileName={articleData?.authorName}
+                    category={category3}
+                    profileName={articleData?.authorName.replace(/[^A-Za-z0-9]+/g, "-")}
                     articleImage={articleData?.imgUrl}
                     profileReadTime={articleData?.readTime}
                     articleNumber={articleData?.articleNumber}

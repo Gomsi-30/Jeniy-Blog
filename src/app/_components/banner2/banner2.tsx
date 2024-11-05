@@ -10,6 +10,7 @@ type BannerProps = {
   profileImage?: string;
   profileName?: string;
   articleImage?: string;
+  category?:string,
   profileReadTime?: string;
   articleNumber?: number; // Use number if articleNumber is a number
 };
@@ -17,6 +18,7 @@ type BannerProps = {
 const Banner = ({
   section,
   check,
+  category,
   headingText,
   profileImage,
   profileName,
@@ -87,7 +89,7 @@ const Banner = ({
             {profileName && (
               <div className="w-9 h-9 relative">
                 <Image 
-                  src={`/authors/${profileName}.jpg`}
+                  src={`/authors/${profileName}.png`}
                   alt="profile-image"
                   fill
                   className="object-cover object-center rounded-full"
@@ -106,7 +108,7 @@ const Banner = ({
           <div className="relative h-[300px] md:h-[400px] lg:h-[500px] xl:h-[400px] w-full max-w-screen-lg">
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(0,0,0,0.6)_100%)] bg-cover bg-center"></div>
             {articleImage && (
-              <Image src={`/${section}/${articleImage}`} alt="Banner Image" layout="fill" objectFit="cover" />
+              <Image src={`/${category}/${articleImage}`} alt="Banner Image" layout="fill" objectFit="cover" />
             )}
           </div>
         </div>

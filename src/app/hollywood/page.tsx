@@ -8,11 +8,11 @@ import { hollywood } from "../_components/articles/hollywood";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Interiors",
+  title: "hollywood",
 };
 
 const Influencers = () => {
-  const section = 'interiors';
+  const section = 'hollywood';
 
 
   const randomIndex = Math.floor(Math.random() * hollywood.length);
